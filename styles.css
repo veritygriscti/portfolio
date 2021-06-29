@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f6f6;
+    color: #444444;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: regular;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1.15rem;
+}
+
+nav {
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#nav-container {
+    margin-right: 15px;
+}
+
+
+#logo {
+    flex-grow: 2.5;
+    margin-left: 10px;
+    text-transform: lowercase;
+}
+
+.nav-item {
+    margin-left: 15px;
+    text-transform: lowercase;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444444;
+}
+
+nav a:hover {
+    font-weight: bold;
+    text-decoration: overline;
+}
+
+nav a:active {
+    font-weight: bold;
+    text-decoration: overline;
+}
+
+#ux {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: top;
+    background-color: red;
+}
+
+.ux-img {
+    width: 33%;
+}
+
+.case-study {
+   height: calc(100%);
+   width: 33.3vw;
+}

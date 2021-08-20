@@ -1,15 +1,27 @@
+/* General Styles, including text and color */
 
-* {
+:root {
+    --header-bg: #501E6D;
+    --white-text: #f4f4f4;
+    --text: #333333;
+    --body-bg: #f6f6f6;
+    --link-color: #5e95c2;
+    --about-bg: #dbdce2;
+}
+
+*, html {
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #f6f6f6;
-    color: #444444;
+    background-color: var(--body-bg);
+    color: var(--text);
     font-family: 'Open Sans', sans-serif;
     font-weight: regular;
-    font-size: 16px;
+    font-size: 18px;
+   
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,107 +29,203 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 
 h2 {
-    font-size: 1.25rem;
+    font-size: 1.7rem;
 }
 
 h3 {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
 }
 
-header {
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    font-weight: regular;
-    line-height: 1.6rem;
-    margin: 0;
+.link  {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    color: var(--link-color);
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+#about h3, h4 {
+    text-transform: lowercase;
+}
+
+footer h3, h4 {
+    text-transform: lowercase;
+}
+
+nav {
     padding: 1%;
-    height: auto;
+    background-color: var(--body-bg);
+    text-transform: lowercase;
+    transition: 800ms ease-in; 
 }
 
-#intro {
-    margin-left: 2vw;
-  
+#nav-container a {
+    text-decoration: none;
+    color: var(--text);   
 }
 
 header a {
-    text-decoration: underline;
-    font-weight: normal;
-    color: yellow;
-}
-
-header a:hover {
+    color: var(--link-color);
     font-weight: bold;
-    color: red;
+}
+
+.case-study-link {
+    text-decoration: none;
+}
+
+.case-study-link:hover {
+    text-decoration: underline;
+    color: var(--white-text);
 }
 
 
-nav {
-    height: 64px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #f6f6f6;
-}
+/* styles active link */
 
-@media only screen and (max-width: 600px){
+#nav-container a.active {
+    text-decoration: overline;
+    font-weight: bold;
+  }
 
-    header {
-        text-align: center;
-        padding: 15px;
-    }
-
-    nav {
-        height: auto;
-        flex-direction: column;   
-        padding: 15px;
-    }
-
-    #nav-container {
-        margin-top: 15px;
-    }
-
-   
-}
-
-#nav-container {
-    margin-right: 15px;
+#dommma {
+    background-color: #3F7BA8;
     
 }
 
-#logo {
-    flex-grow: 2.5;
-    margin-left: 10px;
+#babybarista {
+    background-color: #d5b3aa;
+    
+}
+
+#frethero {
+    background-color: #023D4C;
+    
+}
+
+.small-icon {
+    height: 15px;
+    width: auto;
+}
+
+#about {
+    margin-top: 25px;
+    padding: 5%;
+    background-color: var(--body-bg);
+}
+
+#about-description {
+    margin-top: 30px;
+}
+
+#about-description p {
+   margin: 20px;
+
+}
+
+#skills-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     text-transform: lowercase;
+}
+
+aside {
+    background-color: #3F7BA8;
+    color: var(--white-text);
+    padding: 3%;
+}
+
+
+
+.sm-icon {
+    height: 48px;
+    width: auto;
+}
+
+footer {
+    padding: 8%;
+   
+}
+
+.sm-icon {
+    height: 48px;
+    width: auto;
+    margin: 10px;
+}
+
+#contact {
+    line-height: 2.0
+}
+
+
+#end-bar {
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    
+    margin-top:50px;
+}
+
+#social-media {
+    margin-top: 50px;
+    line-height: 3;
+}
+
+#emoji {
+    font-size: 25px;
+}
+
+
+
+
+@media only screen and (max-width: 599px){
+
+/* Header Styles */   
+
+#grid-container {
+    width: 100%;;
+}
+
+header {
+
+    background-color: var(--header-bg);
+    color: var(--white-text);
+    padding: 8%;
+    text-align: left;
+    font-weight: normal;
+    width: 100%;
+    height: auto;
+}
+
+
+#wave {
+    font-size: 1.75rem;
+}
+
+
+/* Navigation Styles */
+
+#logo {
+    text-align: center;
+}
+
+#nav-container {
+    text-align: center;
+    padding: 1%;
+    margin-top: 15px;
 }
 
 .nav-item {
-    margin-left: 15px;
-    text-transform: lowercase;
+    padding: 1.5%;
 }
-
-nav a {
-    text-decoration: none;
-    color: #444444;
-}
-
-nav a:hover {
-    font-weight: bold;
-    text-decoration: overline;
-}
-
-nav a:active {
-    font-weight: bold;
-    text-decoration: overline;
-}
-
-
 
 
 /* Needed for sticky navbar */
@@ -125,35 +233,223 @@ nav a:active {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
-    color: #f6f6f6;
   }
 
-.sticky a {
-    color: #f6f6f6;
-}
+
+/* Section Styles - UX Case Studies */
 
 #ux {
     display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: top;
-    background-color: red;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    z-index: -1;   
 }
 
-.ux-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
+.case-study {
+    padding: 30px;
+    width: 100;
+}
+
+
+.case-study a {
+    text-decoration: none;
+    color: var(--text); 
 }
 
 .case-description {
-    background-color: red;
+    padding: 1%;
+    color: var(--white-text);
+    line-height: 1.75; 
 }
 
 
-#about {
-    margin-top: 150px;
+#dommma {
+    width: 100vw;
 }
+
+#babybarista {
+    width: 100vw;
+}
+
+#frethero {
+    width: 100vw;
+}
+
+
+
+
+.ux-img {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;;
+}
+
+.about-img {
+    width: 100%;
+}
+
+.selfie-img {
+    width: 100%;
+    border-radius: 0px 175px 175px 0px;
+    margin-left: -25px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+aside {
+    padding: 8%;
+}
+
+.list-item {
+    margin: 5%;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;  
+    padding: 5%;
+}
+
+
+
+}
+
+
+
+@media only screen and (min-width: 600px){
+
+    #grid-container {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 30vw 68vw;
+        grid-template-rows: auto;
+      
+    }
+
+    header {
+        color: var(--text);
+        background-color: var(--body-bg);
+        color: var(--text);
+        padding: 5%;
+       
+    }
+    
+     #wave {
+         font-size: 2.0rem;
+         font-weight: normal;
+     }
+
+    .case-study h2 {
+        font-size: 2.1rem;
+    }
+
+     .case-study img {
+         width: 55%;
+     }
+
+     
+     #frethero, #dommma, #babybarista {
+         display: flex;
+         flex-flow: row nowrap;
+         padding: 0px;
+         text-align: left;
+         padding: 3%;
+         justify-items: center;
+         align-items: center;
+         color: var(--white-text);
+         margin-bottom: 25px;
+         border-radius: 25px;
+     }
+
+
+   .case-description {
+         
+         margin-left: 50px;
+     }
+    
+   
+        /* Applies sticky properites onload */
+        nav {
+            position: fixed;
+            top:0;
+            width: 100%;
+            height: 100px;
+        }
+
+        #logo {
+            text-align: left; 
+            padding: 0;
+            flex-grow: 1.5;
+        }
+        
+        #nav-container {text-align: left; padding: 0;}
+        
+        .nav-item {
+            padding: 0;
+            margin-right: 30px;
+        }   
+    
+        nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            height: 68px;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        #about {
+            padding: 4%;
+            background-image: linear-gradient(#f6f6f6,#dbdce2);
+
+        }
+
+        .selfie-img {
+            width: 100%;
+            border-radius: 75px 175px 175px 5px;
+            margin-left: 0%;
+            margin-top: 50px;
+            margin-bottom: 15px;
+        }
+
+        #about-container {
+            display: flex;
+            flex-flow: row nowrap;
+            
+        }
+
+        #about-description {
+            padding: 5%;
+        }
+
+        
+
+        #skills-container {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content:space-evenly;
+            align-content: space-between;
+            padding: 5%;
+        }
+
+    footer {
+        background-image: linear-gradient(#dbdce2, #b7b8bb);
+       
+
+    }
+
+       
+    }
+
+
+
+
+
+
+
+
+
+

@@ -26,54 +26,61 @@
 </head>
 
 <body>
-
+<div id="grid-container">
 <header>
-    <p id="intro">Hello, I'm Verity: a Toronto based UX Designer who works on projects across the internet.<br>I'm currently available for work, so if you like what you see, <a href="mailto:verity.griscti@gmail.com">get in touch.</a></p>
+    <p id="intro"><span id="wave">Hello, I'm Verity &#x1F44B;</span><br/><br> I'm Toronto based UX Designer who works on projects across the internet. I'm concerned about every stage of the design process, from conception to testing and refinement and have previous experience in content management, marketing and web development. This background informs my design practice. <br/><br/>I'm currently available for work, so if you like what you see, <a href="mailto:verity.griscti@gmail.com">get in touch.</a>&nbsp;&#x1F4E7;</p>
 </header>
 
 <nav id="navbar">
     <h1 id="logo">Verity Griscti - UX Designer</h1> 
     <div id="nav-container">
-       <a class="nav-item" href="#ux">UX Case Studies</a>
+       <a class="nav-item ux active" href="#ux">UX Case Studies</a>
 
        <!-- Adding later 
        <a class="nav-item" href="#work">Digital Content</a>
        <a class="nav-item" href="#work">Artwork</a>
        <a class="nav-item" href="#work">Code</a> -->
 
-       <a class="nav-item" href="#about">About</a>
-       <a class="nav-item" href="#contact">Contact</a>
+       <a class="nav-item about" href="#about">About</a>
+       <a class="nav-item contact" href="#contact">Contact</a>
     </div>
 </nav>
 
 <main>
-    <div id="ux">
+    <section id="ux">
+        <a class="case-study-link" href="#">
         <div class="case-study" id="frethero">
-            <a href="frethero-case-study.html">
-            <img class="ux-img" src="main-assets/images/photos/Placeholder-1.jpg"/>
+            <img class="ux-img" src="main-assets/images/photos/FretHero-Mockup.jpg.png" alt="3 screenshots of the mobile app FretHero"/>
               <div class="case-description">
                <h2>FretHero</h2>
                <p class="hook">Rule Breaking UI: Designing for Recall</p>
+               <p><b>Coming Soon</b></p>
                </div>
-               </a>
         </div>
-        
+        </a>
+        <a class="case-study-link" href="#">
         <div class="case-study" id="dommma">
-            <img class="ux-img" src="main-assets/images/photos/Placeholder-2.jpg"/>
+            <img class="ux-img" src="main-assets/images/photos/DOMMMA-Mockup.jpg.png" alt="An open laptop and mobile phone display the DOMMMA homepage."/>
                <div class="case-description">
-                  <h2>DOMMMA Rental Platform</h2>
+                  <h2>DOMMMA<br/> Rental Platform</h2>
                   <p class="hook">Redesigning for User-Goals.</p>
+                  <p><b>Coming Soon</b></p>
                 </div>
         </div>
-        <div class="case-study" id="frethero">
-            <img class="ux-img" src="main-assets/images/photos/placeholder-3.png"/>
+        </a>
+        <a class="case-study-link" href="#">
+        <div class="case-study" id="babybarista">
+            <img class="ux-img" src="main-assets/images/photos/babybarista-Mockup.png" alt="The Baby Barista prototype is on the left. To the right is a mobile phone displaying the Baby Barista App homepage."/>
                <div class="case-description">
                   <h2>Baby Barista</h2>
                   <p class="hook">Intuitive App design for Exhausted Parents.</p>
+                  <p><b>Coming Soon</b></p>
                 </div>    
         </div>
+        </a>
 
-    </div>
+    </section>
+</div><!-- grid-container -->
 
     <!--- for 2nd iteration
     <div id="work">
@@ -92,17 +99,36 @@
              <h3>Code Samples</h3>
              <p class="hook"></p>Frond-End Coding Projects (HTML/CSS/JavaScript)</p>
         </div>code-->
-    
-    
-        <div id="about">
-            <h2>About</h2>
-            <p>Life is about learning, re-learning, and (where necessary) un-learning, and I strive to maintain a 'beginner's mind' in my work and life by staying curious. As such, I'm drawn to intradisciplinary work and spaces where best practices and methodologies are always changing.</p>
 
+  
+    
+        <section id="about">
+
+            <div id="about-container">
+            <div id="about-img">
+                
+                <img class="selfie-img" src="main-assets/images/photos/about-img.jpg" alt = "A halftoned image of a middle aged, female, ux designer. She looks confident and happy because she just got her first hair cut in over a year."/>
+                <p><a class="link" target="_blank" href="https://www.linkedin.com/in/veritygriscti">See my LinkedIn profile&nbsp;&nbsp;<img class="small-icon" src="main-assets/icons/maximize.png" alt="opens in new window indicator." /></a></p>
+                <p><a class="link" href="VerityGriscti-Resume.pdf">Download my Resume&nbsp;&nbsp;<img class="small-icon" src="main-assets/icons/download.png" alt="download indicator"/> </a></p>
+            </div>
+            <div id="about-description">
+                <h3>About Me</h3>
+            <p>Life is about learning, re-learning, and (where necessary) un-learning, and I strive to maintain a 'beginner's mind' in my work and life by staying curious. As such, I'm drawn to intradisciplinary work and spaces where best practices and methodologies are always changing.</p>
+           
 <p>I have spent my working life problem-solving and leveraging digital tools to support my work and clients. Before moving into UX design, I worked as a content manager for the popular Canadian arts promotion website akimbo, did social media marketing and built websites for the arts and tourism industries.</p>
 
 <p>Outside of work, I have an art practice. I am an artist by training, and I've participated in many exhibitions and festivals, including Maker Festival and The Toronto Outdoor Art Show. I'm also an avid reader, mediocre guitarist, and I enjoy exploring Toronto's extensive park and ravine system.</p>
-            <h3>Skills</h3>
+             </div><!---about-description-->  
+             </div><!--about-container-->
+             
+  
 
+<aside id="skills">
+           <h3>Skills</h3>
+
+         <div id="skills-container">
+
+            <div class="list-item">
             <h4>General</h4>
                 <ul>
                    <li>Information Architecture</li>
@@ -115,15 +141,19 @@
                    <li>Project Coordination</li>
                    <li>Content Management</li>
                 </ul>
+                </div><!---list-1-->
 
+            <div class="list-item">
             <h4>Design</h4>
                <ul>
                     <li>Figma</li>
                     <li>Typography</li>
-                    <li>2D Desig</li>
+                    <li>2D Design</li>
                     <li>Colour Theory</li>
                </ul>
+               </div><!---list-2-->
 
+             <div class="list-item">
              <h4>Engineering</h4>
                 <ul>
                     <li>HTML5/CSS3</li>
@@ -134,24 +164,30 @@
                     <li>Command Line</li>
                     <li>VS Code</li>
                 </ul>
+                </div><!--list-3-->
+                </div><!--skills container-->
+</aside>
     
-        </div><!--about-->
-    </div><!---/work-->
-
+            </section><!--about-->
+   
 </main>
 
 <footer>
-    <div id="contact">
-        <h2>Get in touch!</h2>
-        <p>Do you have a cool project, collaboration idea, or just want to say hello? Drop me a line at verity.griscti@gmail.com.</p>
-    </div>
+    <section id="contact">
+        <h3>Get in touch! <span id="emoji">&#x1f91d;</span></h3>
+        <p>Do you have a cool project, collaboration idea, or just want to say hello? Drop me a line at <a class="link" href="mailto:verity.griscti@gmail.com">verity.griscti@gmail.com</a>.</p>
+    </section>
 
     <div id="social-media">
-        <h2>Follow Me Online</h2>
-        <a href="https://www.linkedin.com/in/veritygriscti/"><img src="main-assets/icons/linkedin.png"/></a>
-        <a href="https://www.instagram.com/veritygriscti/"><img src="main-assets/icons/instagram(3).png"></a>
-        <a href="https://codepen.io/veritygriscti"><img src="main-assets/icons/codepen.png"/></a>
-        <a href="https://github.com/veritygriscti"><img src="main-assets/icons/github.png"/></a>
+        <h3>Follow Me Online:</h3>
+        <a href="https://www.linkedin.com/in/veritygriscti/"><img class="sm-icon" src="main-assets/icons/linkedin.png"/></a>
+        <a href="https://www.instagram.com/veritygriscti/"><img class="sm-icon" src="main-assets/icons/instagram(3).png"></a>
+        <a href="https://codepen.io/veritygriscti"><img class="sm-icon" src="main-assets/icons/codepen.png"/></a>
+        <a href="https://github.com/veritygriscti"><img class="sm-icon"  src="main-assets/icons/github.png"/></a>
+    </div>
+
+    <div id="end-bar">
+        <p>&copy; 2021 Verity Griscti.</p>
     </div>
 </footer>
 

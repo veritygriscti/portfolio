@@ -1,4 +1,4 @@
 # Personal Portfolio
 The personal portfolio of Verity Griscti
 
-This repository holds all the code and assets for a comprehensive, professional portfolio website. The project is currently in underdevelopment and will be deployed to Netlify upon completion.
+All the code and assets for a comprehensive, professional portfolio. The project is currently in beta mode and is hosted by Netlify. See veritygriscti.com for the live site.

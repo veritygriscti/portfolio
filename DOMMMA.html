@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<head>
+  <title>UX Case Study: DOMMMA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <meta name="description" content="UX Designer Verity Griscti's FretHero Case Study">
+  <meta name="author" content="Verity Griscti">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+        
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
+   
+
+  <style>
+   
+
+    body {position: relative;}  /* Required for Bootstrap Scrollspy functionality */
+
+   
+
+    #native-casestudy-header{
+      background-color: black;
+      color: whitesmoke;
+    }
+
+    #native-casestudy-nav {
+      background-color: whitesmoke;
+      opacity: 1.0;
+    }
+
+    .nav-pills .nav-link:not(.active) {
+    background-color: whitesmoke;
+    color: #444444;
+    }
+
+    .nav-pills .nav-link.active {
+    background-color: whitesmoke;
+    color: #333333;
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+    
+  
+  </style>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".nav" data-bs-offset="50">
+
+  <header id="native-casestudy-header" class="container-fluid p-3">
+    <h1 class="fs-3 fst-italic text-center text-md-start">DOMMMA: Designing For Different User Needs</h1>
+  </header>
+
+  <div id="native-banner-img">
+    <img src="main-assets/images/FretHero-HeroBanner.png" alt="" class="img-fluid px-0 mx-0 w-100" />
+  </div>
+
+<main class="container-fluid">
+  <div class="row p-3">
+    <div class="col-sm-12 col-md-4 col-xl-3">
+
+      
+       <nav id="native-casestudy-nav" role="navigation" class="nav flex-column fixed-bottom sticky-md-top p-3">
+          <button role="button" type="button" class="btn-dark d-md-none btn-lg" data-bs-toggle="collapse" data-bs-target="#contents"><i class="fas fa-bars"></i></button><!-- Collapsible Button -->
+          
+          <ul id="contents" class="nav nav-pills native-pills flex-column">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home p-3"></i>Home</a></li>
+          <div class="nav-text p-2">Case Study Sections:</div>
+          <li  class="nav-item p-1"><a class="nav-link" href="#challenge">The Challenge</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#understanding">Understanding Things</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#evaluating">Evaluating the Existing Site</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#recs">Recommendations &amp; Wireframes</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#hifi">High Fidelity Prototype</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#feedback">Feedback &amp; Critique</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#rework">Re-Worked Layout</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#next">Next Steps</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#lessons">Lessons Learned</a></li>
+          </ul><!-- /contents -->
+
+        </nav>
+      
+
+    </div> <!-- sidebar column -->
+
+    <div class="col-sm-12 col-md-8 col-lg-7 col-xl-6">
+      <h2 id="challenge" class="mt-1">The Challenge</h2>
+      <p class="fs-4 fw-light"> How do you design one comprehensive website that will appeal to, and convert, three distinct user groups?</p>
+     
+      <figure class="p-2 d-block">
+         <img src="#" alt="Image Goes Here" height="" width="" />
+         <figcaption>Images: Landlords, Tenants and Contractors.
+         </figcaption>
+       </figure>
+
+       <h3 class="mt-5 fs-4 fw-light">Overview</h3>
+
+       <p>DOMMMA's creating an App that will be an all-in-one solution to how Landlords, Tenants, and Contractors find and interact with each other online. I was hired to redesign their landing page.</p>
+
+       <div class="row p-1">
+           <div class="col p-3 border text-center"><b>Role:</b><br/>UX/UI Designer</div>
+           <div class="col p-3 border text-center"><b>Team:</b><br/>Jayraj Panchal, CEO<br/>
+            Aaron Janes, Sr. Developer<br/>
+            Amir Khamesy, Jr. Developer<br/>
+            Verity Griscti, UX/UI Designer<br/>
+            </div>
+           <div class="col p-3 border text-center"><b>Timeline:</b><br/>80 Hour contract done part-time over two months. </div>
+       </div>
+      <h2 id="understanding" class="mt-5">Understanding Things</h2>
+     
+      <h3 class="mt-5 fs-4 fw-light">Organizational Research</h3>
+
+      <p>I went into this project knowing next to nothing about property management or property listing companies. I had several in-depth conversations with DOMMMA's CEO, Jayraj Panchal, to make sure I understood the start-up's services, target audience and unique selling proposition.</p>
+
+      <p>DOMMMA is building a Progressive Web App with 3 target users, each with a different reason to visit DOMMMA's webpage. <b>Since attention spans are short, it's important each user group quickly finds the information they need.</b></p>
+      
+     <h2 class="mt-5 fs-4 fw-light">Unique Product Offering: Assignment Listings</h2>
+     <p>DOMMMA offers tenants a service called an<i> Assignment Listing</i>.  Assignments let tenants legally transfer the remainder of their lease to a new tenant without breaking their lease or taking on the legal liabilities of sub-letting. </p>
+
+
+     <h3 class="fs-4 fw-light mt-5">App Features By User Group</h3>
+     
+     <div class="row">
+       <div class="col-sm-12 col-md-4 text-center">
+       <h4 class="mt-5 fs-5 fw-light">Landlord</h4>
+     
+       <ul class="list-group list-unstyled">
+        <li class="list-group-item"> ✔️ &nbsp; <br/> List Properties & Vet Potential Renters. </li>
+        <li class="list-group-item"> ✔️ &nbsp; <br/> Ongoing Landlord/Tenant Communication Tools.</li>
+        <li class="list-group-item"> ✔️ &nbsp; <br/> Document Storage Features.</li>
+        <li class="list-group-item"> ✔️ &nbsp; <br/> Assignment Pricing Plans.</li>
+      </ul>
+       </div>
+       <div class="col-sm-12 col-md-4 text-center">
+        <h4 class="mt-5 fs-5 fw-light">Tenant</h4>
+        <ul class="list-group list-unstyled">
+          <li class="list-group-item"> ✔️ &nbsp; <br/> 
+            Search Available Properties</li>
+          <li class="list-group-item"> ✔️ &nbsp; <br/> One time application applied to multiple properties.</li>
+          <li class="list-group-item"> ✔️ &nbsp; <br/> Record of all communication with Landlord.</li>
+          <li class="list-group-item"> ✔️ &nbsp; <br/> How and when to assign a lease.</li>
+          <li class="list-group-item"> ✔️ &nbsp; <br/> Assignment Pricing.</li>
+
+        </ul>
+        </div>
+      <div class="col-sm-12 col-md-4 text-center">
+        <h4 class="mt-5 fs-5 fw-light">Contractor</h4>
+        <ul class="list-group list-unstyled">
+          <li class="list-group-item"> ✔️ &nbsp; <br/> 
+            Register company for future client leads.</li>
+          <li class="list-group-item mb-4">(Not the focus of Minimum Viable Product)</li>
+          </ul>
+      </div>
+    </div>
+     
+     
+     <h2 id="evaluating" class="mt-5">Evaluating the Existing Website</h2>
+    
+     <p>Next, I looked at the existing website. While scrolling down the webpage reading the content, I found relevant information about DOMMMA's app for all three user groups, but  there was <b>no clear story or hierarchy as to how that information was arranged</b>. The home page contained about 1000 words and took <b>over 7 minutes to read in full</b>. Much of the information was repetitive or unnecessary, depending on my user goal.</p>
+
+     <figure class="p-2 d-block text-center">
+      <img src="/main-assets/images/DOMMMA-IA.png" alt="Image Goes Here" height="auto" width="30%" />
+      <figcaption>Information Flow on existing site.<br/>
+      <div class=" p-2 d-block text-center inline">
+        <div style="height: 25px; width: 25px; background-color: red"></div> Directed at Landlords</br>
+        <div style="height: 25px; width: 25px; background-color: orange;"></div> Directed at Tenants</br>
+      </div>
+
+      </figcaption>
+    </figure>
+
+
+    <h3 class="fs-4 fw-light mt-5">Web Accessibility Issues</h3>
+    <p>There were a number of accessibility issues with the original website. The most concerning, from a redesign perspective being the brand colours. The blue text on yellow buttons did not have enough contrast and could be difficult to read for colourblind users.</p>
+
+    <p>The site was also too reliant on looping gifs of the apps screencast, with no pause or stop button. and the text within the gifs was an unreadable size on smaller screens.</p>
+
+    <p>All of the images had empty alt tags. Which is bad for accessibility and SEO.</p>
+
+ 
+
+    <h2 id="recs" class="mt-5">Recommendations &amp; Initial Wireframes</h2>
+    <p>I made the following recommendations based on my analysis of the DOMMMA's business objectives and the existing website.</p>
+
+<ul>
+<li>
+Have each section of the site and primary CTA clearly labeled and accessible in a static navigation bar.
+</li>
+<li>
+Reorganize/rewrite all the text and clearly group content by user type. 
+</li>
+<li>
+Remove repetitive copy and trim word count on the site overall.
+</li>
+<li>
+Include an About section and social proof, as it's important for new businesses to establish trust with their audience.
+</li>
+<li>
+Replace the looping gif images with stock photos sourced from the company's professional Canva account or licensed under Creative Commons. This solution met DOMMMA's time and budget constraints. 
+</li>
+<li>
+Create a web-accessible colour palette for use on the web page, app and digital marketing. (The company wished to preserve the existing colour scheme as much as possible.)
+</li>
+<li>
+Make a general homepage and tenant-specific pages that could be used to build marketing funnels later on.
+</li>
+
+<p class="mt-4">Below is an image of the new wire-frames.</p>
+
+<figure class="p-2 d-block">
+  <img src="#" alt="Image Goes Here" height="" width="" />
+  <figcaption>Mid-Fidelity Wires.
+  </figcaption>
+</figure>
+
+      <h2 id="hifi" class="mt-5">High Fidelity Figma Prototype</h2>
+
+      <p>Some light edits were made to the copy before moving to the high fidelity wires. Most notably, <b>Home Service Providers</b> was shortened to <b>Contractors.</b>  The original wires also kept the <b>Pricing</b> and <b>How DOMMMA Works</b> pages to a one-page scrolling layout, but it was decided to arrange the information in tabs so users wouldn't be presented with information that didn't apply to them.</p>
+
+      <p>DOMMMA's colour scheme was adjusted to meet accessibility standards. I used curves and photography to visually distinguish the site from other rental apps, which seemed to preference hard edges, drop shadows and vector art. The wide use of stock images wasn't ideal, but unique photos could be used in later versions.</p>
+      
+      <figure class="p-2 d-block">
+        <img src="#" alt="Image Goes Here" height="" width="" />
+        <figcaption>High Fidelity Wires.
+        </figcaption>
+      </figure>
+
+
+      <h2 id="feedback" class="mt-5">Initial Feedback & Heuristic Evaluation</h2>
+
+      <p>DOMMMA is a start-up on a strict budget, and there was no budget for a formal test. A link to the Figma prototype was informally sent out to a few people who were asked to review it and answer a few questions in a Google Form afterwards. </p>
+
+      <p>Six people got back to us. </p>
+      
+      <p>All 6 respondents:</p>
+
+      <ul>
+      <li>Noticed that new Landlords could post their first listing free for 14 days.</li>
+      <li>Reported that it was easy to find DOMMMA's pricing information.</li>
+      <li>Stated that they clearly understood what an 'Assignment' was and how it could benefit tenants. This was encouraging as 4 people said they hadn't heard the term before.</li>
+      </ul>
+      <br/>
+      <p>The hero image on the general landing page still seemed too Landlord orientated to one respondent:</p>
+
+      <figure>
+        <blockquote class="blockquote fs-4 fw-light">
+          <p>"It worked well. I thought if you are promoting "assignment" the first hot page seems very landlord oriented at the top. If I was a tenant I would perceive your value on this site weighted towards the landlord and not towards the tenant. The tenant only sees value once they dig into the site and see the meat and potatoes. :)"</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            Anonymous Survey Respondent.
+        </figcaption>
+      </figure>
+
+      <p>We decided to address this problem by making the hero image a carousel, with one image geared to Landlords and a second geared to Tenants.</p>
+      
+      <h2 id="rework" class="mt-5">Re-Worked Layout</h2>
+
+      <p>Having users navigate from Landlords and Contractors on the navigation page to their relevant How DOMMMA Works section seemed confusing and not nearly as visually appealing as the Tenant page. So I scrapped it and created a dedicated one-pager for Landlords and Contractors too. Organic traffic would find a home page that gave basic info on all three user groups. But, marketing funnels aimed at specific users could then link directly to the target users page.</p>
+
+     
+      <h2 id="next" class="mt-5">Next Steps</h2>
+      <p>I worked closely with the development team building the page in React, but the site never went live. The start-up has been placed on pause for the time being.</p>
+
+      <p>If the project had continued:</p>
+      
+      <ul>
+      <li><b>I would have advocated for broader user testing.</b>The site navigation could be tested in Maze or Useberry. But I'd like to make sure Tenants properly understand what an <b>Assignment</b> is and that <b>DOMMMA </b>makes it easy to filter properties by length.</li> 
+      
+      <li><b>I would have monitored the site's web traffic with Google Analytics.</b>  Are the site's visitors spending more time in the Landlord or Tenant sections? Where are they coming from? What is the conversion rate?</li>
+      </ul>
+      
+      <p>Future iterations and recommendations would be based on the above observations.</pi>
+           
+      <h2 id="lesssons" class="mt-5">Lessons Learned</h2>
+
+      
+<p>Don't rely on informal testing and feedback, even on small budgets. Advocate for Maze or UseBerry, explain the value of these tools to the client.</p>
+
+<p>Consider the overall marketing strategy when designing commercial websites. Think beyond just how branding will influence visuals. How will the marketing funnel affect the layout and information hierarchy? </p>
+
+    </div> <!--- /content column-->
+
+  </div> <!--- /row -->
+</main>
+</body>
+</html>

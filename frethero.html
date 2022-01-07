@@ -34,7 +34,7 @@
    
 
     #native-casestudy-header{
-      background-color: black;
+      background-color: #000;
       color: whitesmoke;
     }
 
@@ -56,7 +56,9 @@
     text-decoration: underline;
 }
 
-    
+footer {
+  background-color: #023D4C;
+}
   
   </style>
 
@@ -72,13 +74,13 @@
     <img src="main-assets/images/FretHero-HeroBanner.png" alt="" class="img-fluid px-0 mx-0 w-100" />
   </div>
 
-<main class="container-fluid">
+<main class="container-fluid mb-5">
   <div class="row p-3">
     <div class="col-sm-12 col-md-4 col-xl-3">
 
-      
+       
        <nav id="native-casestudy-nav" role="navigation" class="nav flex-column fixed-bottom sticky-md-top p-3">
-          <button role="button" type="button" class="btn-dark d-md-none btn-lg" data-bs-toggle="collapse" data-bs-target="#contents"><i class="fas fa-bars"></i></button><!-- Collapsible Button -->
+          <button role="button" type="button" class="btn-dark d-md-none " data-bs-toggle="collapse" data-bs-target="#contents"><i class="fas fa-bars"></i></button><!-- Collapsible Button -->
           
           <ul id="contents" class="nav nav-pills native-pills flex-column">
           <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home p-3"></i>Home</a></li>
@@ -101,7 +103,7 @@
 
     <div class="col-sm-12 col-md-8 col-xl-6">
       <h2 id="challenge" class="mt-1">The Challenge</h2>
-      <p class="fs-4 fw-light"> How do you help adult guitar students, who are short on time, memorize the fretboard, note and chord theory to move from beginner to intermediate guitar players?</p>
+      <p class="fs-4 fw-light"> How do you help adult guitar students, who are short on time, memorize the fretboard, notes and chord theory to move from beginner to intermediate guitar players?</p>
      
       <figure class="p-2 d-block">
          <img src="main-assets/images/Will-Ferrall-Guitar.jpg" alt="Will Ferrall playing an electric guitar in the film Stranger Than Fiction" height="auto" width="60%" />
@@ -240,7 +242,7 @@
       <p>My initial designs were portrait, but that meant the tap points on my intermediate fretboard UI would be too small on the smallest screens and create usability issues. Not wanting users to flip their phones within the App experience, I redesigned all my screens for landscape orientation and was pleased to find that the results opened up all my designs, which had felt cramped in portrait mode.</p>
 
      <figure>
-         <img src="main-assets/images/FretHero-ToLandscape.png" alt="Image illustrates difference between Mid-Fidelity portrait and High-Fidelity Landscape designs" height="auto" width="100%" />
+         <img src="main-assets/images/Portrait-To-Landscape.png" alt="Image illustrates difference between Mid-Fidelity portrait and High-Fidelity Landscape designs" height="auto" width="100%" />
          <figcaption>Illustrating the frames evolution from portrait to landscape. 
         </figcaption>
 
@@ -282,12 +284,12 @@
 
       <p>The heat maps revealed some minor confusion over the buttons, which are white on white. I may have gone a bit too minimal here. There were no misclicks in the menu, which is white text on a darker background. I made the buttons darker.</p>
 
-      <figure>
-        <img src="main-assets/images/Dark-Buttons-Screen.png" alt="Screenshot of revised app with darker buttons." height="auto" width="75%" />
-        <figcaption>Revised Fretboard Practice UI with darker, clearer, buttons.
-        </figcaption>
-      </figure>
+      <h3 class="fs-4 fw-light mt-5">Animation Demo</h3>
 
+      <p>Here is a quick demo of the refined version with animations.</p>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/fzkhM5-ZetQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
       <h2 id="next" class="mt-5">What's Next</h2>
       <p>At this point, I am confident the FretHero interface is easy to understand, and I think there is a viable market for this project. I am in the process of flowcharting specific game mechanics.</p>
      
@@ -302,5 +304,11 @@
 
   </div> <!--- /row -->
 </main>
+
+<footer>
+  <div id="native-footer-img" class="mb-5">
+    <img src="main-assets/images/FretHero-Footer.png" alt="" class="img-fluid px-0 mx-0 w-100" />
+  </div>
+</footer>
 </body>
 </html>

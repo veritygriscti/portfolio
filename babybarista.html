@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-  <title>UX Case Study: FretHero</title>
+  <title>UX Case Study: Baby Barista</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -69,7 +69,7 @@
   </header>
 
   <div id="native-banner-img">
-    <img src="main-assets/images/" alt="" class="img-fluid px-0 mx-0 w-100" />
+    <img src="main-assets/images/BabyBarista-Hero.png" alt="" class="img-fluid px-0 mx-0 w-100" />
   </div>
 
 <main class="container-fluid">
@@ -86,9 +86,8 @@
           <li  class="nav-item p-1"><a class="nav-link" href="#challenge">The Challenge</a></li>
           <li  class="nav-item p-1"><a class="nav-link" href="#research">Research &amp; Discovery</a></li>
           <li  class="nav-item p-1"><a class="nav-link" href="#goals">Design Goals</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#sketches">Sketches &amp; Moodboards</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#concepts">Early Concepts</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#wireframes">High Fidelity Wireframes</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#sketches">Moodboards &amp; Early Concepts</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#prototype">High Fidelity Prototype</a></li>
           <li  class="nav-item p-1"><a class="nav-link" href="#testing">User Testing</a></li>
           <li  class="nav-item p-1"><a class="nav-link" href="#next">Next Steps</a></li>
           <li  class="nav-item p-1"><a class="nav-link" href="#lessons">Lessons Learned</a></li>
@@ -101,206 +100,273 @@
 
     <div class="col-sm-12 col-md-8 col-xl-6">
       <h2 id="challenge" class="mt-1">The Challenge</h2>
-      <p class="fs-4 fw-light"> How do you help adult guitar students, who are short on time, memorize the fretboard, notes and chord theory to move from beginner to intermediate guitar players?</p>
+      <p class="fs-4 fw-light">How can an App enhance the usability of a formula-making machine and best assist exhausted parents?</p>
      
       <figure class="p-2 d-block">
-         <img src="main-assets/images/Will-Ferrall-Guitar.jpg" alt="Will Ferrall playing an electric guitar in the film Stranger Than Fiction" height="auto" width="60%" />
-         <figcaption>Will Ferrell learning to play the guitar in the 2006 film <i>Stranger Than Fiction</i>.
+         <img src="main-assets/images/BabyBarista-Overview.jpg" alt="Will Ferrall playing an electric guitar in the film Stranger Than Fiction" height="auto" width="100%" />
+         <figcaption>The Baby Barista Formula Maker by <a target="blank" href="https://rksdesign.com/baby-barista/">RKS Design</a>.
          </figcaption>
        </figure>
 
        <div class="row p-1">
-           <div class="col p-3 border text-center"><b>Role:</b><br/>Entrepreneurial Side Project </div>
-           <div class="col p-3 border text-center"><b>Team:</b><br/>Verity Griscti (solo project)</div>
-           <div class="col p-3 border text-center"><b>Timeline:</b><br/>Concept to High Fidelity Prototype in 6 Weeks.</div>
+           <div class="col p-3 border text-center"><b>Role:</b><br/>Team Lead</div>
+           <div class="col p-3 border text-center"><b>Team:</b><br/>Kevin Andries<br/>
+            Verity Griscti<br/>
+            Marvin Lara<br/>
+            LJ Paraiso</div>
+           <div class="col p-3 border text-center"><b>Timeline:</b><br/>6 Week Capstone Project.</div>
        </div>
-      <h2 id="background" class="mt-5">Background</h2>
-      <figure>
-        <blockquote class="blockquote fs-4 fw-light">
-          <p>"Fender’s guitar-instruction app, Fender Play – which offered several free trials over the lockdown period – saw its user base increase from 150,000 to 930,000 between late March and late June, with close to 20 percent of the new users under 24, and 70 per cent under 45."</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          Richard Bienstock, <cite title="Source Title"><a target="_blank" href="https://www.guitarworld.com/news/fender-has-sold-more-guitars-in-2020-than-any-other-year-in-its-history">GuitarWorld</a></cite>
-        </figcaption>
-      </figure>
-
-     <p>During the pandemic, I dusted off the guitar that had been hiding under my bed for years and began the slow process of relearning the instrument. I was not alone, all major guitar brands and music retailers recorded record-breaking sales in 2020, and online learning Apps and YouTube instructors reported a massive increase in subscribers.</p>
-     <p>I was also looking for an idea I could take from concept to design and eventually into development to gain a comprehensive understanding of digital product creation. Developing a guitar learning App seemed like a relevant project to take on. There is currently a strong desire for digital learning tools and not many available solutions.</p>
-     
-     <h2 id="discovery" class="mt-5">Discovery</h2>
-     <h3 class="fs-4 fw-light mt-5">Designing for an App</h3>
-     <p>This was my first experience designing for an App, and I looked at both Material Design and Apple's HCI guidelines for direction on things like font sizes, touch sizes and thumb zones.
-    </p>
-     
-    <p>As I plan to create this app myself, as a side project. I decided to focus on Android as there are no upfront costs to development.</p>
-
-    <h3 class="fs-4 fw-light mt-5">Designing for Microlearning</h3>
-    <p>After reading several articles on micro-learning I concluded that a successful microlearning app should contain the following:</p>
-    <ul>
-        <li>Training Sessions should be short and <b>focus on a single idea or concept.</b></li>
-        <li>Training Sessions should be <b>interactive</b>, to encourage memorization</li>
-        <li><b>Graphics should be minimal and non-distracting</b>, so the mind's focus stays on learning the content.</li>
-    </ul>
-
-    <h3 class="fs-4 fw-light mt-5">What’s Out There Already?</h3>
-
-    <div class="row align-items-end">
-        <div class="col-sm-12 col-md-6">
-            <figure class="text-center p-2">
-                <img src="main-assets/images/screenshot-fretbuzz.png" alt="Screenshot of the app FretBuzz." height="auto" width="40%"/>
-                <figcaption><b>FretBuzz</b><br/> ❌ Static Interface</figcaption></figure> 
-            
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <figure class="text-center p-2"><img src="main-assets/images/screenshot-guitarband.jpg" alt="Screenshot of the app GuitarBand." height="auto" width="40%"/> <figcaption> <b>Guitar Band</b><br/> ❌ Busy UI. More a game than a learning tool.</figcaption></figure>
-        </div>
-        <div class="col-12">
-            <figure class="text-center p-2"> <img src="main-assets/images/screenshot-jguitar-notetrainer.png" alt="Screenshot of the app Note Trainer." height="auto" width="50%" /><figcaption><b>Note Trainer</b><br/>  ❌ Layout of answer buttons matches chromatic note sequence. Encourages recognition rather than recall.
-            </figcaption></figure>
-        </div>
-
-        <p>The goal of fretboard memorization and studying scales is to <b>gain instant recall</b> of the notes on the fretboard and how the notes relate to scales and chords.</p>
-    
-        <p>While several fretboard learning Apps are already available, <b>none are designed to encourage recall over recognition</b>. Most have static and unengaging interfaces. Essentially acting more as digital flashcards than a fully interactive user experience. I wanted FretHero’s UI to encourage recall and memorization as that better assists the users goals.</p>
-        
-    </div>
-
-    <h2 id="flows" class="mt-5">Flows to Wireframes</h2>
-    <p>I sketched the main user flows and made low-fidelity sketches of the key screens. The sketches were cleaned up and refined in Figma then linked together into an initial prototype.</p>
-    
-    <figure class="d-md-block d-sm-none p-2">
-        <img src="main-assets/images/FretHero-UserFlow.png" alt="Sketch of a user flow describing FretHero's initial training session type and time length process." height="auto" width="100%" />
-        <figcaption>Sketched user flow of a Training Session. (I prefer pen & paper at the earliest stages)
-        </figcaption>
-    </figure>
-
-    <figure class="p-2">
-        <img src="main-assets/images/FretHero-Sketches-To-Mids.png" alt="Picture illustrates the difference between Hand drawn sketches and Mid-Fidelity Wires." height="auto" width="100%" />
-        <figcaption>Hand drawn sketches to Mid-Fidelity Figma Wireframes. 
-        </figcaption>
-    </figure>
-
-      <h2 id="tests" class="mt-5">Early Tests</h2>
-
-      <p>I tested my prototype out on 3 participants with a range of ages and levels of musical education. They all intuitively knew how to input answers to all three types of training questions, which was very encouraging.</p>
-      <h3 class="fs-4 fw-light mt-5">Who I Tested</h3>
+      <h2 id="research" class="mt-5">Research &amp; Discovery</h2>
       
-      <div class="table-responsive">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Tester</th>
-            <th scope="col">Test Environment</th>
-            <th scope="col">Education</th>
-            <th scope="col">Music Background</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Female <br/> 9 yrs old.</th>
-            <td>In Person</td>
-            <td>Grade School</td>
-            <td>RCM Summer Camps: Ukulele, Piano, Percussion</td>
-          </tr>
-          <tr>
-            <th scope="row">Male <br/>45 yrs old. </th>
-            <td>In Person</td>
-            <td>Doctorate</td>
-            <td>High School Music: French Horn, Choir. Private Lessons: Piano. Self-taught beginner guitar.</td>
-          </tr>
-          <tr>
-            <th scope="row">Female <br/> 66 yrs old.</th>
-            <td>Remote via Zoom</td>
-            <td>Professional Certification</td>
-            <td>High School Music: Voila. Private Lessons: Piano.</td>
-          </tr>
-        </tbody>
-      </table>
+      <iframe class="mt-5" width="560" height="315" src="https://www.youtube.com/embed/rRPm7jsxMIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+     <h3 class="fs-4 fw-light mt-5">Understanding the Organization and Product</h3>
+     <p>Baby Barista had developed a prototype of their formula maker with RKS Design and had detailed User Personas and a fully fleshed-out business plan in place when we came on board. We reviewed Baby Barista's existing material and met with the Founder and Director of Business Development.</p>
+
+<p>This initial round of meetings and review uncovered several pain points in the feeding experience that the app could assist with:</p>
+
+<ul>
+<li>Remote bottle prep (achieved by syncing the mobile app with the wifi ready formula maker)</li>
+<li>Feedings tracker</li>
+<li>Manage formula subscription</li>
+</ul>
+    <h3 class="fs-4 fw-light mt-5">Understanding New Mothers</h3>
+    <p>Our team interviewed <b>7 new Mothers</b> who have recently breast or formula-fed their infants. The Mothers were asked about their feeding habits and any positives, negatives or other issues associated with feedings. We also had them describe typical scenarios with their infants. Mothers were asked about their familiarity with competitive or similar products and apps, to get a sense of their experiences with existing products.</p>
+     
+    <div class="row">
+      <div class="col-sm-12 col-md-4 text-center">
+      <h4 class="mt-5 fs-5 fw-light">Concerns</h4>
+    
+      <ul class="list-group list-unstyled">
+       <li class="list-group-item">"What are the cleaning requirements for the machine?"</li>
+       <li class="list-group-item"> "Will travelling with a formula machine be an option?"</li>
+       <li class="list-group-item"> "Does the machine have the correct bottle temperature?"</li>
+     </ul>
       </div>
+      <div class="col-sm-12 col-md-4 text-center">
+       <h4 class="mt-5 fs-5 fw-light">Desires</h4>
+       <ul class="list-group list-unstyled">
+         <li class="list-group-item">“Would like the ability to start a bottle from bed.”</li>
+<li class="list-group-item">Alert notifications for cleanings and feedings
+</li>
+<li class="list-group-item"> Easy feeding tracking
+</li>
+      </ul>
+       </div>
+     <div class="col-sm-12 col-md-4 text-center">
+       <h4 class="mt-5 fs-5 fw-light">Formula Benefits</h4>
+       <ul class="list-group list-unstyled">
+            <li class="list-group-item"> Easy for spouses, grandparents and other caretakers to feed the baby.</li>
+            <li class="list-group-item">A formula machine with a remote start is most useful for nighttime feedings.</li>
+            <li class="list-group-item">The convenience of bottle feeding makes the cost of formula worthwhile.</li>
+         </ul>
+     </div>
+   </div>
+
+    <h3 class="fs-4 fw-light mt-5">Understanding the Competition & Baby Product Marketplace </h3>
+    <p>The only other similar product on the market is the <b>Baby Brezza</b>. A formula maker with a companion app that allows remote starts.</p>
+
+    <p>This project occurred during a COVID-19 lockdown, and our team could not obtain either a Baby Brezza or a SNOO.  We had to rely customer reviews to try to understand what the baby sleeper, <b>SNOO</b> and the popular apps, <b>Baby Tracker</b> and <b>Baby Connect</b> were doing successfully and which pain points were overlooked.</p>
+    
+    <p>The main pain point with the Baby Brezza was connectivity and the app being unable to turn on the machine remotely.</p>
+
+    <figure>
+      <blockquote class="blockquote fs-4 fw-light">
+        <p>"The app might as well not exist, it doesn't turn on the Brezza. You have to turn it on yourself manually to be able to connect the app, and then if you don't start warming the bottle within minutes it shuts off. It also only works in a 20ft radius which is useless when I'm trying to use it from another level of the house or even across the living room. I was so excited for this, and it sucks."</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Helen Monkfield, 1 Star Review August 11, 2010 - Google Play
+      </figcaption>
+    </figure>
+
+
+    <p class="mt-5">The SNOO baby sleeper was very positively reviewed. The only major pain points seemed to be the apps inability to work with multiple SNOOs in the case of multiple babies and manually logging naps that occured outside the sleeper.</p>
+
+    <figure>
+      <blockquote class="blockquote fs-4 fw-light">
+        <p>"“Everything between the Snoo and the app is smooth and responsive. The interface to manually log naps that occur outside the Snoo is pretty clunky but it gets the job done.”"</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+          Dan Staggs, 4 Stars - Google Play
+      </figcaption>
+    </figure>
+
+    
+    <figure>
+      <blockquote class="blockquote fs-4 fw-light">
+        <p>"“We have 3 snoos for triplets. Latest update thinks with each separate log in I need to set up the snoos all over again. Suspect login button links to sign up button with no true login button please fix. Workaround: Login to Baby A, see baby A activity, log out baby a, log in to baby b, app wants me to set up baby b again (separate email), when I force close app and open app again it shows baby b info. When I log out of baby b and open baby a wants me to set up snoo again, as above. FIX PLEASE”"</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+          Melissa &amp; Jeff Poot, 1 star - Google Play
+      </figcaption>
+    </figure>
+
+    <p class="mt-5">A popular feature of both Baby Connect and Baby Tracker was the ability to let multiple users keep track of the same baby. </p>
+
+    <figure>
+      <blockquote class="blockquote fs-4 fw-light">
+        <p>"I really like the flexibility of the app and that it let's multiple people (so long as they all own the app) track the same child. It makes it so easy for my partner and I to know what has happened even when we can't pass on the information verbally. It is also a great tool for tracking patterns and getting your baby into a routine. The only thing I wish the app did was track when the baby is awake too."</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+          Baby Connect 5 star review by Lana - Google Play
+      </figcaption>
+    </figure>
+
+    <h2 id="goals" class="mt-5">Design Goals</h2>
+
+    <p>We made a list of several design goals across three categories.</p>
+   
+    <div class="row">
+      <div class="col-sm-12 col-md-4 text-center">
+      <h4 class="mt-5 fs-5 fw-light">Design &amp; functionality</h4>
+    
+      <ul class="list-group list-unstyled">
+       <li class="list-group-item">Easily start a bottle.</li>
+       <li class="list-group-item">Haptic feedback/Silent Mode</li>
+       <li class="list-group-item">Simple UI</li>
+       <li class="list-group-item">Easily create baby profiles, including multiples</li>
+       <li class="list-group-item">Alert notifications for timed feedings</li>
+       <li class="list-group-item">Capacity to track and share information with healthcare workers</li>
+       <li class="list-group-item">Manage formula subscription within the App</li>
+
+     </ul>
+      </div>
+      <div class="col-sm-12 col-md-4 text-center">
+       <h4 class="mt-5 fs-5 fw-light">Product Error Prevention &amp; User Education</h4>
+       <ul class="list-group list-unstyled">
+         <li class="list-group-item">Reminder to clean machine.</li>
+<li class="list-group-item">Alert when bottle has spoiled.</li>
+<li class="list-group-item">Reminder to check water level after <i>n</i> feedings.</li>
+<li class="list-group-item">Provide a help center/FAQ with formula education and best practices.</li>
+
+      </ul>
+       </div>
+     <div class="col-sm-12 col-md-4 text-center">
+       <h4 class="mt-5 fs-5 fw-light">Pairing with Hardward</h4>
+       <ul class="list-group list-unstyled">
+            <li class="list-group-item">Easily sync App with any Baby Barista, whether new or second hand.</li>
+            <li class="list-group-item">The App needs to 'wake' Baby Barista from sleep mode from the mobile device.</li>
+            <li class="list-group-item">Ability to monitior the water/formula temprature from the App.</li>
+         </ul>
+     </div>
+   </div>
+
+
+      <h2 id="sketches" class="mt-5">Moodboards &amp; Early Concepts</h2>
+
+      <p>Baby Barista had no branding guide for us to consult on the aesthetics of the app. We presented several mood boards to get a sense of direction on style. Early concepts were developed around two mood boards. One pulled from the earth tones used in the machine, and another used the blue and yellow palette from the Baby Barista website.</p>
+       
+      <figure>
+        <div class="row align-items-start">
+            <div class="col-md-6 col-sm-12"><img src="main-assets/images/Baby Barista - Concepts and Sketches(1).jpg" alt="Earth tones moodboard." height="auto" width="100%" /></div>
+            <div class="col-md-6 col-sm-12"><img src="main-assets/images/Baby Barista - Concepts and Sketches.jpg" alt="Blue and yellow moodboard" height="auto" width="100%" /> </div>
+        </div>
+        <figcaption>Moodboards inspired by the prototype and website.</figcaption>
+    </figure>
+
+      <p>From there, we developed a few different concepts exploring different functions of the app.</p>
+
+      <figure class="p-2 d-block">
+        <img src="main-assets/images/Baby Barista - Concept Proposal(1).jpg" alt="Concept 1" height="auto" width="100%" />
+        <figcaption>Concept A - Illustrative, contemporary, earth tones. </a>
+        </figcaption>
+      </figure>
+
+      <figure class="p-2 d-block">
+        <img src="main-assets/images/Baby Barista - Concept Proposal(2).jpg" alt="Concept 1" height="auto" width="100%" />
+        <figcaption>Concept B - Photography, Intuitive, blue &amp; yellow. </a>
+        </figcaption>
+      </figure>
+      
+      <p>The client (and the team) favoured the more minimal concept that best reflected the look of the machine.</p>
+
+      <figure class="p-2 d-block">
+        <img src="main-assets/images/Baby Barista - Concept Proposal.jpg" alt="Concept 1" height="auto" width="100%" />
+        <figcaption>Chosen Concept - Minimal, illustrative and sophisticated.</a>
+        </figcaption>
+      </figure>
+
+      <h2 id="prototype" class="mt-5">High Fidelity Prototype</h2>
+
+      <p>We worked in Figma to create the high fidelity wires and a prototype for testing purposes.</p>
+
+      <iframe class="mt-3" width="560" height="315" src="https://www.youtube.com/embed/hlFSOBUjq2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <p class="mt-5">Below is a walkthrough of the onboarding proccess. The focus here is on error prevention, and encouraging subscription enrollment.</>
+
+       <iframe class="mt-3" width="560" height="315" src="https://www.youtube.com/embed/0OuOSoC7J6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <h2 id="testing" class="mt-5">User Tests</h2>
+
+      <p>We performed an initial round of user tests in UseBerry and had testers perform 4 main tasks:</p>
+
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">User Task</th>
+              <th scope="col">Findings</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Remote Start A Bottle.</th>
+              <td>There was a mild amount of confusion locating the play button. We enlarged it slightly and made the border thicker.</td>
+            </tr>
+            <tr>
+              <th scope="row">View Feeding History.</th>
+              <td>Users had no problem performing this task. Either via the menu or the calendar icon.</td>
+            </tr>
+            <tr>
+              <th scope="row">Manually Add A Bottle to Feeding History.</th>
+              <td>This task was easily navigated to and achieved.</td>
+            </tr>
+            <tr>
+              <th scope="row">Edit Baby Profile.</th>
+              <td> Some users tried clicking the baby avatar on the top right of the home screen. We linked the avatar to the profile section giving users two different entry points.</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+
+        
+      <figure class="p-2 d-block">
+        <img src="main-assets/images/BabyBarista-OnboardingHeatmap.png" alt="Concept 1" height="auto" width="100%" />
+        <figcaption>Heat map of the onboarding process.</a>
+        </figcaption>
+      </figure>
+
+       <p>We asked testers to go through each screen of the onboarding experience. The heatmaps determined that users were able to locate the buttons, links and input fields predictably. Overall users found the onboarding process easy and uncomplicated. However, the onboarding simulation was done without the actual machine present. </p>
+
 
       
-      <p>The tests uncovered three usability issues:</p>
-      <ul>
-          <li>The Video and History icons in the navigation bar were misinterpreted</li>  
-          <li>The ability to name a saved video was overlooked (big oops!)</li>
-          <li>The copy in the Training results area was unclear or not detailed enough.</li>
-       </ul>
-
-      <h2 id="pretty" class="mt-5">Getting Pretty</h2>
-
-      <figure>
-          <div class="row align-items-start">
-              <div class="col-md-6 col-sm-12"><img src="main-assets/images/FretHero-LogoMoods.png" alt="Taylor, Gibson, Fender &amp; Martin Guitar logos" height="auto" width="100%" /></div>
-              <div class="col-md-6 col-sm-12"><img src="main-assets/images/FretHero-ImageMoodboard.png" alt="" height="auto" width="100%" /> </div>
-          </div>
-          <figcaption>Moodboard of logos and music illustrations.</figcaption>
-      </figure>
-
-      <p>I created a mood-board, to get a sense of what aesthetics would best associate with a music App. I noticed repetitive use of abstract curvy shapes, casual looking fonts, linear gradients and bright colours. Music-related visuals tend to be very busy, but my design had to be minimal and translate well on a small screen. I found myself gravitating towards imagery that made good use of white space and graphics originally designed for smaller CD booklets.</p>
-      <p>My initial designs were portrait, but that meant the tap points on my intermediate fretboard UI would be too small on the smallest screens and create usability issues. Not wanting users to flip their phones within the App experience, I redesigned all my screens for landscape orientation and was pleased to find that the results opened up all my designs, which had felt cramped in portrait mode.</p>
-
-     <figure>
-         <img src="main-assets/images/FretHero-ToLandscape.png" alt="Image illustrates difference between Mid-Fidelity portrait and High-Fidelity Landscape designs" height="auto" width="100%" />
-         <figcaption>Illustrating the frames evolution from portrait to landscape. 
-        </figcaption>
-
-     </figure>
-
-      <h2 id="proto" class="mt-5">Prototype Tests &amp; Refinements</h2>
-
-      <p>I ran the second round of testing on Maze. These tests validated that I had fixed my initial navigation and labelling issues</p>
-   
-      <ul>
-      <li><b>90% of testers</b> rated the App navigation experience as a 7 out of 10 or higher.</li>
-      <li><b>100% of testers</b> stated the icons and labels on the menu screen made sense to them.</li>
-      </ul>
-
-      <figure>
-          <img src="main-assets/images/FretHero-NavBarGraph.jpg" alt="Screenshot of Maze Navigation Results. 19 Responses. User Avg. 8.1 out of 10 when asked to rate ease of navigation through the app." height="auto" width="100%" />
-          <figcaption>Bar Graph Results of User Opinions on Navigation</figcaption>
-        </figure>
-
-      <h3 class="fs-4 fw-light mt-5">When asked if the icons and labels made sense:</h3>
-
-      <figure>
-        <blockquote class="blockquote fs-4 fw-light">
-          <p>"The icons and labeling were quite clear and easy to understand."</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-            Tester #2897284
-        </figcaption>
-      </figure>
-
-      <figure>
-        <blockquote class="blockquote fs-4 fw-light">
-          <p>"The icons seemed to match the text pretty well, no complaints."</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-            Tester #22903077
-        </figcaption>
-      </figure>
-
-      <p>The heat maps revealed some minor confusion over the buttons, which are white on white. I may have gone a bit too minimal here. There were no misclicks in the menu, which is white text on a darker background. I made the buttons darker.</p>
-
-      <figure>
-        <img src="main-assets/images/Dark-Buttons-Screen.png" alt="Screenshot of revised app with darker buttons." height="auto" width="75%" />
-        <figcaption>Revised Fretboard Practice UI with darker, clearer, buttons.
-        </figcaption>
-      </figure>
-
       <h2 id="next" class="mt-5">What's Next</h2>
-      <p>At this point, I am confident the FretHero interface is easy to understand, and I think there is a viable market for this project. I am in the process of flowcharting specific game mechanics.</p>
-     
-      <h2 id="lesssons" class="mt-5">Lessons Learned</h2>
+      
+      <p><b>Create a Brand Identity & Style.</b> Baby Barista was still in the early stages of creating its branding.</p>
 
-      <ul>
-        <li>Early tests will help uncover oversights and assumptions before things get too detailed. This seems especially important when designing alone. There is only so much one pair of eyes will notice.</li>
-        <li>Too much visual information can confuse the user, but too little visual information can do the same.</li>
+        <p><b>Further Testing With The Prototype.</b>  Initial tests validated that the app, in and of itself, was easy to use. Further testing with a working prototype needs to be done. Working with the development team to better understand what causes errors at this stage of the user experience would be a logical next step.</p>
         
-      </ul>
+        <p><b>Refining the Formula Subscription Section.</b> Baby Barista intends to create a formula subscription service that users can manage within the app. We didn’t user flow or design this segment of the app as the details of the subscription service were still in development and it would most likely mean integrating with a 3rd party solution like Square.</p>
+        
+        <p><b>Create Reassuring Content for the Help Section.</b> Every brand and type of formula is slightly different, and the volume of information on formula available to parents is overwhelming and confusing as it conflicts with each other. Creating content for the help section and testing users to ensure the information is comprehensive and easy to understand should be completed before an MVP is launched.</p>
+     
+        <h2 id="lessons" class="mt-5">Lessons Learned</h2>
+
+        <ul>
+          <li>The digital product you're designing is ultimately just one part of the story. It's important to take a broad view and examine the company, the user and the environment the product will be used in.</li>
+          <li>You can't design away all technical and human error. A good design anticipates problems and offers assistance.</li>
+          </ul>
     </div> <!--- /content column-->
 
   </div> <!--- /row -->
 </main>
+
+<footer>
+    <div id="native-footer-img" class="mb-5">
+      <img src="main-assets/images/Babybarista-Footer.jpg" alt="" class="img-fluid px-0 mx-0 w-100" />
+    </div>
+  </footer>
 </body>
 </html>

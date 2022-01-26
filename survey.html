@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<head>
+  <title>UX Design: Social Media Attitudes Survey</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <meta name="description" content="UX Designer Verity Griscti's Social Media Survey">
+  <meta name="author" content="Verity Griscti">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+        
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1YHQLPENP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D1YHQLPENP');
+</script>
+   
+
+  <style>
+   
+
+    body {position: relative;}  /* Required for Bootstrap Scrollspy functionality */
+
+   
+
+    #native-casestudy-header{
+      background-color: black;
+      color: whitesmoke;
+    }
+
+    #native-casestudy-nav {
+      background-color: whitesmoke;
+      opacity: 1.0;
+    }
+
+    .nav-pills .nav-link:not(.active) {
+    background-color: whitesmoke;
+    color: #444444;
+    }
+
+    .nav-pills .nav-link.active {
+    background-color: whitesmoke;
+    color: #333333;
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+    
+  
+  </style>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".nav" data-bs-offset="50">
+
+  <header id="native-casestudy-header" class="container-fluid p-3">
+    <h1 class="fs-3 fst-italic text-center text-md-start">Social Media Attitudes Survey</h1>
+  </header>
+
+
+<main class="container-fluid">
+  <div class="row p-3">
+    <div class="col-sm-12 col-md-4 col-xl-3">
+
+      
+       <nav id="native-casestudy-nav" role="navigation" class="nav flex-column fixed-bottom sticky-md-top p-3">
+          <button role="button" type="button" class="btn-dark d-md-none btn-lg" data-bs-toggle="collapse" data-bs-target="#contents"><i class="fas fa-bars"></i></button><!-- Collapsible Button -->
+          
+          <ul id="contents" class="nav nav-pills native-pills flex-column">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home p-3"></i>Home</a></li>
+          <div class="nav-text p-2">Table of Contents:</div>
+          <li  class="nav-item p-1"><a class="nav-link" href="#intro">Introduction</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#part2">Why Do People Use Social Media?</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#part3">How Do People Currently Use Social Media?</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#part4">How Do People Feel About Social Media?</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#part5">Openness To Joining A New Social Media Platform</a></li>
+          <li  class="nav-item p-1"><a class="nav-link" href="#conclusions">Conclusions &amp; Next Steps</a></li>
+          </ul><!-- /contents -->
+
+        </nav>
+      
+
+    </div> <!-- sidebar column -->
+
+    <div class="col-sm-12 col-md-8 col-lg-7 col-xl-6">
+
+      <h2 id="intro" class="mt-5">Introduction</h2>
+
+      <p>This project was completed as part of myYork University&#8217;s School of Continuing Studies <a href="https://continue.yorku.ca/certificates/ux-design/" target="_blank" rel="noreferrer noopener">UX Design Certificate</a>. For the introductory class, we were asked to conduct a 10 question survey on&nbsp;<a rel="noreferrer noopener" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc-t5nFc2JSDIdVV15qDEhFHPFP_exBxLCW5vO-jUTSlc6YYw/viewform">Google Forms</a>&nbsp;to gauge public perception of existing social media platforms to gain a high-level sense of how people use, and what they think, of current social media offerings.</p>
+ 
+      <p>This summary report analyzes the data collected from <strong>47 respondents</strong>.</p>
+
+      <h3 id="keyfindings" class="mt-5">Key Findings</h2>
+
+      <ul class="mt-3"><li>The main draw of social media is the utility it gives people to stay connected to people and communities that they deem important.</li><li>Peoples primary complaint about social media isn&#8217;t the technology itself, but how other humans interact and behave on the platforms.&nbsp;</li><li>Social media users want more tools and control over what they see, in part to mitigate the negative behaviours of other users.</li><li>Users want a platform that helps them parse misleading or unwanted content.</li></ul>
+
+      
+      <h2 id="part2" class="mt-5">Why Do People Use Social Media?</h2>
+
+      <p>Overwhelmingly people use social media platforms to stay connected to family and friends and participate in various communities. Survey respondents also cited social media as a place to find entertainment and information on personal interests and news. A minority of respondents reported using social media to share their opinions.</p>
+
+
+
+<p>People&#8217;s responses on why they used social media were broadly consistent with what they liked and disliked about the platforms. Respondents cited a connection with friends and family as the main reason they enjoyed social media.&nbsp; Negative behaviours and opinions were the primary frustrations users had with existing social media platforms.</p>
+
+<div class="mt-5" data-bs-toggle="modal" data-bs-target="#whydoyou">
+  <figure class="p-2 d-block">
+    <img src="main-assets/images/Survey/why-do-you-use-social-media-.png" alt="Bar Graph: why do you use social media?" height="auto" width="100%" />
+      <figcaption>Fig. 1 Survey Respondents most cited uses of social media. Ranked by popularity.<br/> (Click Graph To Enlarge)
+      </figcaption>
+    </figure>
+  </div>
+
+<!-- Why do you use social media modal -->
+<div class="modal fade" id="whydoyou" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-label">Fig. 1 Survey Respondents most cited uses of social media. Ranked by popularity.</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="main-assets/images/Survey/why-do-you-use-social-media-.png" alt="Bar Graph: why do you use social media?" height="auto" width="100%" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
+
+     <h2 id="part3" class="mt-5">How Do People Currently Use Social Media</h2>
+
+     <p>Answers to closed questions were used to collect information on what social media platforms people used and how they interacted with existing platforms. The survey responses indicate that people use multiple social media platforms every day, and they perform a wide range of tasks on the platforms currently available.</p>
+     
+     <h3 class="mt-5">What social media platforms are used?</h3>
+
+     <figure class="p-2 d-block">
+      <img src="main-assets/images/Survey/social-media-platforms-in-use.png" alt="Bar Graph: What Social Media Platforms Do You Use?" height="auto" width="100%" />
+      <figcaption>Fig. 2 Survey Respondents most used Social Media Platform. Ranked by popularity.
+      </figcaption>
+    </figure>
+
+    <p>Among respondents, <strong>FaceBook</strong>is the most popular social media platform currently in use. But, as I only recruited survey respondents from FaceBook and Instagram (which doesn&#8217;t allow direct links) this data might be skewed a bit. The majority of respondents had to be on FaceBook to access the survey.</p>
+
+    <figure class="p-2 d-block">
+      <img src="main-assets/images/Survey/platforms-per-user.png" alt="Bar Graph: How Many Social Media Platforms Do You Use." height="auto" width="100%" />
+      <figcaption>Fig 3. Number of Social Media platforms used by Survey Respondents.
+      </figcaption>
+    </figure>
+
+<p>All respondents reported using at least two platforms. Using <strong>three to six</strong> different platforms was most common among surveyors.</p>
+
+<h3 class="mt-fs-light">What devices do they use?</h3>
+
+<p>Respondents preferred to access their platforms on portable devices, with mobile devices being the most popular device either via a web browser or a dedicated app.</p>
+
+<figure class="p-2 d-block">
+  <img src="main-assets/images/Survey/device-preferences-.png" alt="Bar Graph: What Device Do You Browse SM on?" height="auto" width="100%" />
+  <figcaption>Fig 4. Types of devices used by survey respondents to access social media.
+  </figcaption>
+</figure>
+
+<h3 class="mt-fs-light">What do people do on social media platforms?</h3>
+
+
+
+<p>Interaction types fall into three broad categories: <strong>posting original content, posting found content and responding to content</strong>. Users slightly favoured responding to content and posting original material interactions to posting found material interactions. </p>
+
+
+
+<figure class="p-2 d-block">
+  <img src="main-assets/images/Survey/type-of-content.png" alt="Pie Chart: What Do You Do On Social Media?" height="auto" width="100%" />
+  <figcaption>Fig 5. Three primary social interaction types performed by survey respondents
+  </figcaption>
+</figure>
+
+
+
+
+<p>Photos are the most popular original content to post. Written articles are the most popular found content to post, and respondents have a clear preference for commenting and liking content to other forms of content interaction.</p>
+
+
+
+<figure class="p-2 d-block">
+  <img src="main-assets/images/Survey/interaction-types-posting-original-content.png" alt="Bar Graph: Posting Original Content" height="auto" width="100%" />
+  <figcaption>Fig 6. Original Content Types
+  </figcaption>
+</figure>
+
+
+<figure class="p-2 d-block">
+  <img src="main-assets/images/Survey/interaction-type-posting-found-content.png" alt="Bar Graph: Posting Found Content" height="auto" width="100%" />
+  <figcaption>Fig. 7 Posting Found Content Types
+  </figcaption>
+</figure>
+
+
+<figure class="p-2 d-block">
+  <img src="main-assets/images/Survey/interaction-type-responding-to-content.png" alt="Bar Graph: Responding To Content" height="auto" width="100%" />
+  <figcaption>Fig. 8 Responding to Content Types
+  </figcaption>
+</figure>
+
+
+<h3 class="mt-fs-light">Personal Use vs. Business Use</h3>
+
+
+
+<p>A sizable minority of users have a business, side hustle or side project they promote on social media, but most respondents are interacting with the platform as individual users.</p>
+
+
+
+<figure class="p-2 d-block">
+  <img src="main-assets/images/Survey/count-of-do-you-have-a-small-business-side-hustle-or-creative-project-that-you-promote-on-social-media-.png" alt="Pie Chart: Personal Use vs. SideHustle" height="auto" width="100%" />
+  <figcaption>Fig 9. Social media use. Professional vs. Personal
+  </figcaption>
+</figure>
+
+
+<h3 class="mt-fs-light">How often do people check social media?</h3>
+
+
+<p>All respondents were daily users of social media. With most respondents checking their platforms five or more times a day. While &#8216;not every day&#8217; was listed as a choice in the survey no one selected that option.</p>
+
+<figure class="p-2 d-block">
+  <img src="main-assets/images/Survey/how-many-times-a-day-do-you-look-at-social-media-.png" alt="Bar Graph: Engagement Frequency" height="auto" width="100%" />
+  <figcaption>Fig 10. Number of times survey respondents self-reported checking social media.
+  </figcaption>
+</figure>
+
+
+
+    <h2 id="part4" class="mt-5">How Do People Feel About Social Media</h2>
+
+    <p>Responses to open-ended questions have been collected, analyzed and placed in broad categories to determine how survey respondents <strong>feel </strong>about various aspects of social media. </p>
+
+<p>Questions were placed at the beginning of the survey to ensure respondents were not fatigued while answering, or biased in any way by the selection of closed questions that followed.</p>
+
+<p>Interestingly, people had a wide variety of frustrations with social media, but most were attracted to the idea for the same reason.</p>
+
+
+<h3 class="mt-5 fs-light">What do people like about social media?</h3>
+
+
+<p>When asked <strong>&#8220;What do you like about social media?&#8221;</strong>, respondents overwhelmingly indicated that social media&#8217;s ability to keep them connected to family and friends was a primary draw.&nbsp;</p>
+
+<p><strong><em>&#8220;I like being able to connect with my friends and family and see their updates on their lives&#8221;&nbsp; </em></strong>or <strong><em>&#8220;Mostly I like seeing pictures of what my friends are up to, particularly now&#8221;</em></strong> were typical responses to the question prompt.&nbsp;</p>
+
+
+<p>Many responses also saw social media&#8217;s ability to foster community as a big positive. Answers that talked about community were among the most<em> </em>positive.&nbsp;</p>
+
+
+<p><em>&#8220;</em><strong><em>Seeing photos and updates about my family and friends. I’ve met a lot of people with common interests who I probably never would have crossed path with if it wasn’t for social media.&#8221;&nbsp; </em></strong>or<strong> </strong><strong><em>&#8220;Ability to stay connected with people and have a worldwide community.&#8221;</em></strong><strong> </strong>are examples of responses that positively mention community.&nbsp;</p>
+
+<p>Many users mentioned several different positive aspects of social media in their answers. These users viewed social media as an enjoyable way to access information, for entertainment or other purposes, alongside the ability to let them connect to people.&nbsp;</p>
+
+
+
+<p><strong><em>&#8220;Entertainment. Seeing new ideas, and what my friends are up to.&#8221;</em></strong><strong>&nbsp; </strong>or <strong><em>&#8220;Humour, hearing from friends (actual real world friends) amusing animal videos, looking at art</em></strong><strong>&#8221; </strong>&nbsp;are examples of people who are drawn to social media for several different reasons.&nbsp;</p>
+
+
+
+<p>Overall words like <strong>friends</strong>, <strong>community</strong>, <strong>connection </strong>and <strong>easy </strong>where the most used by respondents when asked what they liked about social media.</p>
+
+
+<figure class="p-2 d-block">
+  <img src="main-assets/images/Survey/what-do-you-like-about-social-media-1.png" alt="Bar Graph: What Do You Like About Social Media?" height="auto" width="100%" />
+  <figcaption>Fig. 11 Survey respondents most cited ‘likes’ about social media
+  </figcaption>
+</figure>
+
+
+<h3 class="mt-5 fs-light">What frustrates people about social media?</h3>
+
+
+
+<p>When asked <strong>&#8220;What frustrates you about social media?&#8221; </strong>users had a range of complaints, but the most frequent answer was to exhibit frustration with the negative behaviours of other platform users. Other frustrations described irrelevant content, privacy and security concerns, and voiced opinions.&nbsp;</p>
+
+
+
+<p><strong><em>&#8220;It can be very toxic in how people interact and bully each other on it.&#8221; </em></strong>and <strong><em>&#8220;Negative and toxic people.&#8221; </em></strong>are examples of survey responses that indicated the behaviours of other users.&nbsp;</p>
+
+
+
+<p>Words like <strong>annoying</strong>, <strong>stupid</strong>, <strong>toxic </strong>and <strong>moron </strong>were often used to describe other social media users.&nbsp;&nbsp;</p>
+
+
+
+<p>Advertising was one of the other main points of frustration, particularly when users thought ads were replacing content they might want to see. <strong><em>&#8220;The algorithms that force products down my throat or promote the daily spam and click bait fluff articles that drown out my timeline.&#8221;</em></strong><strong>&nbsp; </strong>is how one user explained this frustration.</p>
+
+
+
+<p>Similar to answers about what users liked about social media respondents often listed several frustrations or dislikes. Misinformation, or fake news, was mentioned frequently. <strong><em>&#8220;Misinformation and extreme rudeness. &#8220;</em></strong> and<strong> </strong><strong><em>&#8220;Too many ads, too much fake news, too much hacking&#8221; </em></strong>were typical responses of this type.&nbsp;</p>
+
+
+
+<p>Overall, words like <strong>ads</strong>, <strong>misinformation</strong>, <strong>negativity</strong>, <strong>fake</strong>, <strong>opinion </strong>and <strong>stupid </strong>were used the most by respondents.</p>
+
+<figure class="p-2 d-block">
+  <img src="main-assets/images/Survey/what-frustrates-you-about-social-media-.png" alt="Bar Graph: What Frustrates You About Social Media?" height="auto" width="100%" />
+  <figcaption>Fig. 12 Survey respondents most cited ‘dislikes’ about social media
+  </figcaption>
+</figure>
+
+<h3 class="fs-light mt-5">Improvements over New Features</h3>
+
+
+
+<p>When survey takers were asked, <strong>&#8220;If you could add a new feature to your favourite social media site, what would it be?&#8221; </strong>most requested improvements to existing features and functionality over novel new uses for social media.</p>
+
+
+
+<p>There were some requests for completely new or underdeveloped features like <strong><em>&#8220;philanthropy</em></strong><em>&#8220;</em>, the <strong><em>&#8220;ability to play music with others&#8221;</em></strong><strong> </strong>or <strong><em>&#8220;Live Q&amp;A&#8221;</em></strong><strong>.&nbsp; </strong>Overall, answers seem more concerned with improving the functionality social media currently provides and minimizing some aforementioned frustrations like ad blocking and privacy concerns.</p>
+
+
+
+<p>Answers like<strong> </strong><strong><em>&#8220;unbury logout button&#8221;</em></strong> or<strong> </strong><strong><em>&#8220;better search&#8221;</em></strong> or <strong><em>&#8220;better photo organization&#8221;</em></strong> were the most common. Respondents also requested more control over the content they saw and shared asking for<em> </em><strong><em>&#8220;A more personalized content feed&#8221;</em></strong> or <strong><em>&#8220;limiting screen shares and comments&#8221; </em></strong>among other requests.&nbsp;</p>
+
+
+
+<p>A high number of people answered this question with answers like <strong><em>“IDK”</em></strong> or<strong> <em>“Not Sure”</em> </strong>which suggests that a new survey question needs to be written to replace it in future uses of this survey. A full 19% of data was unusable.&nbsp;</p>
+
+<figure class="p-2 d-block">
+  <img src="main-assets/images/Survey/new-features1.png" alt="Bar Graph: New Feature Request" height="auto" width="100%" />
+  <figcaption>Fig. 13 Survey respondents most cited requests for new social media features
+  </figcaption>
+</figure>
+
+
+<h2 id="part5" class="mt-5">Openness To Joining A New Platform</h2>
+
+<p>Despite the range of frustrations described by survey respondents, people seem neutral to reluctant on the idea of joining a new platform.</p>
+
+<p>When given a quantitative likert question asking how likely they were to join a new social media platform users seemed neutral to against it.&nbsp;</p>
+
+<figure class="p-2 d-block">
+  <img src="main-assets/images/Survey/how-likely-are-you-to-join-a-new-social-media-platform-1-1.png" alt="Likert Graph: Likely to trying new platform?" height="auto" width="100%" />
+  <figcaption>Fig. 14 Survey respondents likert responses to joining a new social media platform. 1 = unlikely and 5= definitely.
+  </figcaption>
+</figure>
+
+    
+  
+     <h2 id="conclusions" class="mt-5">Conclusions &amp; Next Steps</h2>
+
+     <p>Survey respondents already make daily use of multiple social media platforms. There does not seem to be an appetite for a new platform, despite many frustrations with current offerings. For a new platform to gain traction it would have to elegantly address the major frustrations mentioned by survey respondents.&nbsp;</p>
+
+
+
+<h3 class="fs-light mt-5">Next Steps</h3>
+
+
+
+<p>If I were to move forward with this project I would first want to conduct more research in the following areas:</p>
+
+
+
+<ul><li>What are the most popular revenue models currently in use that are not ad dependant? Can one of them be applied to a social media platform?</li><li>Are there databases, AI or APIs out there that can help flag questionable content based on the source URL or text analysis? Can they be easily integrated into a social media platform?</li><li>Look at behavioural psychology on group dynamics. Is there a way to design a site that naturally encourages positive interactions over mean or trolling ones? Have studies been done in analogue situations that might be adapted to digital platforms?&nbsp;</li></ul>
+
+
+
+<p>I&#8217;d also perform some user tests on current social media sites to see how the existing UI patterns for interactions like search, hiding ads and unwanted content are working. How long do they take to find? Are they buried under other features? Do they even exist on mobile versions of the site?</p>
+
+
+
+<p>Assuming I found encouraging answers in my second round of research, I&#8217;d design a &#8216;mobile first&#8217; wire-frame and test it out on a small group of people to see how it works. Then I&#8217;d conduct another round of surveys to gauge how respondents feel about paying for social media access and whatever other potential issues I uncover.</p>
+
+
+
+
+
+   
+  
+     
+    </div> <!--- /content column-->
+
+  </div> <!--- /row -->
+</main>
+
+</body>
+</html>

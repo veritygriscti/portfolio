@@ -1,455 +1,202 @@
-/* General Styles, including text and color */
+/* These are secondary styles to Bootstrap 5 */
 
 :root {
-    --header-bg: #501E6D;
-    --white-text: #f4f4f4;
-    --text: #333333;
-    --body-bg: #f6f6f6;
-    --link-color: #5e95c2;
-    --about-bg: #dbdce2;
-}
-
-*, html {
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  --bg-color: #ffffff;
+  --secondary-background: #21156c;
+  --black-bg: #000000;
+  --dark-text: #333333;
+  --light-text: #ffffff;
+  --hover-text: #21156c;
+  --ux-tiles: #4b0082;
+  --other-work-tile: #21156c;
 }
 
 body {
-    background-color: var(--body-bg);
-    color: var(--text);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: regular;
-    font-size: 18px;
-   
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lora', serif;
+  position: relative; /* Required for Bootstrap Scrollspy functionality */
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bg-color);
 }
 
 h1 {
-    font-size: 1.6rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-h2 {
-    font-size: 1.7rem;
+/* Index Page Styles */
+
+#index-link:hover {
+  color: var(--dark-text);
+  text-decoration: none;
 }
 
-h3 {
-    font-size: 1.25rem;
+#navbar {
+  background-color: var(--bg-color);
+  color: var(--dark-text);
 }
 
-.link  {
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Lora', serif;
-    font-size: 16px;
-    color: var(--link-color);
+nav a {
+  color: var(--dark-text);
 }
 
-.link:hover {
-    text-decoration: underline;
+nav a:hover {
+  color: var(--hover-text);
+  font-weight: 600;
 }
 
+/* Overwriting Bootstraps nav-pill */
 
-#about h3, h4 {
-    text-transform: lowercase;
+.nav-pills .nav-link:not(.active) {
+  background-color: var(--bg-color);
+  color: var(--dark-text);
 }
 
-footer h3, h4 {
-    text-transform: lowercase;
+.nav-pills .nav-link.active {
+  background-color: var(--bg-color);
+  color: var(--dark-text);
+  font-weight: 400;
+  text-decoration: underline;
 }
 
-nav {
-    padding: 1%;
-    background-color: var(--body-bg);
-    text-transform: lowercase;
-    transition: 800ms ease-in; 
+#ux-cs {
+  min-height: 50vh;
+  padding-top: 40px; /* offsets for the navbar */
+  margin-top: 100px;
 }
 
-#nav-container a {
-    text-decoration: none;
-    color: var(--text);   
+.tile a {
+  color: var(--light-text);
+  text-decoration: none;
 }
 
-header a {
-    color: var(--link-color);
-    font-weight: bold;
+.tile:hover {
+  color: var(--light-text);
+  text-decoration: underline;
 }
 
-.case-study-link {
-    text-decoration: none;
+.tile {
+  border-radius: 5px;
 }
 
-.case-study-link:hover {
-    text-decoration: underline;
-    color: var(--white-text);
+#dommma-cs {
+  background-color: #3f7ba8;
 }
 
-
-/* styles active link */
-
-#nav-container a.active {
-    text-decoration: overline;
-    font-weight: bold;
-  }
-
-#dommma {
-    background-color: #3F7BA8;
-    
+#babybarista-cs {
+  background-color: #402f2b;
 }
 
-#babybarista {
-    background-color: #d5b3aa;
-    
+#frethero-cs {
+  background-color: #023d4c;
 }
 
-#frethero {
-    background-color: #023D4C;
-    
+#workshop-tile,
+#ia-tile,
+#survey-tile {
+  background-color: var(--ux-tiles);
 }
 
-.small-icon {
-    height: 15px;
-    width: auto;
+#content-tile,
+#code-tile,
+#art-tile {
+  background-color: var(--other-work-tile);
+  height: 175px;
+  background: url("main-assets/images/index/otherwork-bg.png") no-repeat center
+    center;
+  background-size: cover;
 }
 
-#about {
-    margin-top: 25px;
-    padding: 5%;
-    background-color: var(--body-bg);
+#ux-samples,
+#other-work,
+#about,
+#contact {
+  min-height: 50vh;
+  padding-top: 100px; /* offsets for the navbar */
 }
 
-#about-description {
-    margin-top: 30px;
+#about-written {
+  -webkit-border-top-left-radius: 75px;
+  -webkit-border-bottom-left-radius: 75px;
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 75px;
+  line-height: 1.5em;
+  font-size: 12pt;
 }
 
-#about-description p {
-   margin: 20px;
-
+#about-links {
+  line-height: 1.8em;
 }
 
-#skills-container ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-transform: lowercase;
+#about-img {
+  -webkit-border-top-right-radius: 75px;
+  -webkit-border-bottom-right-radius: 75px;
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 75px;
 }
 
-aside {
-    background-color: #3F7BA8;
-    color: var(--white-text);
-    padding: 3%;
+#about a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-
-
-.sm-icon {
-    height: 48px;
-    width: auto;
+#about a:hover {
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
-footer {
-    padding: 8%;
-   
+#skills {
+  background-color: var(--secondary-background);
+  color: var(--light-text);
+  border-radius: 5px;
 }
 
-.sm-icon {
-    height: 48px;
-    width: auto;
-    margin: 10px;
+.list-group li {
+  background-color: var(--secondary-background);
+  color: var(--light-text);
+  border-width: 0px;
 }
 
 #contact {
-    line-height: 2.0
+  background: url("main-assets/images/index/contact-bg.png") no-repeat center
+    center;
+  background-size: cover;
+  border-radius: 10px;
+  line-height: 1.9em;
 }
 
-
-#end-bar {
-    width: 100%;
-    height: auto;
-    padding: 2%;
-    
-    margin-top:50px;
+.sm-icon {
+  height: 50px;
+  width: 50px;
 }
 
-#social-media {
-    margin-top: 50px;
-    line-height: 3;
+/* Artwork & Content */
+
+.native-back-link {
+  color: var(--light-text);
+  font-size: large;
 }
 
-#emoji {
-    font-size: 25px;
+.native-back-link:hover {
+  color: var(--light-text);
 }
 
-
-
-
-@media only screen and (max-width: 599px){
-
-/* Header Styles */   
-
-#grid-container {
-    width: 100%;;
+.native-casestudy-header {
+  background-color: var(--black-bg);
+  color: var(--light-text);
 }
 
-header {
-
-    background-color: var(--header-bg);
-    color: var(--white-text);
-    padding: 8%;
-    text-align: left;
-    font-weight: normal;
-    width: 100%;
-    height: auto;
+.native-section-height {
+  width: 100%;
+  min-height: 70vh;
+  background-color: var(--bg-color);
 }
 
-
-#wave {
-    font-size: 1.75rem;
+#native-artist-statement {
+  color: var(--light-text);
+  background: var(--black-bg);
 }
 
-
-/* Navigation Styles */
-
-#logo {
-    text-align: center;
+#native-artist-img {
+  background-color: var(--black-bg);
+  color: var(--light-text);
 }
-
-#nav-container {
-    text-align: center;
-    padding: 1%;
-    margin-top: 15px;
-}
-
-.nav-item {
-    padding: 1.5%;
-}
-
-
-/* Needed for sticky navbar */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-
-/* Section Styles - UX Case Studies */
-
-#ux {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    width: 100vw;
-    height: auto;
-    z-index: -1;   
-}
-
-.case-study {
-    padding: 30px;
-    width: 100;
-}
-
-
-.case-study a {
-    text-decoration: none;
-    color: var(--text); 
-}
-
-.case-description {
-    padding: 1%;
-    color: var(--white-text);
-    line-height: 1.75; 
-}
-
-
-#dommma {
-    width: 100vw;
-}
-
-#babybarista {
-    width: 100vw;
-}
-
-#frethero {
-    width: 100vw;
-}
-
-
-
-
-.ux-img {
-    width: 100%;
-    text-align: center;
-    margin-top: 25px;;
-}
-
-.about-img {
-    width: 100%;
-}
-
-.selfie-img {
-    width: 100%;
-    border-radius: 0px 175px 175px 0px;
-    margin-left: -25px;
-    margin-top: 50px;
-    margin-bottom: 15px;
-}
-
-aside {
-    padding: 8%;
-}
-
-.list-item {
-    margin: 5%;
-}
-
-footer {
-    margin-top: 50px;
-    width: 100%;  
-    padding: 5%;
-}
-
-
-
-}
-
-
-
-@media only screen and (min-width: 600px){
-
-    #grid-container {
-        margin-top: 100px;
-        display: grid;
-        grid-template-columns: 30vw 68vw;
-        grid-template-rows: auto;
-      
-    }
-
-    header {
-        color: var(--text);
-        background-color: var(--body-bg);
-        color: var(--text);
-        padding: 5%;
-       
-    }
-    
-     #wave {
-         font-size: 2.0rem;
-         font-weight: normal;
-     }
-
-    .case-study h2 {
-        font-size: 2.1rem;
-    }
-
-     .case-study img {
-         width: 55%;
-     }
-
-     
-     #frethero, #dommma, #babybarista {
-         display: flex;
-         flex-flow: row nowrap;
-         padding: 0px;
-         text-align: left;
-         padding: 3%;
-         justify-items: center;
-         align-items: center;
-         color: var(--white-text);
-         margin-bottom: 25px;
-         border-radius: 25px;
-     }
-
-
-   .case-description {
-         
-         margin-left: 50px;
-     }
-    
-   
-        /* Applies sticky properites onload */
-        nav {
-            position: fixed;
-            top:0;
-            width: 100%;
-            height: 100px;
-        }
-
-        #logo {
-            text-align: left; 
-            padding: 0;
-            flex-grow: 1.5;
-        }
-        
-        #nav-container {text-align: left; padding: 0;}
-        
-        .nav-item {
-            padding: 0;
-            margin-right: 30px;
-        }   
-    
-        nav {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            height: 68px;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        #about {
-            padding: 4%;
-            background-image: linear-gradient(#f6f6f6,#dbdce2);
-
-        }
-
-        .selfie-img {
-            width: 100%;
-            border-radius: 75px 175px 175px 5px;
-            margin-left: 0%;
-            margin-top: 50px;
-            margin-bottom: 15px;
-        }
-
-        #about-container {
-            display: flex;
-            flex-flow: row nowrap;
-            
-        }
-
-        #about-description {
-            padding: 5%;
-        }
-
-        
-
-        #skills-container {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content:space-evenly;
-            align-content: space-between;
-            padding: 5%;
-        }
-
-    footer {
-        background-image: linear-gradient(#dbdce2, #b7b8bb);
-       
-
-    }
-
-       
-    }
-
-
-
-
-
-
-
-
-
-

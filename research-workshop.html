@@ -23,6 +23,8 @@
 
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   
+  <link rel="stylesheet" href="/styles.css" />
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1YHQLPENP"></script>
 <script>
@@ -34,45 +36,11 @@
 </script>
    
 
-  <style>
-   
-
-    body {position: relative;}  /* Required for Bootstrap Scrollspy functionality */
-
-   
-
-    #native-casestudy-header{
-      background-color: black;
-      color: whitesmoke;
-    }
-
-    #native-casestudy-nav {
-      background-color: whitesmoke;
-      opacity: 1.0;
-    }
-
-    .nav-pills .nav-link:not(.active) {
-    background-color: whitesmoke;
-    color: #444444;
-    }
-
-    .nav-pills .nav-link.active {
-    background-color: whitesmoke;
-    color: #333333;
-    font-weight: 600;
-    font-size: larger;
-    text-decoration: underline;
-}
-
-    
-  
-  </style>
-
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".nav" data-bs-offset="50">
 
-  <header id="native-casestudy-header" class="container-fluid p-3">
+  <header id="native-casestudy-header" class="container-fluid p-3 bg-dark text-light">
     <h1 class="fs-3 fst-italic text-center text-md-start">Slide Deck: Brainstorming Workshop</h1>
   </header>
 
@@ -82,8 +50,8 @@
     <div class="col-sm-12 col-md-3 col-xl-2">
 
       
-       <nav id="native-casestudy-nav" role="navigation" class="nav flex-column fixed-bottom sticky-md-top p-3">
-          <button role="button" type="button" class="btn-dark d-md-none btn-lg" data-bs-toggle="collapse" data-bs-target="#contents" aria-label="Menu Button"><i class="fas fa-bars"></i></button><!-- Collapsible Button -->
+       <nav id="native-casestudy-nav" class="nav flex-column fixed-bottom sticky-md-top p-3 border border-secondary rounded">
+          <button type="button" class="btn-dark d-md-none btn-lg" data-bs-toggle="collapse" data-bs-target="#contents" aria-label="Menu Button"><i class="fas fa-bars"></i></button><!-- Collapsible Button -->
           
           <ul id="contents" class="nav nav-pills native-pills flex-column">
           <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home p-3"></i>Home</a></li>
@@ -95,7 +63,8 @@
           </ul><!-- /contents -->
 
         </nav>
-      
+     
+        
 
     </div> <!-- sidebar column -->
 
@@ -106,11 +75,11 @@
       <div id="part1">
 
         <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop - title.png" alt="Workshop Title Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop-title.png" alt="Workshop Title Page"/>
           </figure>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(1).png" alt="Workshop Intro Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(1).png" alt="Workshop Intro Page" />
           </figure>
 
       <div id="intro-speech" class="p-5 mt-3">
@@ -126,15 +95,15 @@
         </div>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(2).png" alt="Workshop Agenda Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(2).png" alt="Workshop Agenda Page"/>
           </figure>
 
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(3).png" alt="Workshop Rules Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(3).png" alt="Workshop Rules Page" />
           </figure>
 
-          <div id="intro-speech" class="p-5 mt-3">
+          <div id="workshop-rules" class="p-5 mt-3">
 
              <p>"Before starting, we’re going to cover some of the workshop rules.</p>
 
@@ -149,11 +118,11 @@
            </div>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(4).png" alt="Workshop Warm Up Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(4).png" alt="Workshop Warm Up Page" />
           </figure>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop.jpg" alt="Workshop 100 Uses Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop.jpg" alt="Workshop 100 Uses Page" />
           </figure>
 
           <p><b>Facilitator’s Notes: </b><br/>
@@ -167,7 +136,7 @@
                 The group with the most ideas wins!</p>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(5).png" alt="Workshop Research Summary Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(5).png" alt="Workshop Research Summary Page"  />
           </figure>
 
           <p><b>Note:</b> Research Graphs are Mock-ups</p>
@@ -180,19 +149,19 @@
       <div id="part2">
 
         <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(6).png" alt="Workshop Problem Statement Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(6).png" alt="Workshop Problem Statement Page" />
           </figure>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(7).png" alt="Workshop Opportunity Statement Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(7).png" alt="Workshop Opportunity Statement Page" />
           </figure>
          
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(8).png" alt="Workshop Coffee Break Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(8).png" alt="Workshop Coffee Break Page" />
           </figure>
 
-          
-    <div>
+         
+     <div>
 
       </div>
   
@@ -200,13 +169,13 @@
      <div id="part3">
 
         <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(9).png" alt="Workshop Activity 1 Title Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(9).png" alt="Workshop Activity 1 Title Page" />
           </figure>
           <p>"Thanks Kimber! Now for our innovation generation activity! This game will help us identify and address customer needs.  
             First, let’s divide into two groups of 4-5 people."</p>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(10).png" alt="Workshop Activity 1 Synopsis Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(10).png" alt="Workshop Activity 1 Synopsis Page" />
           </figure>
           <p>"This will take about an hour. In a nutshell, we will be asking you to think about the user’s problems, come up with ideas that solve these problems, think about what each idea brings, and finally, combine each idea with its value to come up with some innovations."</p>
           <p><b>Facilitator’s Notes:</b><br/>
@@ -224,19 +193,19 @@
             
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(11).png" alt="Workshop Activity 1 Illustration Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(11).png" alt="Workshop Activity 1 Illustration Page" />
           </figure>
           <p>"Each team should end up with something like this. The key to remember is that “Innovation = Valuable Invention.”"</p>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(12).png" alt="Workshop Restate the Problem Statement Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(12).png" alt="Workshop Restate the Problem Statement Page" />
           </figure>
           <p>"And, to make sure this a useful exercise -- we throw the problem statement back up to refresh your memories.
             We will go around the room and answer any questions you have as we keep track of the time. Have fun!</p>
           
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(13).png" alt="Workshop Activity 1 Summary Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(13).png" alt="Workshop Activity 1 Summary Page" />
           </figure>
 
           <p>"So, that brings the innovation game to and end - We hope you enjoyed it! 
@@ -244,34 +213,34 @@
             </p>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(14).png" alt="Workshop Lunch Break Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(14).png" alt="Workshop Lunch Brea kPage" />
           </figure>
 
       
-    <div id="part4">
+     <div id="part4">
         <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(15).png" alt="Workshop MoSCoW Title Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(15).png" alt="Workshop MoSCoW Title Page" />
           </figure>
 
           <p>"Now that we have a pile of ideas that address our user's problem, it's time to make decisions on which ideas could be implemented for the next version of LinkedIn's profile page. Moscow is an acronym for Must have, Should have, Could have and Won’t have this time, and it’s a game that will help you sort through the pile of innovative ideas you generated during the Innovation Generator and helps decide which ones to focus on.”</p>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(16).png" alt="Workshop MoSCoW Intro Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(16).png" alt="Workshop MoSCoW Intro Page" />
           </figure>
 
           <p>"This stage is all about refining your ideas and goals into things you can reasonably achieve within the scope of the project. So the first thing to do is restate the scope, budget and timeline of this project. We’ll let decision maker Pam do that.”</p>
           <p><i>Wait patiently while Pam outlines project</i></p>
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(17).png" alt="Workshop MoSCoW Categories Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(17).png" alt="Workshop MoSCoW Categories Page" />
           </figure>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(18).png" alt="Workshop MoSCoW Whiteboard Illustration Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(18).png" alt="Workshop MoSCoW Whiteboard Illustration Page" />
           </figure>
           <p>"Here is a visualization of what your board might look like when you’re done. Remember, MUST HAVEs should account for NO more than 60% of the project scope or it risks getting bogged down in details. COULD HAVE allow for wiggle room and should be things that can be delegated throughout the group with ease."</p>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(19).png" alt="Workshop Video Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(19).png" alt="Workshop Video Page" />
           </figure>
 
           <p><b>Facilitator’s Note:</b><br/>
@@ -279,24 +248,24 @@
         </p>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(20).png" alt="Workshop Coffee Break Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(20).png" alt="Workshop Coffee Break Page" />
           </figure>
 
           <p><b>Facilitator’s Note:</b><br/>Use this coffee break to document the whiteboards.</p>
 
         
-    </div>
+     </div>
 
    
    
 
-    <div id="part5">
+     <div id="part5">
         <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(21).png" alt="Workshop Results Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(21).png" alt="Workshop Results Page" />
           </figure>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(22).png" alt="Workshop Next Steps Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(22).png" alt="Workshop Next Steps Page" />
           </figure>
 
           <p>"Now we’re going to finalize some actions and assign owners to tasks. I’ll hand this part over to Pam to facilitate" <br/><i>Pam to lead the group, 15-20 min</i>. </p>
@@ -306,15 +275,15 @@
             <p>"Before we close today’s workshop, does anyone else have any questions or comments they’d like to share?" (10mins)</p>
 
           <figure class="p-2 d-block mt-5">
-            <img src="main-assets/images/workshop/UX Design Workshop(23).png" alt="Workshop Thank You Page" height="auto" width="100%" />
+            <img class="img-fluid" src="main-assets/images/workshop/UXDesignWorkshop(23).png" alt="Workshop Thank You Page" />
           </figure>
-    </div>
+     </div>
 
    
-     
+     </div>
     </div> <!--- /content column-->
-
   </div> <!--- /row -->
+  </div>
 </main>
 
 </body>

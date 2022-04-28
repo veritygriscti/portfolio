@@ -1,280 +1,659 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>UX Design: Information Architecture</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>UX Design: Information Architecture</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <meta name="description" content="UX Designer Verity Griscti's Information Architecture">
-  <meta name="author" content="Verity Griscti">
+    <meta
+      name="description"
+      content="UX Designer Verity Griscti's Information Architecture"
+    />
+    <meta name="author" content="Verity Griscti" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"> 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
-        
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
 
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1YHQLPENP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-  gtag('config', 'G-D1YHQLPENP');
-</script>
-   
+    <link rel="stylesheet" href="/styles.css" />
 
-  <style>
-   
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-D1YHQLPENP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
 
-    body {position: relative;}  /* Required for Bootstrap Scrollspy functionality */
+      gtag('config', 'G-D1YHQLPENP')
+    </script>
+  </head>
 
-   
+  <body data-bs-spy="scroll" data-bs-target=".nav" data-bs-offset="50">
+    <header
+      id="native-casestudy-header"
+      class="container-fluid p-3 bg-dark text-light"
+    >
+      <h1 class="fs-3 fst-italic text-center text-md-start">
+        Information Architecture - Organizing 100 Random Things
+      </h1>
+    </header>
 
-    #native-casestudy-header{
-      background-color: black;
-      color: whitesmoke;
-    }
+    <main class="container-fluid">
+      <div class="row p-3">
+        <div class="col-sm-12 col-md-4 col-xl-3">
+          <nav
+            id="native-casestudy-nav"
+            class="nav flex-column fixed-bottom sticky-md-top p-3 border border-secondary rounded"
+          >
+            <button
+              class="btn-dark d-md-none btn-lg"
+              data-bs-toggle="collapse"
+              data-bs-target="#contents"
+              aria-label="Menu Button"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <!-- Collapsible Button -->
 
-    #native-casestudy-nav {
-      background-color: whitesmoke;
-      opacity: 1.0;
-    }
-
-    .nav-pills .nav-link:not(.active) {
-    background-color: whitesmoke;
-    color: #444444;
-    }
-
-    .nav-pills .nav-link.active {
-    background-color: whitesmoke;
-    color: #333333;
-    font-weight: 600;
-    font-size: larger;
-    text-decoration: underline;
-}
-
-    
-  
-  </style>
-
-</head>
-
-<body data-bs-spy="scroll" data-bs-target=".nav" data-bs-offset="50">
-
-  <header id="native-casestudy-header" class="container-fluid p-3">
-    <h1 class="fs-3 fst-italic text-center text-md-start">Information Architecture - Organizing 100 Random Things</h1>
-  </header>
-
-
-<main class="container-fluid">
-  <div class="row p-3">
-    <div class="col-sm-12 col-md-4 col-xl-3">
-
-      
-       <nav id="native-casestudy-nav" role="navigation" class="nav flex-column fixed-bottom sticky-md-top p-3">
-          <button role="button" type="button" class="btn-dark d-md-none btn-lg" data-bs-toggle="collapse" data-bs-target="#contents" aria-label="Menu Button"><i class="fas fa-bars"></i></button><!-- Collapsible Button -->
-          
-          <ul id="contents" class="nav nav-pills native-pills flex-column">
-          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home p-3"></i>Home</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#part1">Try To Be Cute</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#part2">Let Objects Dictate the Organization</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#part3">Closed Sorts Tests</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#part4">Add Description to Ambigous Items</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#part5">Consolidate Categories, Expand Sub-Categories</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#part6">Re-test</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#conclusions">Conclusions</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#afterword">Afterword</a></li>
-          </ul><!-- /contents -->
-
-        </nav>
-      
-
-    </div> <!-- sidebar column -->
-
-    <div class="col-sm-12 col-md-8 col-lg-7 col-xl-6">
-
-        <p>This project was completed as part of my York University’s School of Continuing Studies <a rel="noreferrer noopener" href="https://continue.yorku.ca/certificates/ux-design/" target="_blank">UX Design Certificate</a>. For the introductory class, we were asked to generate a list of 100 random things from the website <a rel="noreferrer noopener" href="https://www.randomlists.com/things" target="_blank">Random Lists</a> and create an organization scheme for the items along with an explanation of how we arrived at that scheme. </p>
-
-      <h2 id="intro" class="mt-5">Try To Be Cute</h2>
-
-      <p>I wrote all my items out on individual index cards and started sorting. Initially, I liked the idea of fitting all the objects into the general schema of a house. Having parent categories being rooms in a home: bathroom, kitchen etc. and sub-categories representing specific places within each room: pantry, utility closet etc. In order for this schema to work, I had to make some leaps of logic, placing the <strong>sailboat </strong>in the garage. I put the <strong>drill press</strong> in the basement, in hindsight that seems very random. I also couldn&#8217;t properly address objects that might be in multiple rooms in the house, like <strong>a lamp </strong>or <strong>mirror</strong>. I abandoned this idea while trying to rationalize how <strong>street lights</strong> could belong in a den or home bar as it became apparent I was trying too hard to shoehorn too many of the items into my &#8216;house&#8217; idea simply because I liked it.</p>
-
-      
-      <h2 id="part2" class="mt-5">Let The Objects Dictate the Organization</h2>
-
-      <p>I did another open sort, this time grouping the items solely as I thought they related to each other. I came up with 12 parent categories and 10 sub-categories diagrammed below.</p>
-      
-      <div class="mt-5" data-bs-toggle="modal" data-bs-target="#version1">
-        <figure class="p-2 d-block">
-          
-            <figcaption class="fw-bold">Click/Tap diagram to enlarge.</figcaption>
-            <img src="main-assets/images/InfoArch/100Random-V1.webp" alt="100 Random Things Version 1" height="auto" width="100%" />
-            
-          </figure>
+            <ul id="contents" class="nav nav-pills native-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fas fa-home p-3"></i>
+                  Home
+                </a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#part1">Try To Be Cute</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#part2">
+                  Let Objects Dictate the Organization
+                </a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#part3">Closed Sorts Tests</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#part4">
+                  Add Description to Ambigous Items
+                </a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#part5">
+                  Consolidate Categories, Expand Sub-Categories
+                </a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#part6">Re-test</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#conclusions">Conclusions</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#afterword">Afterword</a>
+              </li>
+            </ul>
+            <!-- /contents -->
+          </nav>
         </div>
-      
-      <!-- Version 1 Modal -->
-      <div class="modal fade" id="version1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="Version1Label">100 Random Things Organization Version 1.0</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                    <img src="main-assets/images/InfoArch/100Random-V1.webp" alt="Landlords, Tenants and Contractors" height="auto" width="100%" />     
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- sidebar column -->
+
+        <div class="col-sm-12 col-md-8 col-lg-7 col-xl-6">
+          <p>
+            This project was completed as part of my York University’s School of
+            Continuing Studies
+            <a
+              rel="noreferrer noopener"
+              href="https://continue.yorku.ca/certificates/ux-design/"
+              target="_blank"
+            >
+              UX Design Certificate
+            </a>
+            . For the introductory class, we were asked to generate a list of
+            100 random things from the website
+            <a
+              rel="noreferrer noopener"
+              href="https://www.randomlists.com/things"
+              target="_blank"
+            >
+              Random Lists
+            </a>
+            and create an organization scheme for the items along with an
+            explanation of how we arrived at that scheme.
+          </p>
+
+          <h2 id="intro" class="mt-5">Try To Be Cute</h2>
+
+          <p>
+            I wrote all my items out on individual index cards and started
+            sorting. Initially, I liked the idea of fitting all the objects into
+            the general schema of a house. Having parent categories being rooms
+            in a home: bathroom, kitchen etc. and sub-categories representing
+            specific places within each room: pantry, utility closet etc. In
+            order for this schema to work, I had to make some leaps of logic,
+            placing the
+            <strong>sailboat</strong>
+            in the garage. I put the
+            <strong>drill press</strong>
+            in the basement, in hindsight that seems very random. I also
+            couldn&#8217;t properly address objects that might be in multiple
+            rooms in the house, like
+            <strong>a lamp</strong>
+            or
+            <strong>mirror</strong>
+            . I abandoned this idea while trying to rationalize how
+            <strong>street lights</strong>
+            could belong in a den or home bar as it became apparent I was trying
+            too hard to shoehorn too many of the items into my
+            &#8216;house&#8217; idea simply because I liked it.
+          </p>
+
+          <h2 id="part2" class="mt-5">
+            Let The Objects Dictate the Organization
+          </h2>
+
+          <p>
+            I did another open sort, this time grouping the items solely as I
+            thought they related to each other. I came up with 12 parent
+            categories and 10 sub-categories diagrammed below.
+          </p>
+
+          <div class="mt-5" data-bs-toggle="modal" data-bs-target="#version1">
+            <figure class="p-2 d-block">
+              <figcaption class="fw-bold">
+                Click/Tap diagram to enlarge.
+              </figcaption>
+              <img
+                class="img-fluid"
+                src="main-assets/images/InfoArch/100Random-V1.webp"
+                alt="100 Random Things Version 1"
+              />
+            </figure>
+          </div>
+
+          <!-- Version 1 Modal -->
+          <div
+            class="modal fade"
+            id="version1"
+            tabindex="-1"
+            aria-labelledby="Version1-1Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="Version1Label">
+                    100 Random Things Organization Version 1.0
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="main-assets/images/InfoArch/100Random-V1.webp"
+                    alt="Landlords, Tenants and Contractors"
+                  />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      
-    
 
-     <h2 id="part3" class="mt-5">Closed Sorts Tests</h2>
+          <h2 id="part3" class="mt-5">Closed Sorts Tests</h2>
 
-     <p>I had my husband and 9-year-old daughter perform closed sorts, grouping objects into my predefined categories and sub-categories, to see if my schema made sense to them.&nbsp;&nbsp;</p>
+          <p>
+            I had my husband and 9-year-old daughter perform closed sorts,
+            grouping objects into my predefined categories and sub-categories,
+            to see if my schema made sense to them.&nbsp;&nbsp;
+          </p>
 
+          <p>
+            <strong>Observation 1:</strong>
+            My daughter didn&#8217;t know where to put
+            <strong>sidewalk</strong>
+            and
+            <strong>street lights</strong>
+            because she didn&#8217;t know what
+            <strong>Neighbourhood Infrastructure</strong>
+            meant. She also asked what
+            <strong>appliances</strong>
+            meant. So, my IA is not going to be accessible to all ages and
+            reading levels as it currently stands and I can&#8217;t just assume
+            it&#8217;s good for all English speaking user groups.
+          </p>
 
+          <p>
+            <strong>Observation 2:</strong>
+            &nbsp;I opted for words without pictures when I generated my list
+            and some of the items could be interpreted quite differently. My
+            daughter sorted the
+            <strong>controller</strong>
+            into
+            <strong>Recreation &gt; Games</strong>
+            because she thought it was about a video game controller and
+            reasoned the controller belonged with the
+            <strong>video game</strong>
+            . I had it sorted with
+            <strong>Home Electronics &amp; Appliances</strong>
+            because I assumed it was a television controller, but now that I
+            think of it that device is usually called a &#8216;remote&#8217;
+            <strong>,</strong>
+            not a controller. Either way,
+            <strong>Home Electronics</strong>
+            is probably the better home for that item.&nbsp;&nbsp;
+          </p>
 
-<p><strong>Observation 1:</strong> My daughter didn&#8217;t know where to put <strong>sidewalk </strong>and <strong>street lights </strong>because she didn&#8217;t know what <strong>Neighbourhood Infrastructure </strong>meant. She also asked what <strong>appliances </strong>meant. So, my IA is not going to be accessible to all ages and reading levels as it currently stands and I can&#8217;t just assume it&#8217;s good for all English speaking user groups.</p>
+          <p>
+            Less clear, my Husband sorted
+            <strong>bow</strong>
+            in with
+            <strong>Clothing &gt; Accessories</strong>
+            because he thought it referenced a &#8216;bow-tie&#8217;. I sorted
+            the
+            <strong>bow</strong>
+            into
+            <strong>Recreations &gt; Outdoors</strong>
+            because I automatically thought the word referred to an archery bow,
+            but it could also be a gift-wrap bow. Those are 3 very different
+            objects with 3 very different homes in my IA.
+          </p>
 
+          <p>
+            I went back over my 100 items. Many are super-specific:
+            <strong>plastic fork</strong>
+            ,
+            <strong>fake flowers</strong>
+            ,
+            <strong>soy sauce packet</strong>
+            etc, but quite a few (
+            <strong>bow</strong>
+            ,
+            <strong>needle</strong>
+            ,
+            <strong>cork</strong>
+            etc) are vague and the word will mean different things to different
+            people.
+            <strong>Teddies</strong>
+            could be a reference to multiple stuffed bears, but it could just as
+            easily be a reference to lingerie.&nbsp;&nbsp;
+          </p>
 
-
-<p><strong>Observation 2: </strong>&nbsp;I opted for words without pictures when I generated my list and some of the items could be interpreted quite differently. My daughter sorted the <strong>controller </strong>into <strong>Recreation &gt; Games </strong>because she thought it was about a video game controller and reasoned the controller belonged with the <strong>video game</strong>. I had it sorted with<strong> Home Electronics &amp; Appliances</strong> because I assumed it was a television controller, but now that I think of it that device is usually called a &#8216;remote&#8217;<strong>, </strong>not a controller. Either way, <strong>Home Electronics</strong> is probably the better home for that item.&nbsp;&nbsp;</p>
-
-<p>Less clear, my Husband sorted <strong>bow </strong>in with <strong>Clothing &gt; Accessories</strong> because he thought it referenced a &#8216;bow-tie&#8217;. I sorted the <strong>bow </strong>into <strong>Recreations &gt; Outdoors </strong>because I automatically thought the word referred to an archery bow, but it could also be a gift-wrap bow. Those are 3 very different objects with 3 very different homes in my IA.</p>
-
-<p>I went back over my 100 items. Many are super-specific: <strong>plastic fork</strong>, <strong>fake flowers</strong>, <strong>soy sauce packet</strong> etc, but quite a few (<strong>bow</strong>, <strong>needle</strong>, <strong>cork </strong>etc) are vague and the word will mean different things to different people. <strong>Teddies</strong> could be a reference to multiple stuffed bears, but it could just as easily be a reference to lingerie.&nbsp;&nbsp;</p>
-
-<figure class="p-2 d-block">
-    <img src="main-assets/images/InfoArch/IA-ClosedCardSort.png" alt="Action shots of closed card sort." height="auto" width="100%" />
-    <figcaption>Left: Close up of a table with index piles of multi coloured index cards. Top Right: A 9 year old girl thoughtfully sorting index cards. Bottom Right: Adult male sorts index cards on a Saturday morning (thinks about video games).
-    </figcaption>
-  </figure>
-
-
-    <h2 id="part4" class="mt-5">Add Description to Ambigous Items</h2>
-
-    <p>If I was sorting 100 real objects I would go back and verify what they actually are and add more descriptive wording as necessary. I can&#8217;t do that here, I didn&#8217;t even generate pictures that I can cross-reference.  I could rely on context. If you see a <strong>bow </strong>in <strong>Recreation&gt;Outdoors </strong>you&#8217;ll easily deduce it&#8217;s an archery bow. But if you&#8217;re running Tree Testing, where the user has to find a <strong>bow </strong>it&#8217;s better for the user&#8217;s cognitive load if the text is more descriptive, because scanning organizational hierarchies and making deductions takes time and effort. Also, if I change or expand my IA and list items it would be better for maintenance if I use more reliable descriptions from the start. What if I add an R/C Car controller or dish-washing soap or something similar later on?</p>
-
-
-
-<p>I went back and lightly edited my list of items where I thought there might be some confusion. My edits are in italics below:</p>
-
-
-
-<ol><li><em>bath </em>towel</li><li>twister <em>floor game</em></li><li>teddies<em>, lingerie</em></li><li><em>sewing </em>needle</li><li><em>archery  </em>bow</li><li><em>electronics </em>charger</li><li><em>computer </em>monitor</li><li><em>drinking </em>glass</li><li><em>gaming </em>controller</li><li><em>bar </em>soap</li><li><em>coat </em>hanger</li><li><em>computer </em>keyboard</li><li><em>wine </em>cork</li><li><em>shirt </em>button</li></ol>
-
-
-
-<p>I don&#8217;t know if that&#8217;s cheating but I&#8217;m going to rationalize that it isn&#8217;t because the W3C wants wording on websites to be descriptive and accurate so people using screen readers can easily understand the content. If a sighted person needs a picture of a bow, controller or needle to confirm exactly what object it is then a sight-impaired person is going to need the alt text description of that image to be more descriptive too.&nbsp;</p>
-
-
-   
-
-    <h2 id="part5" class="mt-5">Consolidate Categories, Expand Sub-Categories</h2>
-
-    <p>After I was done reviewing the descriptions of the items I took another look at my categories. 12 top-level categories seemed like a lot and the descriptions of some of the categories were weak and led to questions during the card sorting test. I ended up making 8 broader top-level categories and 16 sub-categories. I tried to make them more descriptive.  </p>
-
-    <div class="mt-5" data-bs-toggle="modal" data-bs-target="#version1-1">
-        <figure class="p-2 d-block">
-          <figcaption class="fw-bold">Click/Tap diagram to enlarge.
-          </figcaption>
-            <img src="main-assets/images/InfoArch/100Random-V1.1.webp" alt="100 Random Things Version 1.1" height="auto" width="100%" />
-            
+          <figure class="p-2 d-block">
+            <img
+              class="img-fluid"
+              src="main-assets/images/InfoArch/IA-ClosedCardSort.png"
+              alt="Action shots of closed card sort."
+            />
+            <figcaption>
+              Left: Close up of a table with index piles of multi coloured index
+              cards. Top Right: A 9 year old girl thoughtfully sorting index
+              cards. Bottom Right: Adult male sorts index cards on a Saturday
+              morning (thinks about video games).
+            </figcaption>
           </figure>
-        </div>
-      
-      <!-- Version 1.1 Modal -->
-      <div class="modal fade" id="version1-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="Version1-1Label">100 Random Things Organization Version 1.1</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                    <img src="main-assets/images/InfoArch/100Random-V1.1.webp" alt="Revised Information Schema for 100 Random Things" height="auto" width="100%" />     
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+          <h2 id="part4" class="mt-5">Add Description to Ambigous Items</h2>
+
+          <p>
+            If I was sorting 100 real objects I would go back and verify what
+            they actually are and add more descriptive wording as necessary. I
+            can&#8217;t do that here, I didn&#8217;t even generate pictures that
+            I can cross-reference. I could rely on context. If you see a
+            <strong>bow</strong>
+            in
+            <strong>Recreation&gt;Outdoors</strong>
+            you&#8217;ll easily deduce it&#8217;s an archery bow. But if
+            you&#8217;re running Tree Testing, where the user has to find a
+            <strong>bow</strong>
+            it&#8217;s better for the user&#8217;s cognitive load if the text is
+            more descriptive, because scanning organizational hierarchies and
+            making deductions takes time and effort. Also, if I change or expand
+            my IA and list items it would be better for maintenance if I use
+            more reliable descriptions from the start. What if I add an R/C Car
+            controller or dish-washing soap or something similar later on?
+          </p>
+
+          <p>
+            I went back and lightly edited my list of items where I thought
+            there might be some confusion. My edits are in italics below:
+          </p>
+
+          <ol>
+            <li>
+              <em>bath</em>
+              towel
+            </li>
+            <li>
+              twister
+              <em>floor game</em>
+            </li>
+            <li>
+              teddies
+              <em>, lingerie</em>
+            </li>
+            <li>
+              <em>sewing</em>
+              needle
+            </li>
+            <li>
+              <em>archery</em>
+              bow
+            </li>
+            <li>
+              <em>electronics</em>
+              charger
+            </li>
+            <li>
+              <em>computer</em>
+              monitor
+            </li>
+            <li>
+              <em>drinking</em>
+              glass
+            </li>
+            <li>
+              <em>gaming</em>
+              controller
+            </li>
+            <li>
+              <em>bar</em>
+              soap
+            </li>
+            <li>
+              <em>coat</em>
+              hanger
+            </li>
+            <li>
+              <em>computer</em>
+              keyboard
+            </li>
+            <li>
+              <em>wine</em>
+              cork
+            </li>
+            <li>
+              <em>shirt</em>
+              button
+            </li>
+          </ol>
+
+          <p>
+            I don&#8217;t know if that&#8217;s cheating but I&#8217;m going to
+            rationalize that it isn&#8217;t because the W3C wants wording on
+            websites to be descriptive and accurate so people using screen
+            readers can easily understand the content. If a sighted person needs
+            a picture of a bow, controller or needle to confirm exactly what
+            object it is then a sight-impaired person is going to need the alt
+            text description of that image to be more descriptive too.&nbsp;
+          </p>
+
+          <h2 id="part5" class="mt-5">
+            Consolidate Categories, Expand Sub-Categories
+          </h2>
+
+          <p>
+            After I was done reviewing the descriptions of the items I took
+            another look at my categories. 12 top-level categories seemed like a
+            lot and the descriptions of some of the categories were weak and led
+            to questions during the card sorting test. I ended up making 8
+            broader top-level categories and 16 sub-categories. I tried to make
+            them more descriptive.
+          </p>
+
+          <div class="mt-5" data-bs-toggle="modal" data-bs-target="#version1-1">
+            <figure class="p-2 d-block">
+              <figcaption class="fw-bold">
+                Click/Tap diagram to enlarge.
+              </figcaption>
+              <img
+                class="img-fluid"
+                src="main-assets/images/InfoArch/100Random-V1.1.webp"
+                alt="100 Random Things Version 1.1"
+              />
+            </figure>
+          </div>
+
+          <!-- Version 1.1 Modal -->
+          <div
+            class="modal fade"
+            id="version1-1"
+            tabindex="-1"
+            aria-labelledby="Version1-1Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="Version1-1Label">
+                    100 Random Things Organization Version 1.1
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="main-assets/images/InfoArch/100Random-V1.1.webp"
+                    alt="Revised Information Schema for 100 Random Things"
+                  />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      
 
-    <h2 id="part6" class="mt-5">Re-Test</h2>
+          <h2 id="part6" class="mt-5">Re-Test</h2>
 
-    <p>I had my husband and daughter redo the closed sort test, sorting the cards into my new categories and sub-categories. There were no misinterpretations of the items this time around. There were still slight variations on where we sorted things. I put packing peanuts in <strong>Industrial</strong>, my husband put it in <strong>Household Items &gt; Cleaning &amp; Organization. </strong>I put the <strong>wine cork</strong> and <strong>bottle cap </strong>in <strong>Household Items &gt; Kitchen. </strong>&nbsp;My husband placed them in the broader <strong>Household Items</strong> category. My daughter thought I needed a new category called <strong>junk.&nbsp; </strong>But other than these small differences the 2nd closed sorts went quickly and smoothly. So with a small addition of the subcategory of <strong>shipping materials </strong>added to <strong>Industrial Use </strong>and changing <strong>Outdoor Use &gt; Recreation</strong> to<strong> Outdoor Use &gt; Outdoor Play </strong>I&#8217;ve got my final organization schema mapped out.</p>
+          <p>
+            I had my husband and daughter redo the closed sort test, sorting the
+            cards into my new categories and sub-categories. There were no
+            misinterpretations of the items this time around. There were still
+            slight variations on where we sorted things. I put packing peanuts
+            in
+            <strong>Industrial</strong>
+            , my husband put it in
+            <strong>Household Items &gt; Cleaning &amp; Organization.</strong>
+            I put the
+            <strong>wine cork</strong>
+            and
+            <strong>bottle cap</strong>
+            in
+            <strong>Household Items &gt; Kitchen.</strong>
+            &nbsp;My husband placed them in the broader
+            <strong>Household Items</strong>
+            category. My daughter thought I needed a new category called
+            <strong>junk.&nbsp;</strong>
+            But other than these small differences the 2nd closed sorts went
+            quickly and smoothly. So with a small addition of the subcategory of
+            <strong>shipping materials</strong>
+            added to
+            <strong>Industrial Use</strong>
+            and changing
+            <strong>Outdoor Use &gt; Recreation</strong>
+            to
+            <strong>Outdoor Use &gt; Outdoor Play</strong>
+            I&#8217;ve got my final organization schema mapped out.
+          </p>
 
+          <h2 id="conclusions" class="mt-5">Conclusions</h2>
 
-     <h2 id="conclusions" class="mt-5">Conclusions</h2>
+          <p>
+            I think the final organizational layout is logical, although I can
+            see other ways to group things that might be better or more
+            intuitive. It&#8217;s hard to tell with my sample size of 3.
+            <strong>Personal Hygiene</strong>
+            products might be better as a top level category.
+            <strong>Appliances</strong>
+            might be better as a subcategory of
+            <strong>Household Items</strong>
+            instead of lumping it in with electronics. I think running some tree
+            tests and seeing how quickly users find the items, seeing if there
+            are patterns of behaviour in where they look and tweaking the schema
+            based on the results would be the next step in this process.
+          </p>
 
-     <p>I think the final organizational layout is logical, although I can see other ways to group things that might be better or more intuitive. It&#8217;s hard to tell with my sample size of 3. <strong>Personal Hygiene</strong> products might be better as a top level category. <strong>Appliances </strong>might be better as a subcategory of <strong>Household Items</strong> instead of lumping it in with electronics. I think running some tree tests and seeing how quickly users find the items, seeing if there are patterns of behaviour in where they look and tweaking the schema based on the results would be the next step in this process.</p>
+          <div class="mt-5" data-bs-toggle="modal" data-bs-target="#version1-2">
+            <figure class="p-2 d-block">
+              <figcaption class="fw-bold">
+                Click/Tap diagram to enlarge.
+              </figcaption>
+              <img
+                class="img-fluid"
+                src="main-assets/images/InfoArch/100Random-V1.2.webp"
+                alt="100 Random Things Version 1.1"
+              />
+            </figure>
+          </div>
 
-     <div class="mt-5" data-bs-toggle="modal" data-bs-target="#version1-2">
-        <figure class="p-2 d-block">
-          <figcaption class="fw-bold">Click/Tap diagram to enlarge.
-          </figcaption>
-            <img src="main-assets/images/InfoArch/100Random-V1.2.webp" alt="100 Random Things Version 1.1" height="auto" width="100%" />
-            
-          </figure>
-        </div>
-      
-      <!-- Version 1.2 Modal -->
-      <div class="modal fade" id="version1-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="Version1-2Label">100 Random Things Organization Version 1.2</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                    <img src="main-assets/images/InfoArch/100Random-V1.2.webp" alt="Final Information Schema for 100 Random Things" height="auto" width="100%" />     
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- Version 1.2 Modal -->
+          <div
+            class="modal fade"
+            id="version1-2"
+            tabindex="-1"
+            aria-labelledby="Version1-2Label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="Version1-2Label">
+                    100 Random Things Organization Version 1.2
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="main-assets/images/InfoArch/100Random-V1.2.webp"
+                    alt="Final Information Schema for 100 Random Things"
+                  />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
+
+          <h2 id="afterword" class="mt-5">Afterword</h2>
+          <p>
+            After this assignment was handed in it was brought up that almost no
+            one just goes straight to organizing the random things
+            <strong><em>alphabetically</em></strong>
+            .
+          </p>
+
+          <p>
+            I thought that was an interesting point because it didn&#8217;t even
+            occur to me to create an alphabetical schema. I think it&#8217;s
+            because the last time I encountered IA where the top level hierarchy
+            was alphabetical it was either in the very early days of the web or
+            the world of analogue. I&#8217;m thinking back to the time of Phone
+            books, Map Indexes, Card Catalogues and the Shelf of Encyclopedias.
+            If you know what you&#8217;re looking for it&#8217;s a solid system,
+            but maybe not as effective as the search bar, which seems to have
+            replaced alphabetization in a lot of ways. But it&#8217;s not a
+            system that encourages discover-ability. No one walks into a book
+            store and goes, &#8220;Well I&#8217;m a Hemingway fan so I bet I
+            love Herman Hesse because he&#8217;s also in the H&#8217;s.&#8221;
+          </p>
+
+          <p>
+            I think I&#8217;ve just gotten use to being able to browse by topic
+            and follow rabbit holes of hyperlinks. Whereas before when I needed
+            to find information I already had to at least vaguely know what I
+            was looking for. It&#8217;s interesting how quickly I&#8217;ve gone
+            in my life time from just assuming I&#8217;ll find something
+            alphabetically to not even thinking to arrange something
+            alphabetically.
+          </p>
+
+          <p>
+            While researching different analogue information systems for
+            contrast I ran across this article in Time,
+            <a
+              href="https://time.com/5904883/alphabetical-order-history/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              From Encyclopedias to Telephone Books, How Alphabetization Took
+              Over the Modern World
+            </a>
+            . The story behind many of the things we take for granted is always
+            fascinating.
+          </p>
         </div>
+        <!--- /content column-->
       </div>
-
-   
-   <h2 id="afterword" class="mt-5">Afterword</h2>
-   <p>After this assignment was handed in it was brought up that almost no one just goes straight to organizing the random things <strong><em>alphabetically</em></strong>.  </p>
-
-
-
-<p>I thought that was an interesting point because it didn&#8217;t even occur to me to create an alphabetical schema. I think it&#8217;s because the last time I encountered IA where the top level hierarchy was alphabetical it was either in the very early days of the web or the world of analogue. I&#8217;m thinking back to the time of Phone books, Map Indexes, Card Catalogues and the Shelf of Encyclopedias. If you know what you&#8217;re looking for it&#8217;s a solid system, but maybe not as effective as the search bar, which seems to have replaced alphabetization in a lot of ways. But it&#8217;s not a system that encourages discover-ability. No one walks into a book store and goes, &#8220;Well I&#8217;m a Hemingway fan so I bet I love Herman Hesse because he&#8217;s also in the H&#8217;s.&#8221;</p>
-
-
-
-<p>I think I&#8217;ve just gotten use to being able to browse by topic and follow rabbit holes of hyperlinks. Whereas before when I needed to find information I already had to at least vaguely know what I was looking for. It&#8217;s interesting how quickly I&#8217;ve gone in my life time from just assuming I&#8217;ll find something alphabetically to not even thinking to arrange something alphabetically. </p>
-
-
-
-<p>While researching different analogue information systems for contrast I ran across this article in Time,<a href="https://time.com/5904883/alphabetical-order-history/" target="_blank" rel="noreferrer noopener"> From Encyclopedias to Telephone Books, How Alphabetization Took Over the Modern World</a>.  The story behind many of the things we take for granted is always fascinating.</p>
-
-     
-    </div> <!--- /content column-->
-
-  </div> <!--- /row -->
-</main>
-
-</body>
+      <!--- /row -->
+    </main>
+  </body>
 </html>

@@ -1,396 +1,717 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>UX Case Study: Baby Barista</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>UX Case Study: Baby Barista</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <meta name="description" content="UX Designer Verity Griscti's Baby Barista Case Study">
-  <meta name="author" content="Verity Griscti">
+    <meta
+      name="description"
+      content="UX Designer Verity Griscti's Baby Barista Case Study"
+    />
+    <meta name="author" content="Verity Griscti" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"> 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
-        
- 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1YHQLPENP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
 
-  gtag('config', 'G-D1YHQLPENP');
-</script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-  <style>
-   
+    <link rel="stylesheet" href="/styles.css" />
 
-    body {position: relative;}  /* Required for Bootstrap Scrollspy functionality */
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-D1YHQLPENP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
 
-   
+      gtag('config', 'G-D1YHQLPENP')
+    </script>
+  </head>
 
-    #native-casestudy-header{
-      background-color: black;
-      color: whitesmoke;
-    }
+  <body data-bs-spy="scroll" data-bs-target=".nav" data-bs-offset="50">
+    <header
+      id="native-casestudy-header"
+      class="bg-dark text-light container-fluid p-3"
+    >
+      <h1 class="fs-3 fst-italic text-center text-md-start">
+        Baby Barista: Intuitive Design for Exhausted Parents
+      </h1>
+    </header>
 
-    #native-casestudy-nav {
-      background-color: whitesmoke;
-      opacity: 1.0;
-    }
+    <div id="native-banner-img">
+      <img
+        src="main-assets/images/babybarista/BabyBarista-Hero.png"
+        alt=""
+        class="img-fluid px-0 mx-0 w-100"
+      />
+    </div>
 
-    .nav-pills .nav-link:not(.active) {
-    background-color: whitesmoke;
-    color: #444444;
-    }
+    <main class="container-fluid">
+      <div class="row p-3">
+        <div class="col-sm-12 col-md-4 col-xl-3">
+          <nav
+            id="native-casestudy-nav"
+            class="nav flex-column fixed-bottom sticky-md-top p-3 border border-secondary rounded"
+          >
+            <button
+              type="button"
+              class="btn-dark d-md-none btn-lg"
+              data-bs-toggle="collapse"
+              data-bs-target="#contents"
+              aria-label="Menu Button"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <!-- Collapsible Button -->
 
-    .nav-pills .nav-link.active {
-    background-color: whitesmoke;
-    color: #333333;
-    font-weight: 600;
-    font-size: larger;
-    text-decoration: underline;
-}
-
-    
-  
-  </style>
-
-</head>
-
-<body data-bs-spy="scroll" data-bs-target=".nav" data-bs-offset="50">
-
-  <header id="native-casestudy-header" class="container-fluid p-3">
-    <h1 class="fs-3 fst-italic text-center text-md-start">Baby Barista: Intuitive Design for Exhausted Parents </h1>
-  </header>
-
-  <div id="native-banner-img">
-    <img src="main-assets/images/babybarista/BabyBarista-Hero.png" alt="" class="img-fluid px-0 mx-0 w-100" />
-  </div>
-
-<main class="container-fluid">
-  <div class="row p-3">
-    <div class="col-sm-12 col-md-4 col-xl-3">
-
-      
-       <nav id="native-casestudy-nav" role="navigation" class="nav flex-column fixed-bottom sticky-md-top p-3">
-          <button role="button" type="button" class="btn-dark d-md-none btn-lg" data-bs-toggle="collapse" data-bs-target="#contents" aria-label="Menu Button"><i class="fas fa-bars"></i></button><!-- Collapsible Button -->
-          
-          <ul id="contents" class="nav nav-pills native-pills flex-column">
-          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home p-3"></i>Home</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#challenge">The Challenge</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#research">Research &amp; Discovery</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#goals">Design Goals</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#sketches">Moodboards &amp; Early Concepts</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#prototype">High Fidelity Prototype</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#testing">User Testing</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#next">Next Steps</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#lessons">Lessons Learned</a></li>
-          </ul><!-- /contents -->
-
-        </nav>
-      
-
-    </div> <!-- sidebar column -->
-
-    <div class="col-sm-12 col-md-8 col-xl-6">
-      <h2 id="challenge" class="mt-1">The Challenge</h2>
-      <p class="fs-4 fw-light">How can an App enhance the usability of a formula-making machine and best assist exhausted parents?</p>
-     
-      <figure class="p-2 d-block">
-         <img src="main-assets/images/babybarista/BabyBarista-Overview.jpg" alt="The Baby Barista formula machine sitting on a kitchen counter." height="auto" width="100%" />
-         <figcaption>The Baby Barista Formula Maker by <a target="blank" href="https://rksdesign.com/baby-barista/">RKS Design</a>.
-         </figcaption>
-       </figure>
-
-       <div class="row p-1">
-           <div class="col-sm-12 col-md-4 p-3 border text-center"><b>Role:</b><br/>Team Lead</div>
-           <div class="col-sm-12 col-md-4 p-3 border text-center"><b>Team:</b><br/>Kevin Andries<br/>
-            Verity Griscti<br/>
-            Marvin Lara<br/>
-            LJ Paraiso</div>
-           <div class="col-sm-12 col-md-4 p-3 border text-center"><b>Timeline:</b><br/>6 Week Capstone Project.</div>
-        
-       </div>
-
-      <h2 id="research" class="mt-5">Research &amp; Discovery</h2>
-      
-      <div class="ratio ratio-16x9">
-        <iframe class="mb-5" src="https://www.youtube.com/embed/rRPm7jsxMIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-     
-     <h3 class="fs-4 fw-light mt-5">Understanding the Organization and Product</h3>
-     <p>Baby Barista had developed a prototype of their formula maker with RKS Design and had detailed User Personas and a fully fleshed-out business plan in place when we came on board. We reviewed Baby Barista's existing material and met with the Founder and Director of Business Development.</p>
-
-<p>This initial round of meetings and review uncovered several pain points in the feeding experience that the app could assist with:</p>
-
-<ul>
-<li>Remote bottle prep (achieved by syncing the mobile app with the wifi ready formula maker)</li>
-<li>Feedings tracker</li>
-<li>Manage formula subscription</li>
-</ul>
-
-
-<figure class="p-2 d-block">
-  <img src="main-assets/images/babybarista/babybarista_new-mothers.jpg" alt="A smiling mother holding her baby." height="auto" width="100%" />
-  <figcaption>Mother and baby. Image Credit: <a target="blank" href="https://rksdesign.com/baby-barista/">RKS Design</a>.
-  </figcaption>
-</figure>
-
-    <h3 class="fs-4 fw-light mt-5">Understanding New Mothers</h3>
-    <p>Our team interviewed <b>7 new Mothers</b> who have recently breast or formula-fed their infants. The Mothers were asked about their feeding habits and any positives, negatives or other issues associated with feedings. We also had them describe typical scenarios with their infants. Mothers were asked about their familiarity with competitive or similar products and apps, to get a sense of their experiences with existing products.</p>
-     
-    <div class="row">
-      <div class="col-sm-12 col-md-4 text-center">
-      <h4 class="mt-5 fs-5 fw-light">Concerns</h4>
-    
-      <ul class="list-group list-unstyled">
-       <li class="list-group-item">"What are the cleaning requirements for the machine?"</li>
-       <li class="list-group-item"> "Will travelling with a formula machine be an option?"</li>
-       <li class="list-group-item"> "Does the machine have the correct bottle temperature?"</li>
-     </ul>
-      </div>
-      <div class="col-sm-12 col-md-4 text-center">
-       <h4 class="mt-5 fs-5 fw-light">Desires</h4>
-       <ul class="list-group list-unstyled">
-         <li class="list-group-item">“Would like the ability to start a bottle from bed”</li>
-<li class="list-group-item">Alert notifications for cleanings and feedings
-</li>
-<li class="list-group-item"> Easy feeding tracking
-</li>
-      </ul>
-       </div>
-     <div class="col-sm-12 col-md-4 text-center">
-       <h4 class="mt-5 fs-5 fw-light">Formula Benefits</h4>
-       <ul class="list-group list-unstyled">
-            <li class="list-group-item"> Easy for spouses, grandparents and other caretakers to feed the baby</li>
-            <li class="list-group-item">A formula machine with a remote start is most useful for nighttime feedings</li>
-            <li class="list-group-item">The convenience of bottle feeding makes the cost of formula worthwhile</li>
-         </ul>
-     </div>
-   </div>
-
-    <h3 class="fs-4 fw-light mt-5">Understanding the Competition & Baby Product Marketplace </h3>
-    <p>The only other similar product on the market is the <b>Baby Brezza</b>. A formula maker with a companion app that allows remote starts.</p>
-
-    <p>This project occurred during a COVID-19 lockdown, and our team could not obtain either a Baby Brezza or a SNOO.  We had to rely on customer reviews to try to understand what the baby sleeper, <b>SNOO</b> and the popular apps, <b>Baby Tracker</b> and <b>Baby Connect</b> were doing successfully and which pain points were overlooked.</p>
-    
-    <p>The main pain point with the Baby Brezza was connectivity and the app being unable to turn on the machine remotely.</p>
-
-    <figure>
-      <blockquote class="blockquote fs-4 fw-light">
-        <p>"The app might as well not exist, it doesn't turn on the Brezza. You have to turn it on yourself manually to be able to connect the app, and then if you don't start warming the bottle within minutes it shuts off. It also only works in a 20ft radius which is useless when I'm trying to use it from another level of the house or even across the living room. I was so excited for this, and it sucks."</p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        Helen Monkfield, 1 Star Review August 11, 2010 - Google Play
-      </figcaption>
-    </figure>
-
-
-    <p class="mt-5">The SNOO baby sleeper was very positively reviewed. The only major pain points seemed to be the apps inability to work with multiple SNOOs in the case of multiple babies and manually logging naps that occured outside the sleeper.</p>
-
-    <figure>
-      <blockquote class="blockquote fs-4 fw-light">
-        <p>“Everything between the SNOO and the App is smooth and responsive. The interface to manually log naps that occur outside the SNOO is pretty clunky but it gets the job done.”</p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-          Dan Staggs, 4 Stars - Google Play
-      </figcaption>
-    </figure>
-
-    
-    <figure>
-      <blockquote class="blockquote fs-4 fw-light">
-        <p>“We have 3 SNOOS for triplets. Latest update thinks with each separate log in I need to set up the snoos all over again. Suspect login button links to sign up button with no true login button please fix. Workaround: Login to Baby A, see baby A activity, log out baby a, log in to baby b, app wants me to set up baby b again (separate email), when I force close app and open app again it shows baby b info. When I log out of baby b and open baby a wants me to set up snoo again, as above. FIX PLEASE”</p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-          Melissa &amp; Jeff Poot, 1 star - Google Play
-      </figcaption>
-    </figure>
-
-    <p class="mt-5">A popular feature of both Baby Connect and Baby Tracker was the ability to let multiple users keep track of the same baby. </p>
-
-    <figure>
-      <blockquote class="blockquote fs-4 fw-light">
-        <p>"I really like the flexibility of the app and that it lets multiple people (so long as they all own the app) track the same child. It makes it so easy for my partner and I to know what has happened even when we can't pass on the information verbally. It is also a great tool for tracking patterns and getting your baby into a routine. The only thing I wish the app did was track when the baby is awake too."</p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-          Baby Connect 5 star review by Lana - Google Play
-      </figcaption>
-    </figure>
-
-    <h2 id="goals" class="mt-5">Design Goals</h2>
-
-    <p>We made a list of several design goals across three categories.</p>
-   
-    <div class="row">
-      <div class="col-sm-12 col-md-4 text-center">
-      <h4 class="mt-5 fs-5 fw-light">Design &amp; functionality</h4>
-    
-      <ul class="list-group list-unstyled">
-       <li class="list-group-item">Easily start a bottle</li>
-       <li class="list-group-item">Haptic feedback/Silent Mode</li>
-       <li class="list-group-item">Simple UI</li>
-       <li class="list-group-item">Easily create baby profiles, including multiples</li>
-       <li class="list-group-item">Alert notifications for timed feedings</li>
-       <li class="list-group-item">Capacity to track and share information with healthcare workers</li>
-       <li class="list-group-item">Manage formula subscription within the App</li>
-
-     </ul>
-      </div>
-      <div class="col-sm-12 col-md-4 text-center">
-       <h4 class="mt-5 fs-5 fw-light">Product Error Prevention &amp; User Education</h4>
-       <ul class="list-group list-unstyled">
-         <li class="list-group-item">Reminder to clean machine</li>
-<li class="list-group-item">Alert when bottle has spoiled</li>
-<li class="list-group-item">Reminder to check water level after <i>n</i> feedings</li>
-<li class="list-group-item">Provide a help center/FAQ with formula education and best practices</li>
-
-      </ul>
-       </div>
-     <div class="col-sm-12 col-md-4 text-center">
-       <h4 class="mt-5 fs-5 fw-light">Pairing with Hardware</h4>
-       <ul class="list-group list-unstyled">
-            <li class="list-group-item">Easily sync App with any Baby Barista, whether new or second hand</li>
-            <li class="list-group-item">The App needs to 'wake' Baby Barista from sleep mode from the mobile device</li>
-            <li class="list-group-item">Ability to monitior the water/formula temprature from the App</li>
-         </ul>
-     </div>
-   </div>
-
-
-      <h2 id="sketches" class="mt-5">Moodboards &amp; Early Concepts</h2>
-
-      <p>Baby Barista had no branding guide for us to consult on the aesthetics of the app. We presented several mood boards to get a sense of direction on style. Early concepts were developed around two mood boards. One pulled from the earth tones used in the machine, and another used the blue and yellow palette from the Baby Barista website.</p>
-       
-      <figure>
-        <div class="row align-items-start">
-            <div class="col-md-6 col-sm-12"><img src="main-assets/images/babybarista/Baby Barista - Concepts and Sketches(1).jpg" alt="Earth tones moodboard." height="auto" width="100%" /></div>
-            <div class="col-md-6 col-sm-12"><img src="main-assets/images/babybarista/Baby Barista - Concepts and Sketches.jpg" alt="Blue and yellow moodboard" height="auto" width="100%" /> </div>
+            <ul id="contents" class="nav nav-pills native-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fas fa-home p-3"></i>
+                  Home
+                </a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#challenge">The Challenge</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#research">
+                  Research &amp; Discovery
+                </a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#goals">Design Goals</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#sketches">
+                  Moodboards &amp; Early Concepts
+                </a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#prototype">
+                  High Fidelity Prototype
+                </a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#testing">User Testing</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#next">Next Steps</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#lessons">Lessons Learned</a>
+              </li>
+            </ul>
+            <!-- /contents -->
+          </nav>
         </div>
-        <figcaption>Moodboards inspired by the prototype and website.</figcaption>
-    </figure>
+        <!-- sidebar column -->
 
-      <p>From there, we developed a few different concepts exploring different functions of the app.</p>
+        <div class="col-sm-12 col-md-8 col-xl-6">
+          <h2 id="challenge" class="mt-1">The Challenge</h2>
+          <p class="fs-4 fw-light">
+            How can an App enhance the usability of a formula-making machine and
+            best assist exhausted parents?
+          </p>
 
-      <figure class="p-2 d-block">
-        <img src="main-assets/images/babybarista/Baby Barista - Concept Proposal(1).jpg" alt="Concept 1" height="auto" width="100%" />
-        <figcaption>Concept A - Illustrative, contemporary, earth tones. </a>
-        </figcaption>
-      </figure>
+          <figure class="p-2 d-block">
+            <img
+              class="img-fluid"
+              src="main-assets/images/babybarista/BabyBarista-Overview.jpg"
+              alt="The Baby Barista formula machine sitting on a kitchen counter."
+            />
+            <figcaption>
+              The Baby Barista Formula Maker by
+              <a target="blank" href="https://rksdesign.com/baby-barista/">
+                RKS Design
+              </a>
+              .
+            </figcaption>
+          </figure>
 
-      <figure class="p-2 d-block">
-        <img src="main-assets/images/babybarista/Baby Barista - Concept Proposal(2).jpg" alt="Concept 1" height="auto" width="100%" />
-        <figcaption>Concept B - Photography, Intuitive, blue &amp; yellow. </a>
-        </figcaption>
-      </figure>
-      
-      <p>The client (and the team) favoured the more minimal concept that best reflected the look of the machine.</p>
+          <div class="row p-1">
+            <div class="col-sm-12 col-md-4 p-3 border text-center">
+              <b>Role:</b>
+              <br />
+              Team Lead
+            </div>
+            <div class="col-sm-12 col-md-4 p-3 border text-center">
+              <b>Team:</b>
+              <br />
+              Kevin Andries
+              <br />
+              Verity Griscti
+              <br />
+              Marvin Lara
+              <br />
+              LJ Paraiso
+            </div>
+            <div class="col-sm-12 col-md-4 p-3 border text-center">
+              <b>Timeline:</b>
+              <br />
+              6 Week Capstone Project.
+            </div>
+          </div>
 
-      <figure class="p-2 d-block">
-        <img src="main-assets/images/babybarista/Baby Barista - Concept Proposal.jpg" alt="Concept 1" height="auto" width="100%" />
-        <figcaption>Chosen Concept - Minimal, illustrative and sophisticated.</a>
-        </figcaption>
-      </figure>
+          <h2 id="research" class="mt-5">Research &amp; Discovery</h2>
 
-      <h2 id="prototype" class="mt-5">High Fidelity Prototype</h2>
+          <div class="ratio ratio-16x9">
+            <iframe
+              class="mb-5"
+              src="https://www.youtube.com/embed/rRPm7jsxMIQ"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
 
-      <p>We worked in Figma to create the high fidelity wires and a prototype for testing purposes.</p>
-      
-      <div class="ratio ratio-16x9">
-         <iframe class="mt-3" src="https://www.youtube.com/embed/hlFSOBUjq2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+          <h3 class="fs-4 fw-light mt-5">
+            Understanding the Organization and Product
+          </h3>
+          <p>
+            Baby Barista had developed a prototype of their formula maker with
+            RKS Design and had detailed User Personas and a fully fleshed-out
+            business plan in place when we came on board. We reviewed Baby
+            Barista's existing material and met with the Founder and Director of
+            Business Development.
+          </p>
 
-      <p class="mt-5">Below is a walkthrough of the onboarding proccess. The focus here is on error prevention, and encouraging subscription enrollment.</p>
+          <p>
+            This initial round of meetings and review uncovered several pain
+            points in the feeding experience that the app could assist with:
+          </p>
 
-      <div class="ratio ratio-16x9">
-       <iframe class="mt-3" src="https://www.youtube.com/embed/0OuOSoC7J6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      
-      <h2 id="testing" class="mt-5">User Tests</h2>
-
-      <p>We performed an initial round of user tests in UseBerry and had testers perform 4 main tasks:</p>
-
-      <div class="table-responsive">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">User Task</th>
-              <th scope="col">Findings</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Remote Start A Bottle.</th>
-              <td>There was a mild amount of confusion locating the play button. We enlarged it slightly and made the border thicker.</td>
-            </tr>
-            <tr>
-              <th scope="row">View Feeding History.</th>
-              <td>Users had no problem performing this task. Either via the menu or the calendar icon.</td>
-            </tr>
-            <tr>
-              <th scope="row">Manually Add A Bottle to Feeding History.</th>
-              <td>This task was easily navigated to and achieved.</td>
-            </tr>
-            <tr>
-              <th scope="row">Edit Baby Profile.</th>
-              <td> Some users tried clicking the baby avatar on the top right of the home screen. We linked the avatar to the profile section giving users two different entry points.</td>
-            </tr>
-          </tbody>
-        </table>
-        </div>
-
-
-        
-      <figure class="p-2 d-block">
-        <img src="main-assets/images/babybarista/BabyBarista-OnboardingHeatmap.png" alt="Concept 1" height="auto" width="100%" />
-        <figcaption>Heat map of the onboarding process.</a>
-        </figcaption>
-      </figure>
-
-       <p>We asked testers to go through each screen of the onboarding experience. The heatmaps determined that users were able to locate the buttons, links and input fields predictably. Overall, users found the onboarding process easy and uncomplicated. However, the onboarding simulation was done without the actual machine present. </p>
-
-
-      
-      <h2 id="next" class="mt-5">What's Next</h2>
-      
-      <p><b>Create a Brand Identity and Style.</b> Baby Barista was still in the early stages of creating its branding.</p>
-
-        <p><b>Further Testing With The Prototype.</b>  Initial tests validated that the app, in and of itself, was easy to use. Further testing with a working prototype needs to be done. Working with the development team to better understand what causes errors at this stage of the user experience would be a logical next step.</p>
-        
-        <p><b>Refining the Formula Subscription Section.</b> Baby Barista intends to create a formula subscription service that users can manage within the app. We didn’t user flow or design this segment of the app as the details of the subscription service were still in development and it would most likely mean integrating with a 3rd party solution like Square.</p>
-        
-        <p><b>Create Reassuring Content for the Help Section.</b> Every brand and type of formula is slightly different, and the volume of information on formula available to parents is overwhelming and confusing as it conflicts with each other. Creating content for the help section and testing users to ensure the information is comprehensive and easy to understand should be completed before an MVP is launched.</p>
-     
-        <h2 id="lessons" class="mt-5">Lessons Learned</h2>
-
-        <ul>
-          <li>The digital product you're designing is ultimately just one part of the story. It's important to take a broad view and examine the company, the user and the environment the product will be used in.</li>
-          <li>You can't design away all technical and human error. A good design anticipates problems and offers assistance.</li>
+          <ul>
+            <li>
+              Remote bottle prep (achieved by syncing the mobile app with the
+              wifi ready formula maker)
+            </li>
+            <li>Feedings tracker</li>
+            <li>Manage formula subscription</li>
           </ul>
-    </div> <!--- /content column-->
 
-  </div> <!--- /row -->
-</main>
+          <figure class="p-2 d-block">
+            <img
+              class="img-fluid"
+              src="main-assets/images/babybarista/babybarista_new-mothers.jpg"
+              alt="A smiling mother holding her baby."
+            />
+            <figcaption>
+              Mother and baby. Image Credit:
+              <a target="blank" href="https://rksdesign.com/baby-barista/">
+                RKS Design
+              </a>
+              .
+            </figcaption>
+          </figure>
 
-<footer>
-    <div id="native-footer-img" class="mb-3">
-      <img src="main-assets/images/babybarista/Babybarista-Footer.jpg" alt="" class="img-fluid px-0 mx-0 w-100" />
-    </div>
-    <div class="p-3 text-start">
-      <p><a  class="link-secondary" href="DOMMMA.html">< Previous Case Study: DOMMMA Rental Platform</a></p>
-    </div>
-  </footer>
-</body>
+          <h3 class="fs-4 fw-light mt-5">Understanding New Mothers</h3>
+          <p>
+            Our team interviewed
+            <b>7 new Mothers</b>
+            who have recently breast or formula-fed their infants. The Mothers
+            were asked about their feeding habits and any positives, negatives
+            or other issues associated with feedings. We also had them describe
+            typical scenarios with their infants. Mothers were asked about their
+            familiarity with competitive or similar products and apps, to get a
+            sense of their experiences with existing products.
+          </p>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-4 text-center">
+              <h4 class="mt-5 fs-5 fw-light">Concerns</h4>
+
+              <ul class="list-group list-unstyled">
+                <li class="list-group-item">
+                  "What are the cleaning requirements for the machine?"
+                </li>
+                <li class="list-group-item">
+                  "Will travelling with a formula machine be an option?"
+                </li>
+                <li class="list-group-item">
+                  "Does the machine have the correct bottle temperature?"
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center">
+              <h4 class="mt-5 fs-5 fw-light">Desires</h4>
+              <ul class="list-group list-unstyled">
+                <li class="list-group-item">
+                  “Would like the ability to start a bottle from bed”
+                </li>
+                <li class="list-group-item">
+                  Alert notifications for cleanings and feedings
+                </li>
+                <li class="list-group-item">Easy feeding tracking</li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center">
+              <h4 class="mt-5 fs-5 fw-light">Formula Benefits</h4>
+              <ul class="list-group list-unstyled">
+                <li class="list-group-item">
+                  Easy for spouses, grandparents and other caretakers to feed
+                  the baby
+                </li>
+                <li class="list-group-item">
+                  A formula machine with a remote start is most useful for
+                  nighttime feedings
+                </li>
+                <li class="list-group-item">
+                  The convenience of bottle feeding makes the cost of formula
+                  worthwhile
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 class="fs-4 fw-light mt-5">
+            Understanding the Competition & Baby Product Marketplace
+          </h3>
+          <p>
+            The only other similar product on the market is the
+            <b>Baby Brezza</b>
+            . A formula maker with a companion app that allows remote starts.
+          </p>
+
+          <p>
+            This project occurred during a COVID-19 lockdown, and our team could
+            not obtain either a Baby Brezza or a SNOO. We had to rely on
+            customer reviews to try to understand what the baby sleeper,
+            <b>SNOO</b>
+            and the popular apps,
+            <b>Baby Tracker</b>
+            and
+            <b>Baby Connect</b>
+            were doing successfully and which pain points were overlooked.
+          </p>
+
+          <p>
+            The main pain point with the Baby Brezza was connectivity and the
+            app being unable to turn on the machine remotely.
+          </p>
+
+          <figure>
+            <blockquote class="blockquote fs-4 fw-light">
+              <p>
+                "The app might as well not exist, it doesn't turn on the Brezza.
+                You have to turn it on yourself manually to be able to connect
+                the app, and then if you don't start warming the bottle within
+                minutes it shuts off. It also only works in a 20ft radius which
+                is useless when I'm trying to use it from another level of the
+                house or even across the living room. I was so excited for this,
+                and it sucks."
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Helen Monkfield, 1 Star Review August 11, 2010 - Google Play
+            </figcaption>
+          </figure>
+
+          <p class="mt-5">
+            The SNOO baby sleeper was very positively reviewed. The only major
+            pain points seemed to be the apps inability to work with multiple
+            SNOOs in the case of multiple babies and manually logging naps that
+            occured outside the sleeper.
+          </p>
+
+          <figure>
+            <blockquote class="blockquote fs-4 fw-light">
+              <p>
+                “Everything between the SNOO and the App is smooth and
+                responsive. The interface to manually log naps that occur
+                outside the SNOO is pretty clunky but it gets the job done.”
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Dan Staggs, 4 Stars - Google Play
+            </figcaption>
+          </figure>
+
+          <figure>
+            <blockquote class="blockquote fs-4 fw-light">
+              <p>
+                “We have 3 SNOOS for triplets. Latest update thinks with each
+                separate log in I need to set up the snoos all over again.
+                Suspect login button links to sign up button with no true login
+                button please fix. Workaround: Login to Baby A, see baby A
+                activity, log out baby a, log in to baby b, app wants me to set
+                up baby b again (separate email), when I force close app and
+                open app again it shows baby b info. When I log out of baby b
+                and open baby a wants me to set up snoo again, as above. FIX
+                PLEASE”
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Melissa &amp; Jeff Poot, 1 star - Google Play
+            </figcaption>
+          </figure>
+
+          <p class="mt-5">
+            A popular feature of both Baby Connect and Baby Tracker was the
+            ability to let multiple users keep track of the same baby.
+          </p>
+
+          <figure>
+            <blockquote class="blockquote fs-4 fw-light">
+              <p>
+                "I really like the flexibility of the app and that it lets
+                multiple people (so long as they all own the app) track the same
+                child. It makes it so easy for my partner and I to know what has
+                happened even when we can't pass on the information verbally. It
+                is also a great tool for tracking patterns and getting your baby
+                into a routine. The only thing I wish the app did was track when
+                the baby is awake too."
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Baby Connect 5 star review by Lana - Google Play
+            </figcaption>
+          </figure>
+
+          <h2 id="goals" class="mt-5">Design Goals</h2>
+
+          <p>We made a list of several design goals across three categories.</p>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-4 text-center">
+              <h4 class="mt-5 fs-5 fw-light">Design &amp; Functionality</h4>
+
+              <ul class="list-group list-unstyled">
+                <li class="list-group-item">Easily start a bottle</li>
+                <li class="list-group-item">Haptic feedback/Silent Mode</li>
+                <li class="list-group-item">Simple UI</li>
+                <li class="list-group-item">
+                  Easily create baby profiles, including multiples
+                </li>
+                <li class="list-group-item">
+                  Alert notifications for timed feedings
+                </li>
+                <li class="list-group-item">
+                  Capacity to track and share information with healthcare
+                  workers
+                </li>
+                <li class="list-group-item">
+                  Manage formula subscription within the App
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center">
+              <h4 class="mt-5 fs-5 fw-light">
+                Error Prevention
+              </h4>
+              <ul class="list-group list-unstyled">
+                <li class="list-group-item">Reminder to clean machine</li>
+                <li class="list-group-item">Alert when bottle has spoiled</li>
+                <li class="list-group-item">
+                  Reminder to check water level after
+                  <i>n</i>
+                  feedings
+                </li>
+                <li class="list-group-item">
+                  Provide a help center/FAQ with formula education and best
+                  practices
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center">
+              <h4 class="mt-5 fs-5 fw-light">Pair with Hardware</h4>
+              <ul class="list-group list-unstyled">
+                <li class="list-group-item">
+                  Easily sync App with any Baby Barista, whether new or second
+                  hand
+                </li>
+                <li class="list-group-item">
+                  The App needs to 'wake' Baby Barista from sleep mode from the
+                  mobile device
+                </li>
+                <li class="list-group-item">
+                  Ability to monitior the water/formula temprature from the App
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 id="sketches" class="mt-5">Moodboards &amp; Early Concepts</h2>
+
+          <p>
+            Baby Barista had no branding guide for us to consult on the
+            aesthetics of the app. We presented several mood boards to get a
+            sense of direction on style. Early concepts were developed around
+            two mood boards. One pulled from the earth tones used in the
+            machine, and another used the blue and yellow palette from the Baby
+            Barista website.
+          </p>
+
+          <figure>
+            <div class="row align-items-start">
+              <div class="col-md-6 col-sm-12">
+                <img
+                  class="img-fluid"
+                  src="main-assets/images/babybarista/BabyBarista-ConceptsandSketches(1).jpg"
+                  alt="Earth tones moodboard."
+                />
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img
+                  class="img-fluid"
+                  src="main-assets/images/babybarista/BabyBarista-ConceptsandSketches.jpg"
+                  alt="Blue and yellow moodboard"
+                />
+              </div>
+            </div>
+            <figcaption>
+              Moodboards inspired by the prototype and website.
+            </figcaption>
+          </figure>
+
+          <p>
+            From there, we developed a few different concepts exploring
+            different functions of the app.
+          </p>
+
+          <figure class="p-2 d-block">
+            <img
+              class="img-fluid"
+              src="main-assets/images/babybarista/BabyBarista-ConceptProposal(1).jpg"
+              alt="Concept 1"
+            />
+            <figcaption>
+              Concept A - Illustrative, contemporary, earth tones.
+            </figcaption>
+          </figure>
+
+          <figure class="p-2 d-block">
+            <img
+              class="img-fluid"
+              src="main-assets/images/babybarista/BabyBarista-ConceptProposal(2).jpg"
+              alt="Concept 1"
+            />
+            <figcaption>
+              Concept B - Photography, Intuitive, blue &amp; yellow.
+            </figcaption>
+          </figure>
+
+          <p>
+            The client (and the team) favoured the more minimal concept that
+            best reflected the look of the machine.
+          </p>
+
+          <figure class="p-2 d-block">
+            <img
+              class="img-fluid"
+              src="main-assets/images/babybarista/BabyBarista-ConceptProposal.jpg"
+              alt="Concept 1"
+            />
+            <figcaption>
+              Chosen Concept - Minimal, illustrative and sophisticated.
+            </figcaption>
+          </figure>
+
+          <h2 id="prototype" class="mt-5">High Fidelity Prototype</h2>
+
+          <p>
+            We worked in Figma to create the high fidelity wires and a prototype
+            for testing purposes.
+          </p>
+
+          <div class="ratio ratio-16x9">
+            <iframe
+              class="mt-3"
+              src="https://www.youtube.com/embed/hlFSOBUjq2o"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <p class="mt-5">
+            Below is a walkthrough of the onboarding proccess. The focus here is
+            on error prevention, and encouraging subscription enrollment.
+          </p>
+
+          <div class="ratio ratio-16x9">
+            <iframe
+              class="mt-3"
+              src="https://www.youtube.com/embed/0OuOSoC7J6A"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <h2 id="testing" class="mt-5">User Tests</h2>
+
+          <p>
+            We performed an initial round of user tests in UseBerry and had
+            testers perform 4 main tasks:
+          </p>
+
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">User Task</th>
+                  <th scope="col">Findings</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Remote Start A Bottle.</th>
+                  <td>
+                    There was a mild amount of confusion locating the play
+                    button. We enlarged it slightly and made the border thicker.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">View Feeding History.</th>
+                  <td>
+                    Users had no problem performing this task. Either via the
+                    menu or the calendar icon.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Manually Add A Bottle to Feeding History.</th>
+                  <td>This task was easily navigated to and achieved.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Edit Baby Profile.</th>
+                  <td>
+                    Some users tried clicking the baby avatar on the top right
+                    of the home screen. We linked the avatar to the profile
+                    section giving users two different entry points.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <figure class="p-2 d-block">
+            <img
+              class="img-fluid"
+              src="main-assets/images/babybarista/BabyBarista-OnboardingHeatmap.png"
+              alt="Concept 1"
+            />
+            <figcaption>Heat map of the onboarding process.</figcaption>
+          </figure>
+
+          <p>
+            We asked testers to go through each screen of the onboarding
+            experience. The heatmaps determined that users were able to locate
+            the buttons, links and input fields predictably. Overall, users
+            found the onboarding process easy and uncomplicated. However, the
+            onboarding simulation was done without the actual machine present.
+          </p>
+
+          <h2 id="next" class="mt-5">What's Next</h2>
+
+          <p>
+            <b>Create a Brand Identity and Style.</b>
+            Baby Barista was still in the early stages of creating its branding.
+          </p>
+
+          <p>
+            <b>Further Testing With The Prototype.</b>
+            Initial tests validated that the app, in and of itself, was easy to
+            use. Further testing with a working prototype needs to be done.
+            Working with the development team to better understand what causes
+            errors at this stage of the user experience would be a logical next
+            step.
+          </p>
+
+          <p>
+            <b>Refining the Formula Subscription Section.</b>
+            Baby Barista intends to create a formula subscription service that
+            users can manage within the app. We didn’t user flow or design this
+            segment of the app as the details of the subscription service were
+            still in development and it would most likely mean integrating with
+            a 3rd party solution like Square.
+          </p>
+
+          <p>
+            <b>Create Reassuring Content for the Help Section.</b>
+            Every brand and type of formula is slightly different, and the
+            volume of information on formula available to parents is
+            overwhelming and confusing as it conflicts with each other. Creating
+            content for the help section and testing users to ensure the
+            information is comprehensive and easy to understand should be
+            completed before an MVP is launched.
+          </p>
+
+          <h2 id="lessons" class="mt-5">Lessons Learned</h2>
+
+          <ul>
+            <li>
+              The digital product you're designing is ultimately just one part
+              of the story. It's important to take a broad view and examine the
+              company, the user and the environment the product will be used in.
+            </li>
+            <li>
+              You can't design away all technical and human error. A good design
+              anticipates problems and offers assistance.
+            </li>
+          </ul>
+        </div>
+        <!--- /content column-->
+      </div>
+      <!--- /row -->
+    </main>
+
+    <footer>
+      <div id="native-footer-img" class="mb-3">
+        <figure>
+          <img
+            src="main-assets/images/babybarista/Babybarista-Footer.jpg"
+            alt=""
+            class="img-fluid px-0 mx-0 w-100"
+          />
+          <figcaption>
+            Baby Barista Prototype. Image Credit:
+            <a target="blank" href="https://rksdesign.com/baby-barista/">
+              RKS Design
+            </a>
+            .
+          </figcaption>
+        </figure>
+      </div>
+      <div class="p-3 text-start">
+        <p>
+          <a class="link-secondary" href="DOMMMA.html">
+            &lt; Previous Case Study: DOMMMA Rental Platform
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

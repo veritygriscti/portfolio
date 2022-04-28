@@ -1,349 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>UX Casestudy: FretHero</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>UX Casestudy: FretHero</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <meta name="description" content="UX Designer Verity Griscti's FretHero Case Study">
-  <meta name="author" content="Verity Griscti">
+    <meta
+      name="description"
+      content="UX Designer Verity Griscti's FretHero Case Study"
+    />
+    <meta name="author" content="Verity Griscti" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"> 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
- 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1YHQLPENP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
 
-  gtag('config', 'G-D1YHQLPENP');
-</script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-  <style>
-   
+    <link rel="stylesheet" href="/styles.css" />
 
-    body {position: relative;}  /* Required for Bootstrap Scrollspy functionality */
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-D1YHQLPENP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
 
-   
+      gtag('config', 'G-D1YHQLPENP')
+    </script>
+  </head>
 
-    #native-casestudy-header{
-      background-color: #000;
-      color: whitesmoke;
-    }
+  <body data-bs-spy="scroll" data-bs-target=".nav" data-bs-offset="50">
+    <header
+      id="native-casestudy-header"
+      class="bg-dark text-light container-fluid p-3"
+    >
+      <h1 class="fs-3 fst-italic text-center text-md-start">
+        FretHero: Designing a Rock'n'Roll UI
+      </h1>
+    </header>
 
-    #native-casestudy-nav {
-      background-color: whitesmoke;
-      opacity: 1.0;
-    }
-
-    .nav-pills .nav-link:not(.active) {
-    background-color: whitesmoke;
-    color: #444444;
-    }
-
-    .nav-pills .nav-link.active {
-    background-color: whitesmoke;
-    color: #333333;
-    font-weight: 600;
-    font-size: larger;
-    text-decoration: underline;
-}
-
-
-  
-  </style>
-
-</head>
-
-<body data-bs-spy="scroll" data-bs-target=".nav" data-bs-offset="50">
-
-  <header id="native-casestudy-header" class="container-fluid p-3">
-    <h1 class="fs-3 fst-italic text-center text-md-start">FretHero: Designing a Rock'n'Roll UI</h1>
-  </header>
-
-  <div id="native-banner-img">
-    <img src="main-assets/images/frethero/FretHero-HeroBanner.png" alt="" class="img-fluid px-0 mx-0 w-100" />
-  </div>
-
-<main class="container-fluid mb-5">
-  <div class="row p-3">
-    <div class="col-sm-12 col-md-4 col-xl-3">
-
-       
-       <nav id="native-casestudy-nav" role="navigation" class="nav flex-column fixed-bottom sticky-md-top p-3">
-          <button role="button" type="button" class="btn-dark d-md-none " data-bs-toggle="collapse" data-bs-target="#contents" aria-label="Menu Button"><i class="fas fa-bars"></i></button><!-- Collapsible Button -->
-          
-          <ul id="contents" class="nav nav-pills native-pills flex-column">
-          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home p-3"></i>Home</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#challenge">The Challenge</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#background">Background</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#discovery">Discovery</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#flows">Flows to Wireframes</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#tests">Early Tests</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#pretty">Getting Pretty</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#proto">Prototype Tests &amp; Refinements</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#next">What's Next</a></li>
-          <li  class="nav-item p-1"><a class="nav-link" href="#lessons">Lessons Learned</a></li>
-          </ul><!-- /contents -->
-
-        </nav>
-      
-
-    </div> <!-- sidebar column -->
-
-    <div class="col-sm-12 col-md-8 col-xl-6">
-      <h2 id="challenge" class="mt-1">The Challenge</h2>
-      <p class="fs-4 fw-light"> How do you help adult guitar students, who are short on time, memorize the fretboard, notes and chord theory to move from beginner to intermediate guitar players?</p>
-     
-      <figure class="p-2 d-block">
-         <img src="main-assets/images/frethero/Will-Ferrall-Guitar.jpg" alt="Will Ferrall playing an electric guitar in the film Stranger Than Fiction" height="auto" width="100%" />
-         <figcaption>Will Ferrell learning to play the guitar in the 2006 film <i>Stranger Than Fiction</i>.
-         </figcaption>
-       </figure>
-
-       <div class="row p-1">
-           <div class="col-sm-12 col-md-4 p-3 border text-center"><b>Role:</b><br/>Entrepreneurial Side Project </div>
-           <div class="col-sm-12 col-md-4 p-3 border text-center"><b>Team:</b><br/>Verity Griscti (solo project)</div>
-           <div class="col-sm-12 col-md-4 p-3 border text-center"><b>Timeline:</b><br/>Concept to High Fidelity Prototype in 6 Weeks.</div>
-       </div>
-      <h2 id="background" class="mt-5">Background</h2>
-      <figure>
-        <blockquote class="blockquote fs-4 fw-light">
-          <p>"Fender’s guitar-instruction app, Fender Play – which offered several free trials over the lockdown period – saw its user base increase from 150,000 to 930,000 between late March and late June, with close to 20 percent of the new users under 24, and 70 per cent under 45."</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          Richard Bienstock, <cite title="Source Title"><a target="_blank" href="https://www.guitarworld.com/news/fender-has-sold-more-guitars-in-2020-than-any-other-year-in-its-history">GuitarWorld</a></cite>
-        </figcaption>
-      </figure>
-
-     <p>During the pandemic, I dusted off the guitar that had been hiding under my bed for years and began the slow process of relearning the instrument. I was not alone, all major guitar brands and music retailers recorded record-breaking sales in 2020, and online learning Apps and YouTube instructors reported a massive increase in subscribers.</p>
-     <p>I was also looking for an idea I could take from concept to design and eventually into development to gain a comprehensive understanding of digital product creation. Developing a guitar learning App seemed like a relevant project to take on. There is currently a strong desire for digital learning tools and not many available solutions.</p>
-     
-     <h2 id="discovery" class="mt-5">Discovery</h2>
-     <h3 class="fs-4 fw-light mt-5">Designing for an App</h3>
-     <p>This was my first experience designing for an App, and I looked at both Material Design and Apple's HCI guidelines for direction on things like font sizes, touch sizes and thumb zones.
-    </p>
-     
-    <p>As I plan to create this app myself, as a side project. I decided to focus on Android as there are no upfront costs to development.</p>
-
-    <h3 class="fs-4 fw-light mt-5">Designing for Microlearning</h3>
-    <p>After reading several articles on micro-learning I concluded that a successful microlearning app should contain the following:</p>
-    <ul>
-        <li>Training Sessions should be short and <b>focus on a single idea or concept.</b></li>
-        <li>Training Sessions should be <b>interactive</b>, to encourage memorization</li>
-        <li><b>Graphics should be minimal and non-distracting</b>, so the mind's focus stays on learning the content.</li>
-    </ul>
-
-    <h3 class="fs-4 fw-light mt-5">What’s Out There Already?</h3>
-
-    <div class="row align-items-end">
-        <div class="col-sm-12 col-md-6">
-            <figure class="text-center p-2">
-                <img src="main-assets/images/frethero/screenshot-fretbuzz.png" alt="Screenshot of the app FretBuzz." height="auto" width="40%"/>
-                <figcaption><b>FretBuzz</b><br/> ❌ Static Interface</figcaption></figure> 
-            
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <figure class="text-center p-2"><img src="main-assets/images/frethero/screenshot-guitarband.jpg" alt="Screenshot of the app GuitarBand." height="auto" width="40%"/> <figcaption> <b>Guitar Band</b><br/> ❌ Busy UI. More a game than a learning tool.</figcaption></figure>
-        </div>
-        <div class="col-12">
-            <figure class="text-center p-2"> <img src="main-assets/images/frethero/screenshot-jguitar-notetrainer.png" alt="Screenshot of the app Note Trainer." height="auto" width="50%" /><figcaption><b>Note Trainer</b><br/>  ❌ Layout of answer buttons matches chromatic note sequence. Encourages recognition rather than recall.
-            </figcaption></figure>
-        </div>
-
-        <p>The goal of fretboard memorization and studying scales is to <b>gain instant recall</b> of the notes on the fretboard and how the notes relate to scales and chords.</p>
-    
-        <p>While several fretboard learning Apps are already available, <b>none are designed to encourage recall over recognition</b>. Most have static and unengaging interfaces. Essentially acting more as digital flashcards than a fully interactive user experience. I wanted FretHero’s UI to encourage recall and memorization as that better assists the users goals.</p>
-        
+    <div id="native-banner-img">
+      <img
+        src="main-assets/images/frethero/FretHero-HeroBanner.png"
+        alt=""
+        class="img-fluid px-0 mx-0 w-100"
+      />
     </div>
 
-    <h2 id="flows" class="mt-5">Flows to Wireframes</h2>
-    <p>I sketched the main user flows and made low-fidelity sketches of the key screens. The sketches were cleaned up and refined in Figma then linked together into an initial prototype.</p>
-    
-    <div class="mt-5" data-bs-toggle="modal" data-bs-target="#userflow">
-      <figure class="p-2 d-block">
-        <img src="main-assets/images/frethero/FretHero-UserFlow.png" alt="Sketch of a user flow describing FretHero's initial training session type and time length process." height="auto" width="100%" />
-          <figcaption>Click sketch to enlarge.
-          </figcaption>
-        </figure>
-      </div>
-    
-    <!-- Version 1.1 Modal -->
-    <div class="modal fade" id="userflow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="userflow-label">User Flow: Selecting Session Type &amp; Length </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="main-assets/images/frethero/FretHero-UserFlow.png" alt="Sketch of a user flow describing FretHero's initial training session type and time length process." height="auto" width="100%" />
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+    <main class="container-fluid mb-5">
+      <div class="row p-3">
+        <div class="col-sm-12 col-md-4 col-xl-3">
+          <nav
+            id="native-casestudy-nav"
+            class="nav flex-column fixed-bottom sticky-md-top p-3 border border-secondary rounded"
+          >
+            <button
+              type="button"
+              class="btn-dark d-md-none"
+              data-bs-toggle="collapse"
+              data-bs-target="#contents"
+              aria-label="Menu Button"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <!-- Collapsible Button -->
+
+            <ul id="contents" class="nav nav-pills native-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fas fa-home p-3"></i>
+                  Home
+                </a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#challenge">The Challenge</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#background">Background</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#discovery">Discovery</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#flows">Flows to Wireframes</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#tests">Early Tests</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#pretty">Getting Pretty</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#proto">
+                  Prototype Tests &amp; Refinements
+                </a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#next">What's Next</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#lessons">Lessons Learned</a>
+              </li>
+            </ul>
+            <!-- /contents -->
+          </nav>
         </div>
-      </div>
-    </div>
+        <!-- sidebar column -->
 
+        <div class="col-sm-12 col-md-8 col-xl-6">
+          <h2 id="challenge" class="mt-1">The Challenge</h2>
+          <p class="fs-4 fw-light">
+            How do you help adult guitar students, who are short on time,
+            memorize the fretboard, notes and chord theory to move from beginner
+            to intermediate guitar players?
+          </p>
 
-    <figure class="p-2">
-        <img src="main-assets/images/frethero/FretHero-Sketches-To-Mids.png" alt="Picture illustrates the difference between Hand drawn sketches and Mid-Fidelity Wires." height="auto" width="100%" />
-        <figcaption>Hand drawn sketches to Mid-Fidelity Figma Wireframes. 
-        </figcaption>
-    </figure>
+          <figure class="p-2 d-block">
+            <img
+              class="img-fluid"
+              src="main-assets/images/frethero/Will-Ferrall-Guitar.jpg"
+              alt="Will Ferrall playing an electric guitar in the film Stranger Than Fiction"
+            />
+            <figcaption>
+              Will Ferrell learning to play the guitar in the 2006 film
+              <i>Stranger Than Fiction</i>
+              .
+            </figcaption>
+          </figure>
 
-      <h2 id="tests" class="mt-5">Early Tests</h2>
-
-      <p>I tested my prototype out on 3 participants with a range of ages and levels of musical education. They all intuitively knew how to input answers to all three types of training questions, which was very encouraging.</p>
-      <h3 class="fs-4 fw-light mt-5">Who I Tested</h3>
-      
-      <div class="table-responsive">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Tester</th>
-            <th scope="col">Test Environment</th>
-            <th scope="col">Education</th>
-            <th scope="col">Music Background</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Female <br/> 9 yrs old.</th>
-            <td>In Person</td>
-            <td>Grade School</td>
-            <td>RCM Summer Camps: Ukulele, Piano, Percussion</td>
-          </tr>
-          <tr>
-            <th scope="row">Male <br/>45 yrs old. </th>
-            <td>In Person</td>
-            <td>Doctorate</td>
-            <td>High School Music: French Horn, Choir. Private Lessons: Piano. Self-taught beginner guitar.</td>
-          </tr>
-          <tr>
-            <th scope="row">Female <br/> 66 yrs old.</th>
-            <td>Remote via Zoom</td>
-            <td>Professional Certification</td>
-            <td>High School Music: Viola. Private Lessons: Piano.</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-
-      
-      <p>The tests uncovered three usability issues:</p>
-      <ul>
-          <li>The Video and History icons in the navigation bar were misinterpreted</li>  
-          <li>The ability to name a saved video was overlooked (big oops!)</li>
-          <li>The copy in the Training results area was unclear or not detailed enough.</li>
-       </ul>
-
-      <h2 id="pretty" class="mt-5">Getting Pretty</h2>
-
-      <figure>
-          <div class="row align-items-start">
-              <div class="col-md-6 col-sm-12"><img src="main-assets/images/frethero/FretHero-LogoMoods.png" alt="Taylor, Gibson, Fender &amp; Martin Guitar logos" height="auto" width="100%" /></div>
-              <div class="col-md-6 col-sm-12"><img src="main-assets/images/frethero/FretHero-ImageMoodboard.png" alt="" height="auto" width="100%" /> </div>
+          <div class="row p-1">
+            <div class="col-sm-12 col-md-4 p-3 border text-center">
+              <b>Role:</b>
+              <br />
+              Entrepreneurial Side Project
+            </div>
+            <div class="col-sm-12 col-md-4 p-3 border text-center">
+              <b>Team:</b>
+              <br />
+              Verity Griscti (solo project)
+            </div>
+            <div class="col-sm-12 col-md-4 p-3 border text-center">
+              <b>Timeline:</b>
+              <br />
+              Concept to High Fidelity Prototype in 6 Weeks.
+            </div>
           </div>
-          <figcaption>Moodboard of logos and music illustrations.</figcaption>
-      </figure>
+          <h2 id="background" class="mt-5">Background</h2>
+          <figure>
+            <blockquote class="blockquote fs-4 fw-light">
+              <p>
+                "Fender’s guitar-instruction app, Fender Play – which offered
+                several free trials over the lockdown period – saw its user base
+                increase from 150,000 to 930,000 between late March and late
+                June, with close to 20 percent of the new users under 24, and 70
+                per cent under 45."
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Richard Bienstock,
+              <cite title="Source Title">
+                <a
+                  target="_blank"
+                  href="https://www.guitarworld.com/news/fender-has-sold-more-guitars-in-2020-than-any-other-year-in-its-history"
+                >
+                  GuitarWorld
+                </a>
+              </cite>
+            </figcaption>
+          </figure>
 
-      <p>I created a mood-board, to get a sense of what aesthetics would best associate with a music App. I noticed repetitive use of abstract curvy shapes, casual looking fonts, linear gradients and bright colours. Music-related visuals tend to be very busy, but my design had to be minimal and translate well on a small screen. I found myself gravitating towards imagery that made good use of white space and graphics originally designed for smaller CD booklets.</p>
-      <p>My initial designs were portrait, but that meant the tap points on my intermediate fretboard UI would be too small on the smallest screens and create usability issues. Not wanting users to flip their phones within the App experience, I redesigned all my screens for landscape orientation and was pleased to find that the results opened up all my designs, which had felt cramped in portrait mode.</p>
+          <p>
+            During the pandemic, I dusted off the guitar that had been hiding
+            under my bed for years and began the slow process of relearning the
+            instrument. I was not alone, all major guitar brands and music
+            retailers recorded record-breaking sales in 2020, and online
+            learning Apps and YouTube instructors reported a massive increase in
+            subscribers.
+          </p>
+          <p>
+            I was also looking for an idea I could take from concept to design
+            and eventually into development to gain a comprehensive
+            understanding of digital product creation. Developing a guitar
+            learning App seemed like a relevant project to take on. There is
+            currently a strong desire for digital learning tools and not many
+            available solutions.
+          </p>
 
-     <figure>
-         <img src="main-assets/images/frethero/Portrait-To-Landscape.png" alt="Image illustrates difference between Mid-Fidelity portrait and High-Fidelity Landscape designs" height="auto" width="100%" />
-         <figcaption>Illustrating the frames evolution from portrait to landscape. 
-        </figcaption>
+          <h2 id="discovery" class="mt-5">Discovery</h2>
+          <h3 class="fs-4 fw-light mt-5">Designing for an App</h3>
+          <p>
+            This was my first experience designing for an App, and I looked at
+            both Material Design and Apple's HCI guidelines for direction on
+            things like font sizes, touch sizes and thumb zones.
+          </p>
 
-     </figure>
+          <p>
+            As I plan to create this app myself, as a side project. I decided to
+            focus on Android as there are no upfront costs to development.
+          </p>
 
-      <h2 id="proto" class="mt-5">Prototype Tests &amp; Refinements</h2>
+          <h3 class="fs-4 fw-light mt-5">Designing for Microlearning</h3>
+          <p>
+            After reading several articles on micro-learning I concluded that a
+            successful microlearning app should contain the following:
+          </p>
+          <ul>
+            <li>
+              Training Sessions should be short and
+              <b>focus on a single idea or concept.</b>
+            </li>
+            <li>
+              Training Sessions should be
+              <b>interactive</b>
+              , to encourage memorization
+            </li>
+            <li>
+              <b>Graphics should be minimal and non-distracting</b>
+              , so the mind's focus stays on learning the content.
+            </li>
+          </ul>
 
-      <p>I ran the second round of testing on Maze. These tests validated that I had fixed my initial navigation and labelling issues</p>
-   
-      <ul>
-      <li><b>90% of testers</b> rated the App navigation experience as a 7 out of 10 or higher.</li>
-      <li><b>100% of testers</b> stated the icons and labels on the menu screen made sense to them.</li>
-      </ul>
+          <h3 class="fs-4 fw-light mt-5">What’s Out There Already?</h3>
 
-      <figure>
-          <img src="main-assets/images/frethero/FretHero-NavBarGraph.jpg" alt="Screenshot of Maze Navigation Results. 19 Responses. User Avg. 8.1 out of 10 when asked to rate ease of navigation through the app." height="auto" width="100%" />
-          <figcaption>Bar Graph Results of User Opinions on Navigation</figcaption>
-        </figure>
+          <div class="row align-items-end">
+            <div class="col-sm-12 col-md-6">
+              <figure class="text-center p-2">
+                <img
+                  class="img-fluid"
+                  src="main-assets/images/frethero/screenshot-fretbuzz.png"
+                  alt="Screenshot of the app FretBuzz."
+                />
+                <figcaption>
+                  <b>FretBuzz</b>
+                  <br />
+                  ❌ Static Interface
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <figure class="text-center p-2">
+                <img
+                  class="img-fluid"
+                  src="main-assets/images/frethero/screenshot-guitarband.jpg"
+                  alt="Screenshot of the app GuitarBand."
+                />
+                <figcaption>
+                  <b>Guitar Band</b>
+                  <br />
+                  ❌ Busy UI. More a game than a learning tool.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-12">
+              <figure class="text-center p-2">
+                <img
+                  class="img-fluid"
+                  src="main-assets/images/frethero/screenshot-jguitar-notetrainer.png"
+                  alt="Screenshot of the app Note Trainer."
+                />
+                <figcaption>
+                  <b>Note Trainer</b>
+                  <br />
+                  ❌ Layout of answer buttons matches chromatic note sequence.
+                  Encourages recognition rather than recall.
+                </figcaption>
+              </figure>
+            </div>
 
-      <h3 class="fs-4 fw-light mt-5">When asked if the icons and labels made sense:</h3>
+            <p>
+              The goal of fretboard memorization and studying scales is to
+              <b>gain instant recall</b>
+              of the notes on the fretboard and how the notes relate to scales
+              and chords.
+            </p>
 
-      <figure>
-        <blockquote class="blockquote fs-4 fw-light">
-          <p>"The icons and labeling were quite clear and easy to understand."</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-            Tester #2897284
-        </figcaption>
-      </figure>
+            <p>
+              While several fretboard learning Apps are already available,
+              <b>none are designed to encourage recall over recognition</b>
+              . Most have static and unengaging interfaces. Essentially acting
+              more as digital flashcards than a fully interactive user
+              experience. I wanted FretHero’s UI to encourage recall and
+              memorization as that better assists the users goals.
+            </p>
+          </div>
 
-      <figure>
-        <blockquote class="blockquote fs-4 fw-light">
-          <p>"The icons seemed to match the text pretty well, no complaints."</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-            Tester #22903077
-        </figcaption>
-      </figure>
+          <h2 id="flows" class="mt-5">Flows to Wireframes</h2>
+          <p>
+            I sketched the main user flows and made low-fidelity sketches of the
+            key screens. The sketches were cleaned up and refined in Figma then
+            linked together into an initial prototype.
+          </p>
 
-      <p>The heat maps revealed some minor confusion over the buttons, which are white on white. I may have gone a bit too minimal here. There were no misclicks in the menu, which is white text on a darker background. I made the buttons darker.</p>
+          <div class="mt-5" data-bs-toggle="modal" data-bs-target="#userflow">
+            <figure class="p-2 d-block">
+              <img
+                class="img-fluid"
+                src="main-assets/images/frethero/FretHero-UserFlow.png"
+                alt="Sketch of a user flow describing FretHero's initial training session type and time length process."
+              />
+              <figcaption>Click sketch to enlarge.</figcaption>
+            </figure>
+          </div>
 
-      <figure class="p-2 mt-5">
-        <img src="main-assets/images/frethero/Dark-Buttons-Screen.png" alt="Revised screen with darker buttons." height="auto" width="75%" />
-        <figcaption>Revised screen with darker input buttons. 
-        </figcaption>
-    </figure>
-       
-      <h3 class="fs-4 fw-light mt-5">Animation Demo</h3>
+          <!-- Version 1.1 Modal -->
+          <div
+            class="modal fade"
+            id="userflow"
+            tabindex="0"
+            aria-labelledby="userflow-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="userflow-label">
+                    User Flow: Selecting Session Type &amp; Length
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="main-assets/images/frethero/FretHero-UserFlow.png"
+                    alt="Sketch of a user flow describing FretHero's initial training session type and time length process."
+                  />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <p>Here is a quick demo of the refined version with animations.</p>
-       
-      <div class="ratio ratio-16x9">
-        <iframe src="https://www.youtube.com/embed/fzkhM5-ZetQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       </div>
+          <figure class="p-2">
+            <img
+              class="img-fluid"
+              src="main-assets/images/frethero/FretHero-Sketches-To-Mids.png"
+              alt="Picture illustrates the difference between Hand drawn sketches and Mid-Fidelity Wires."
+            />
+            <figcaption>
+              Hand drawn sketches to Mid-Fidelity Figma Wireframes.
+            </figcaption>
+          </figure>
 
-      <h2 id="next" class="mt-5">What's Next</h2>
-      <p>At this point, I am confident the FretHero interface is easy to understand, and I think there is a viable market for this project. I am in the process of flowcharting specific game mechanics.</p>
-     
-      <h2 id="lessons" class="mt-5">Lessons Learned</h2>
+          <h2 id="tests" class="mt-5">Early Tests</h2>
 
-      <ul>
-        <li>Early tests will help uncover oversights and assumptions before things get too detailed. This seems especially important when designing alone. There is only so much one pair of eyes will notice.</li>
-        <li>Too much visual information can confuse the user, but too little visual information can do the same.</li>
-        
-      </ul>
-    </div> <!--- /content column-->
+          <p>
+            I tested my prototype out on 3 participants with a range of ages and
+            levels of musical education. They all intuitively knew how to input
+            answers to all three types of training questions, which was very
+            encouraging.
+          </p>
+          <h3 class="fs-4 fw-light mt-5">Who I Tested</h3>
 
-  </div> <!--- /row -->
-</main>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Tester</th>
+                  <th scope="col">Test Environment</th>
+                  <th scope="col">Education</th>
+                  <th scope="col">Music Background</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    Female
+                    <br />
+                    9 yrs old.
+                  </th>
+                  <td>In Person</td>
+                  <td>Grade School</td>
+                  <td>RCM Summer Camps: Ukulele, Piano, Percussion</td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    Male
+                    <br />
+                    45 yrs old.
+                  </th>
+                  <td>In Person</td>
+                  <td>Doctorate</td>
+                  <td>
+                    High School Music: French Horn, Choir. Private Lessons:
+                    Piano. Self-taught beginner guitar.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    Female
+                    <br />
+                    66 yrs old.
+                  </th>
+                  <td>Remote via Zoom</td>
+                  <td>Professional Certification</td>
+                  <td>High School Music: Viola. Private Lessons: Piano.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-<footer>
-  <div id="native-footer-img" class="mb-3">
-    <img src="main-assets/images/frethero/FretHero-Footer.png" alt="" class="img-fluid px-0 mx-0 w-100" />
-  </div>
-  <div class="p-3 text-end">
-    <p><a  class="link-secondary" href="DOMMMA.html">Next Case Study: DOMMMA Rental Platform ></a></p>
-  </div>
-</footer>
-</body>
+          <p>The tests uncovered three usability issues:</p>
+          <ul>
+            <li>
+              The Video and History icons in the navigation bar were
+              misinterpreted
+            </li>
+            <li>
+              The ability to name a saved video was overlooked (big oops!)
+            </li>
+            <li>
+              The copy in the Training results area was unclear or not detailed
+              enough.
+            </li>
+          </ul>
+
+          <h2 id="pretty" class="mt-5">Getting Pretty</h2>
+
+          <figure>
+            <div class="row align-items-start">
+              <div class="col-md-6 col-sm-12">
+                <img
+                  class="img-fluid"
+                  src="main-assets/images/frethero/FretHero-LogoMoods.png"
+                  alt="Taylor, Gibson, Fender &amp; Martin Guitar logos"
+                />
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img
+                  class="img-fluid"
+                  src="main-assets/images/frethero/FretHero-ImageMoodboard.png"
+                  alt="Top Left: A black silhoutte of Bob Dylan with colourful hair. Top Right: A still from Yellow Submarine's Sea of Holes. Bottom Left: The 2018 Bonnaroo Festival Splash Image. Bottom Right: Cake's Fashion Nugget's CD cover."
+                />
+              </div>
+            </div>
+            <figcaption>Moodboard of logos and music illustrations.</figcaption>
+          </figure>
+
+          <p>
+            I created a mood-board, to get a sense of what aesthetics would best
+            associate with a music App. I noticed repetitive use of abstract
+            curvy shapes, casual looking fonts, linear gradients and bright
+            colours. Music-related visuals tend to be very busy, but my design
+            had to be minimal and translate well on a small screen. I found
+            myself gravitating towards imagery that made good use of white space
+            and graphics originally designed for smaller CD booklets.
+          </p>
+          <p>
+            My initial designs were portrait, but that meant the tap points on
+            my intermediate fretboard UI would be too small on the smallest
+            screens and create usability issues. Not wanting users to flip their
+            phones within the App experience, I redesigned all my screens for
+            landscape orientation and was pleased to find that the results
+            opened up all my designs, which had felt cramped in portrait mode.
+          </p>
+
+          <figure>
+            <img
+              class="img-fluid"
+              src="main-assets/images/frethero/Portrait-To-Landscape.png"
+              alt="Image illustrates difference between Mid-Fidelity portrait and High-Fidelity Landscape designs"
+            />
+            <figcaption>
+              Illustrating the frames evolution from portrait to landscape.
+            </figcaption>
+          </figure>
+
+          <h2 id="proto" class="mt-5">Prototype Tests &amp; Refinements</h2>
+
+          <p>
+            I ran the second round of testing on Maze. These tests validated
+            that I had fixed my initial navigation and labelling issues
+          </p>
+
+          <ul>
+            <li>
+              <b>90% of testers</b>
+              rated the App navigation experience as a 7 out of 10 or higher.
+            </li>
+            <li>
+              <b>100% of testers</b>
+              stated the icons and labels on the menu screen made sense to them.
+            </li>
+          </ul>
+
+          <figure>
+            <img
+              class="img-fluid"
+              src="main-assets/images/frethero/FretHero-NavBarGraph.jpg"
+              alt="Screenshot of Maze Navigation Results. 19 Responses. User Avg. 8.1 out of 10 when asked to rate ease of navigation through the app."
+            />
+            <figcaption>
+              Bar Graph Results of User Opinions on Navigation
+            </figcaption>
+          </figure>
+
+          <h3 class="fs-4 fw-light mt-5">
+            When asked if the icons and labels made sense:
+          </h3>
+
+          <figure>
+            <blockquote class="blockquote fs-4 fw-light">
+              <p>
+                "The icons and labeling were quite clear and easy to
+                understand."
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Tester #2897284
+            </figcaption>
+          </figure>
+
+          <figure>
+            <blockquote class="blockquote fs-4 fw-light">
+              <p>
+                "The icons seemed to match the text pretty well, no complaints."
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Tester #22903077
+            </figcaption>
+          </figure>
+
+          <p>
+            The heat maps revealed some minor confusion over the buttons, which
+            are white on white. I may have gone a bit too minimal here. There
+            were no misclicks in the menu, which is white text on a darker
+            background. I made the buttons darker.
+          </p>
+
+          <figure class="p-2 mt-5">
+            <img
+              class="img-fluid"
+              src="main-assets/images/frethero/Dark-Buttons-Screen.png"
+              alt="Revised screen with darker buttons."
+            />
+            <figcaption>Revised screen with darker input buttons.</figcaption>
+          </figure>
+
+          <h3 class="fs-4 fw-light mt-5">Animation Demo</h3>
+
+          <p>Here is a quick demo of the refined version with animations.</p>
+
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/fzkhM5-ZetQ"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <h2 id="next" class="mt-5">What's Next</h2>
+          <p>
+            At this point, I am confident the FretHero interface is easy to
+            understand, and I think there is a viable market for this project. I
+            am in the process of flowcharting specific game mechanics.
+          </p>
+
+          <h2 id="lessons" class="mt-5">Lessons Learned</h2>
+
+          <ul>
+            <li>
+              Early tests will help uncover oversights and assumptions before
+              things get too detailed. This seems especially important when
+              designing alone. There is only so much one pair of eyes will
+              notice.
+            </li>
+            <li>
+              Too much visual information can confuse the user, but too little
+              visual information can do the same.
+            </li>
+          </ul>
+        </div>
+        <!--- /content column-->
+      </div>
+      <!--- /row -->
+    </main>
+
+    <footer>
+      <div id="native-footer-img" class="mb-3">
+        <img
+          src="main-assets/images/frethero/FretHero-Footer.png"
+          alt=""
+          class="img-fluid px-0 mx-0 w-100"
+        />
+      </div>
+      <div class="p-3 text-end">
+        <p>
+          <a class="link-secondary" href="DOMMMA.html">
+            Next Case Study: DOMMMA Rental Platform >
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

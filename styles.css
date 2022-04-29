@@ -2,6 +2,7 @@
 
 :root {
   --bg-color: #ffffff;
+  --col-bg: #ffffff;
   --secondary-background: #21156c;
   --black-bg: #000000;
   --dark-text: #333333;
@@ -167,6 +168,10 @@ nav a:hover {
 .sm-icon {
   height: 50px;
   width: 50px;
+}
+
+.sidebar-bg {
+  background-color: var(--col-bg);
 }
 
 /* Artwork & Content */

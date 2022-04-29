@@ -39,7 +39,7 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="/styles.css"/>
+    <link rel="stylesheet" href="/styles.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -77,7 +77,7 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#menu"
+            data-bs-target="#menu-content"
             aria-controls="menu"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -85,27 +85,29 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <ul
-            id="menu"
-            class="nav d-flex justify-content-sm-start justify-content-lg-end collapse navbar-collapse nav-pills"
-          >
-            <li class="nav-item">
-              <a class="nav-link" href="#ux-cs">UX Case Studies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ux-samples">UX Samples</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#other-work">Other Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-          <!-- /menu -->
+          <div class="collapse navbar-collapse" id="menu-content">
+            <ul
+              id="menu"
+              class="nav d-flex justify-content-sm-start justify-content-lg-end collapse navbar-collapse nav-pills"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#ux-cs">UX Case Studies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ux-samples">UX Samples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#other-work">Other Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <!-- /menu -->
+          </div>
         </div>
         <!--- container-fluid -->
       </nav>

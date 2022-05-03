@@ -64,14 +64,14 @@
         class="navbar navbar-light navbar-expand-md fixed-top p-1 border-bottom border-secondary"
         aria-label="Main Navigation"
       >
-        <div class="container-fluid">
+        <div id="nav-contents" class="container-fluid">
           <div class="navbrand">
             <a id="index-link" class="nav-link text-dark" href="index.html">
               <h1 class="fs-4 fw-normal p-2 align-items-middle align-middle">
                 Verity Griscti
               </h1>
             </a>
-          </div>
+          </div><!---navbrand-->
 
           <button
             class="navbar-toggler"
@@ -106,160 +106,125 @@
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
-            <!-- /menu -->
-          </div>
-        </div>
-        <!--- container-fluid -->
+            
+          </div><!-- menu-content-->
+        </div><!--- nav-contents -->
+
       </nav>
 
-      <section id="ux-cs" class="container">
-        <div class="row g-5">
-          <div class="col-sm-12 col-md-4">
-            <div id="frethero-cs" class="p-5 tile">
-              <a href="/frethero.html">
-                <img
-                  class="img-fluid"
-                  src="main-assets/images/index/FretHero-Mockup.jpg"
-                  alt="A Mockup Illustration of 3 Frethero App Screens"
-                />
-                <h2 class="fs-3 fw-normal mt-4">Frethero</h2>
-                <p class="fs-5 fw-light">
+      <div id="ux-cs" class="mt-5">
+        <div class="card-group text-left mt-5">
+          <div id="frethero-cs" class="card p-4 m-3 tile">
+            <img
+              src="/main-assets/images/index/FretHero-Mockup.jpg"
+              class="card-img-top"
+              alt="A screen shot of the FretHero Splash, Note Selector and Chord Box Sreens."
+            />
+            <div class="card-body">
+              <a class="link-light" href="/frethero.html">
+                <h3 class="card-title">FretHero</h3>
+                <p class="card-text">
                   Rule Breaking UI: Design for Recall.
                 </p>
               </a>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <div id="dommma-cs" class="p-5 tile">
-              <a href="/DOMMMA.html">
-                <img
-                  class="img-fluid"
-                  src="main-assets/images/index/DOMMMA-Mockup.jpg.png"
-                  alt="A Mockup Illustration of both the Laptop and Mobile DOMMMA landing page."
-                />
-                <h2 class="fs-3 fw-normal mt-4">
-                  DOMMMA
-                  <br />
-                  Rental Platform
-                </h2>
-                <p class="fs-5 fw-light">Redesigning for User Goals</p>
-              </a>
+          </div><!--frethero-cs-->
+          <div id="dommma-cs" class="card p-4 m-3 tile">
+            <img
+              src="/main-assets/images/index/DOMMMA-Mockup.jpg.png"
+              class="card-img-top"
+              alt="An open laptop and cell phone both display the DOMMMA home page."
+            />
+            <div class="card-body">
+              <a href="/DOMMMA.html"><h3 class="card-title">DOMMMA</h3>
+              <p class="card-text">
+                Redesigning for user goals.
+              </p>
+            </a>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <div id="babybarista-cs" class="p-5 tile">
-              <a href="/babybarista.html">
-                <img
-                  class="img-fluid"
-                  src="main-assets/images/index/babybarista-Mockup.png"
-                  alt="A Mockup Illustration of the Baby Barista Formula Dispenser and Companion App."
-                />
-                <h2 class="fs-3 fw-normal mt-4">Baby Barista</h2>
-                <p class="fs-5 fw-light">
-                  Intuitive App Design for Exhausted Parents
-                </p>
-              </a>
+          </div><!--dommma-cs-->
+          <div id="babybarista-cs" class="card p-4 m-3 tile">
+            <img
+              src="/main-assets/images/index/babybarista-Mockup.png"
+              class="card-img-top"
+              alt="An image of a the Baby Barista formula dispenser and a cell phone displaying a screen shot of the Baby Barista App."
+            />
+            <div class="card-body">
+              <a href="/babybarista.html"><h3 class="card-title">Baby Barista</h3>
+              <p class="card-text">
+                Intuitive App Design for Exhausted Parents.
+              </p></a>
             </div>
-          </div>
-        </div>
-      </section>
+          </div><!---baby-barista-->
+        </div><!--card-group-->
+      </div><!--ux-cs-->
 
-      <section id="ux-samples" class="container">
-        <h2 class="fs-5 fw-bold">UX Samples</h2>
-
-        <div class="row g-5 mt-5">
-          <div class="col-sm-12 col-md-4">
-            <div id="workshop-tile" class="border p-4 tile">
-              <a href="/research-workshop.html">
-                <div class="text-center">
-                  <img
-                    class="p-0 mb-3 img-fluid"
-                    src="main-assets/images/index/Brainstorming-Graphic.png"
-                    alt="White line graphic of a brain on a violet background."
-                  />
-                </div>
-                <h3 class="fs-3">Brainstorming Workshop</h3>
-                <p>Helping LinkedIn employees improve their profile page.</p>
-              </a>
-            </div>
+    <div id="ux-samples" class="container">
+      <h2 class="fs-5 fw-bold">UX Samples</h2>
+      <div class="card-group mt-5">
+        <div id="workshop-tile" class="card p-5 m-3 tile">
+          <img src="/main-assets/images/index/Brainstorming-Graphic.png" class="card-img-top" alt="White line drawing of a profile view of a brain on a dark violet background.">
+          <div class="card-body">
+            <a href="/research-workshop.html"><h4 class="card-title">Brainstorming Workshop</h4>
+            <p class="card-text">Helping LinkedIn employees improve their profile page.</p>
+            </a>
           </div>
-
-          <div class="col-sm-12 col-md-4">
-            <div id="ia-tile" class="border p-4 tile">
-              <a href="/InformationArchitecture.html">
-                <div class="text-center">
-                  <img
-                    class="p-0 mb-3 img-fluid"
-                    src="main-assets/images/index/InfoArch-Graphic.png"
-                    alt="White line graphic of a I.A. Schema on a violet background."
-                  />
-                </div>
-                <h3 class="fs-3">Information Architecture</h3>
-                <p>
-                  Soy Sauce Packets and Streetlights: Organizing 100 Random
-                  Things
-                </p>
-              </a>
-            </div>
+        </div><!--workshop-tile-->
+        <div id="ia-tile" class="card p-5 m-3 tile">
+          <img src="/main-assets/images/index/InfoArch-Graphic.png" class="card-img-top" alt="White line drawing of a site map diagram on a dark violet background.">
+          <div class="card-body">
+            <a href="/InformationArchitecture.html"><h4 class="card-title">Information Architecture</h4>
+            <p class="card-text">Soy Sauce Packets and Streetlights: Organizing 100 Random Things.</p>
+            </a>
           </div>
-
-          <div class="col-sm-12 col-md-4">
-            <div id="survey-tile" class="border p-4 tile">
-              <a href="/survey.html">
-                <div class="text-center">
-                  <img
-                    class="p-0 mb-3 img-fluid"
-                    src="main-assets/images/index/Survey-Graphic.png"
-                    alt="White line graphic of an ascending bar graph on a violet background."
-                  />
-                </div>
-                <h3 class="fs-3">Survey</h3>
-                <p>Gauging the publics perception and use of social media.</p>
-              </a>
-            </div>
+        </div><!--ia-tile-->
+        <div id="survey-tile" class="card p-5 m-3 tile">
+          <img src="/main-assets/images/index/Survey-Graphic.png" class="card-img-top" alt="White line drawing of a three bar graph with a curved line above the graph on a dark violet background.">
+          <div class="card-body">
+            <a href="/survey.html"> <h4 class="card-title">Survey</h4>
+            <p class="card-text"><p>Gauging the publics perception and use of social media.</p>
+             </a>
           </div>
-        </div>
-      </section>
+        </div><!--survey-tile-->
+      </div><!---card-group-->
+    </div><!---ux-samples-->
 
-      <section id="other-work" class="container">
-        <h2 class="fs-5 fw-bold">Other Work</h2>
-        <div class="row g-3 mt-5">
-          <div class="col-sm-12 col-md-4">
-            <div id="content-tile" class="p-5 tile text-center">
-              <a href="/content.html">
-                <h3 class="fs-3">Content</h3>
-                <p>Digital Content Creation & Management</p>
-              </a>
-            </div>
+    <div id="other-work" class="container">
+      <h2 class="fs-5 fw-bold">Other Work</h2>
+      <div class="card-group mt-5">
+        <div id="content-tile" class="card p-5 m-3 tile text-center">
+          <div class="card-body">
+            <a href="/content.html"><h4 class="card-title">Content</h4>
+            <p class="card-text">Creation & Management.</p>
+            </a>
           </div>
-          <div class="col-sm-12 col-md-4">
-            <div id="code-tile" class="p-5 tile text-center">
-              <a target="_blank" href="https://codepen.io/veritygriscti">
-                <h3 class="fs-3">Code Samples</h3>
-                <p>HTML/CSS/JS on CodePen</p>
-              </a>
-            </div>
+        </div><!--content-tile-->
+        <div id="code-tile" class="card p-5 m-3 tile text-center">
+          <div class="card-body">
+            <a target="_blank" href="https://codepen.io/veritygriscti"><h4 class="card-title">Code Samples</h4>
+            <p class="card-text">HMTL, CSS & JavaScript on Codepen.</p>
+            </a>
           </div>
+        </div><!--code-tile-->
+        <div id="art-tile" class="card p-5 m-3 tile text-center">
+          <div class="card-body">
+            <a href="/artwork.html"> <h4 class="card-title">Artwork</h4>
+            <p class="card-text"><p>Select works from my art practice.</p>
+             </a>
+          </div>
+        </div><!--artwork-tile-->
+      </div><!---card-group-->
+    </div><!---other-work-->
 
-          <div class="col-sm-12 col-md-4">
-            <div id="art-tile" class="p-5 tile text-center">
-              <a href="/artwork.html">
-                <h3 class="fs-3">Artwork</h3>
-                <p>Select works from my art practice.</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    
       <section id="about" class="container-fluid">
         <h2 class="fs-5 fw-bold">About</h2>
 
-        <div class="row mt-5 g-3">
+        <div id="about-row" class="row mt-5 g-3">
           <div
-            class="col-sm-12 col-md-4 order-md-last text-center align-items-top"
+               id="about-img"  class="col-sm-12 col-md-4 order-md-last text-center align-items-top"
           >
-            <div class="p-3">
+            <div  class="p-3">
               <img
                 id="about-img"
                 class="img-fluid"
@@ -268,9 +233,9 @@
               />
               <br />
             </div>
-          </div>
+          </div><!---about-img-container-->
 
-          <div class="col-sm-12 col-md-8 order-md-first p-2">
+          <div id="about-written-container" class="col-sm-12 col-md-8 order-md-first p-2">
             <div id="about-written" class="p-5 border border-dark">
               <p>
                 Life is about learning, re-learning, and (where necessary)
@@ -313,10 +278,10 @@
                   <i class="bi bi-download"></i>
                   &nbsp;(PDF)
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
+              </div><!--about-links-->
+            </div><!--about-written-->
+          </div><!--about-written-container-->
+        </div><!--about-row-->
 
         <aside id="skills" class="p-5 container-fluid mt-5">
           <h3 class="fs-5 fw-bold">Skills</h3>
@@ -358,7 +323,7 @@
                 <li class="list-group-item">VS Code</li>
               </ul>
             </div>
-          </div>
+          </div><!--row-->
         </aside>
       </section>
 
@@ -419,8 +384,8 @@
                 src="main-assets/icons/github.png"
               />
             </a>
-          </div>
-        </div>
+          </div><!--sm-menu-->
+        </div><!---social-media-->
       </section>
     </main>
 

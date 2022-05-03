@@ -61,7 +61,7 @@ nav a:hover {
 #ux-cs {
   min-height: 50vh;
   padding-top: 40px; /* offsets for the navbar */
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .tile a {
@@ -77,6 +77,9 @@ nav a:hover {
 .tile {
   border-radius: 5px;
 }
+
+
+/* Card Group Styles */
 
 #dommma-cs {
   background-color: #3f7ba8;
@@ -100,9 +103,7 @@ nav a:hover {
 #code-tile,
 #art-tile {
   background-color: var(--other-work-tile);
-  height: 175px;
-  background: url("main-assets/images/index/otherwork-bg.png") no-repeat center
-    center;
+  background: url("main-assets/images/index/otherwork-bg.png") no-repeat center center;
   background-size: cover;
 }
 

@@ -390,19 +390,37 @@
           <span id="emoji">&#x1f91d;</span>
         </h2>
 
-        <div id="form-container" class="fs-5 fw-light mt-5">
+        <div id="form-container" class="fs-5 fw-light">
           Do you have a cool project, collaboration idea, or just want to say
           hello?
           <br />
           <form
-            name="contact"
+            class="mt-5"
+            name="contact-form"
+            onSubmit="submit"
             method="POST"
             data-netlify="true"
             data-netlify-recaptcha="true"
           >
+          <div class="col-md-6 mb-2">
+            <label
+              for="name"
+              class="form-label hide-element"
+              aria-label="Name-Input"
+            >
+              Name:
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="Contact-Form-Name"
+              placeholder="Your Name"
+              name="name"
+            />
+          </div>
             <div class="col-md-6 mb-2">
               <label
-                for="Email-Address"
+                for="email-address"
                 class="form-label hide-element"
                 aria-label="Email-Input"
               >
@@ -413,11 +431,12 @@
                 class="form-control"
                 id="Email-Address"
                 placeholder="Email Address"
+                name="email-address"
               />
             </div>
             <div class="col-md-6 mb-3">
               <label
-                for="Text-Message"
+                for="text-message"
                 class="form-label hide-element"
                 aria-label="Input Email Message"
               >
@@ -427,6 +446,7 @@
                 class="form-control"
                 id="Text-Message"
                 rows="3"
+                name="text-message"
               ></textarea>
             </div>
             <div data-netlify-recaptcha="true"></div>

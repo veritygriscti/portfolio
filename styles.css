@@ -60,8 +60,7 @@ nav a:hover {
 
 #ux-cs {
   min-height: 50vh;
-  padding-top: 40px; /* offsets for the navbar */
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .tile a {
@@ -206,3 +205,16 @@ nav a:hover {
   background-color: var(--black-bg);
   color: var(--light-text);
 }
+
+/** Visibly hides element, leaves accessible for screen readers **/
+
+.hide-element {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; 
+} 
